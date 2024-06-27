@@ -1,7 +1,7 @@
 {
-  "name": "whs-kit",
+  "name": "whskit",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/whs-library.umd.js",
   "module": "dist/whs-library.es.js",
