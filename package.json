@@ -1,6 +1,5 @@
 {
-  "name": "whskit",
-  "private": true,
+  "name": "@g-pax/whskit",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/whs-library.umd.js",
@@ -11,7 +10,12 @@
     "dist"
   ],
   "publishConfig": {
-    "access": "restricted"
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g-pax/whs-kit.git"
   },
   "release": {
     "branches": [
