@@ -1,0 +1,12 @@
+export declare const bottomLeft: string;
+export declare const bottomRight: string;
+export declare const closeButton: string;
+export declare const error: string;
+export declare const icon: string;
+export declare const info: string;
+export declare const message: string;
+export declare const notification: string;
+export declare const success: string;
+export declare const topLeft: string;
+export declare const topRight: string;
+export declare const warning: string;

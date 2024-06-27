@@ -1,0 +1,32 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #007bff;
+  color: #fff;
+  margin: 4px;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.label {
+  margin-right: 8px;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: inherit;
+  padding: 0;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,4833 @@
+[data-theme="Value"] {
+  /* color */
+  --calendar-popup-calendar-day-border-current-default: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --calendar-popup-calendar-day-fill-active-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --calendar-popup-calendar-day-fill-active-disabled: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --calendar-popup-calendar-day-fill-active-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --calendar-popup-calendar-day-fill-inactive-default: var(
+    --transparent,
+    #00000000
+  );
+  --calendar-popup-calendar-day-fill-inactive-disabled: var(
+    --transparent,
+    #00000000
+  );
+  --calendar-popup-calendar-day-fill-inactive-hover: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --calendar-popup-calendar-day-text-active-default: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --calendar-popup-calendar-day-text-active-disabled: var(
+    --brand-primary-100,
+    #102b2f
+  );
+  --calendar-popup-calendar-day-text-active-hover: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --calendar-popup-calendar-day-text-inactive-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --calendar-popup-calendar-day-text-inactive-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --calendar-popup-calendar-day-text-inactive-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --calendar-popup-header-header-text: var(--neutral-ink-500 *, #a8a8a8);
+  --calendar-popup-surface-surface: var(--neutral-surface-100, #1c1d27);
+  --calendar-popup-week-days-week-day-label: var(--neutral-ink-400, #8a8a8b);
+  --file-upload-color-drop-area-icon-fill-enabled: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --file-upload-color-drop-area-icon-fill-hover: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --file-upload-color-drop-area-icon-icon-enabled: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --file-upload-color-drop-area-icon-icon-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --file-upload-color-drop-area-surface-fill-enabled: var(
+    --neutral-surface-50,
+    #171821
+  );
+  --file-upload-color-drop-area-surface-fill-hover: var(
+    --brand-primary-50,
+    #101e23
+  );
+  --file-upload-color-drop-area-surface-outline-enabled: var(
+    --brand-primary-200,
+    #114649
+  );
+  --file-upload-color-drop-area-surface-outline-hover: var(
+    --brand-primary-400,
+    #118789
+  );
+  --file-upload-color-drop-area-text-main-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --file-upload-color-drop-area-text-main-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --file-upload-color-drop-area-text-requirements-enabled: var(
+    --neutral-ink-400,
+    #8a8a8b
+  );
+  --file-upload-color-drop-area-text-requirements-hover: var(
+    --neutral-ink-600,
+    #b6b6b6
+  );
+  --file-upload-color-file-list-surface-outline: var(
+    --neutral-surface-200,
+    #22232f
+  );
+  --file-upload-color-file-list-surface-surface: var(
+    --neutral-surface-50,
+    #171821
+  );
+  --file-upload-color-file-error-message-icon-failed: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --file-upload-color-file-error-message-text-failed: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --file-upload-color-file-file-name-complete-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --file-upload-color-file-file-name-complete-hover: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --file-upload-color-file-file-name-failed-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --file-upload-color-file-file-name-failed-hover: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --file-upload-color-file-file-name-uploading-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --file-upload-color-file-file-name-uploading-hover: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --file-upload-color-file-file-size-complete: var(--neutral-ink-400, #8a8a8b);
+  --file-upload-color-file-file-size-failed: var(--neutral-ink-400, #8a8a8b);
+  --file-upload-color-file-file-size-uploading: var(--neutral-ink-400, #8a8a8b);
+  --file-upload-color-file-icon-fill-complete-enabled: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --file-upload-color-file-icon-fill-complete-hover: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --file-upload-color-file-icon-fill-failed-enabled: var(
+    --feedback-danger-tint-50,
+    #e77e8514
+  );
+  --file-upload-color-file-icon-fill-failed-hover: var(
+    --feedback-danger-tint-100,
+    #e77e8529
+  );
+  --file-upload-color-file-icon-fill-uploading-enabled: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --file-upload-color-file-icon-fill-uploading-hover: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --file-upload-color-file-icon-icon-complete-enabled: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --file-upload-color-file-icon-icon-complete-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --file-upload-color-file-icon-icon-failed-enabled: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --file-upload-color-file-icon-icon-failed-hover: var(
+    --feedback-danger-700,
+    #efa7ac
+  );
+  --file-upload-color-file-icon-icon-uploading-enabled: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --file-upload-color-file-icon-icon-uploading-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --file-upload-color-file-status-content-complete: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --file-upload-color-file-status-content-failed: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --file-upload-color-file-status-content-uploading: var(
+    --neutral-ink-400,
+    #8a8a8b
+  );
+  --file-upload-color-file-status-fill-complete: var(
+    --feedback-success-tint-50,
+    #35b55d14
+  );
+  --file-upload-color-file-status-fill-failed: var(
+    --feedback-danger-tint-50,
+    #e77e8514
+  );
+  --file-upload-color-file-status-fill-uploading: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --file-upload-color-file-surface-complete-enabled: var(
+    --neutral-surface-50,
+    #171821
+  );
+  --file-upload-color-file-surface-complete-hover: var(
+    --neutral-surface-200,
+    #22232f
+  );
+  --file-upload-color-file-surface-failed-enabled: var(
+    --neutral-surface-50,
+    #171821
+  );
+  --file-upload-color-file-surface-failed-hover: var(
+    --neutral-surface-200,
+    #22232f
+  );
+  --file-upload-color-file-surface-uploading-enabled: var(
+    --neutral-surface-50,
+    #171821
+  );
+  --file-upload-color-file-surface-uploading-hover: var(
+    --neutral-surface-200,
+    #22232f
+  );
+  --input-action-icon-icon-background-active-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --input-action-icon-icon-background-enabled-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --input-action-icon-icon-color-active-default: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --input-action-icon-icon-color-active-hover: var(--neutral-ink-700, #c4c4c4);
+  --input-action-icon-icon-color-enabled-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --input-action-icon-icon-color-enabled-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --input-action-icon-icon-color-enabled-hover: var(--neutral-ink-700, #c4c4c4);
+  --input-background-autofill-default: var(--brand-primary-tint-50, #12b5b514);
+  --input-background-autofill-hover: var(--brand-primary-tint-100, #12b5b529);
+  --input-background-color-fill-danger-active: var(
+    --neutral-surface-100,
+    #1c1d27
+  );
+  --input-background-color-fill-danger-default: var(
+    --neutral-surface-100,
+    #1c1d27
+  );
+  --input-background-color-fill-danger-hover: var(
+    --neutral-surface-200,
+    #22232f
+  );
+  --input-background-color-fill-disabled-disabled: var(
+    --neutral-surface-100,
+    #1c1d27
+  );
+  --input-background-color-fill-enabled-active: var(
+    --neutral-surface-100,
+    #1c1d27
+  );
+  --input-background-color-fill-enabled-default: var(
+    --neutral-surface-100,
+    #1c1d27
+  );
+  --input-background-color-fill-enabled-hover: var(
+    --neutral-surface-200,
+    #22232f
+  );
+  --input-background-color-fill-read-only-active: var(
+    --brand-primary-50,
+    #101e23
+  );
+  --input-background-color-fill-read-only-default: var(
+    --neutral-surface-200,
+    #22232f
+  );
+  --input-background-color-fill-read-only-hover: var(
+    --neutral-surface-300,
+    #292a3a
+  );
+  --input-background-color-fill-success-active: var(
+    --neutral-surface-100,
+    #1c1d27
+  );
+  --input-background-color-fill-success-default: var(
+    --neutral-surface-100,
+    #1c1d27
+  );
+  --input-background-color-fill-success-hover: var(
+    --neutral-surface-200,
+    #22232f
+  );
+  --input-background-color-stroke-danger-active: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --input-background-color-stroke-danger-default: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --input-background-color-stroke-danger-hover: var(
+    --feedback-danger-700,
+    #efa7ac
+  );
+  --input-background-color-stroke-disabled-disabled: var(
+    --neutral-surface-300,
+    #292a3a
+  );
+  --input-background-color-stroke-enabled-active: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --input-background-color-stroke-enabled-default: var(
+    --neutral-surface-500 *,
+    #34344c
+  );
+  --input-background-color-stroke-enabled-hover: var(
+    --neutral-surface-700,
+    #767685
+  );
+  --input-background-color-stroke-read-only-active: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --input-background-color-stroke-read-only-default: var(
+    --neutral-surface-300,
+    #292a3a
+  );
+  --input-background-color-stroke-read-only-hover: var(
+    --neutral-surface-400,
+    #2e2f40
+  );
+  --input-background-color-stroke-success-active: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --input-background-color-stroke-success-default: var(
+    --neutral-surface-500 *,
+    #34344c
+  );
+  --input-background-color-stroke-success-hover: var(
+    --neutral-surface-700,
+    #767685
+  );
+  --input-clear-icon-icon-background-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --input-clear-icon-icon-color-default: var(--neutral-ink-500 *, #a8a8a8);
+  --input-clear-icon-icon-color-hover: var(--neutral-ink-700, #c4c4c4);
+  --input-cursor-color-danger: var(--feedback-danger-500 *, #e77e85);
+  --input-cursor-color-primary: var(--brand-primary-500 *, #12b5b5);
+  --input-feedback-icon-color-danger: var(--feedback-danger-500 *, #e77e85);
+  --input-feedback-icon-color-success: var(--feedback-success-500 *, #35b55d);
+  --input-flag-dropdown-icon-active-default: var(--neutral-ink-900, #d9d9d9);
+  --input-flag-dropdown-icon-active-hover: var(--neutral-ink-700, #c4c4c4);
+  --input-flag-dropdown-icon-enabled-default: var(--neutral-ink-500 *, #a8a8a8);
+  --input-flag-dropdown-icon-enabled-disabled: var(--neutral-ink-300, #656668);
+  --input-flag-dropdown-icon-enabled-hover: var(--neutral-ink-700, #c4c4c4);
+  --input-flag-flag-thing-content-disabled: var(--neutral-ink-100, #28292d);
+  --input-flag-flag-thing-content-enabled: var(--neutral-ink-0, #16171c);
+  --input-flag-flag-thing-content-hover: var(--neutral-ink-0, #16171c);
+  --input-flag-flag-thing-fill-disabled: var(--neutral-ink-300, #656668);
+  --input-flag-flag-thing-fill-enabled: var(--neutral-ink-500 *, #a8a8a8);
+  --input-flag-flag-thing-fill-hover: var(--neutral-ink-700, #c4c4c4);
+  --input-info-icon-color-enabled: var(--neutral-ink-500 *, #a8a8a8);
+  --input-info-icon-color-hover: var(--neutral-ink-700, #c4c4c4);
+  --input-input-caption-color-icon-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --input-input-caption-color-icon-info: var(--neutral-ink-500 *, #a8a8a8);
+  --input-input-caption-color-icon-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --input-input-caption-color-icon-warning: var(
+    --feedback-warning-500 *,
+    #e09c42
+  );
+  --input-input-caption-color-text-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --input-input-caption-color-text-info: var(--neutral-ink-500 *, #a8a8a8);
+  --input-input-caption-color-text-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --input-input-caption-color-text-warning: var(
+    --feedback-warning-500 *,
+    #e09c42
+  );
+  --input-input-field-text-color-danger-empty-active: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --input-input-field-text-color-danger-empty-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --input-input-field-text-color-danger-empty-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --input-input-field-text-color-danger-filled-enabled: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --input-input-field-text-color-danger-filled-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --input-input-field-text-color-disabled-empty-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --input-input-field-text-color-disabled-filled-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --input-input-field-text-color-enabled-empty-active: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --input-input-field-text-color-enabled-empty-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --input-input-field-text-color-enabled-empty-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --input-input-field-text-color-enabled-filled-enabled: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --input-input-field-text-color-enabled-filled-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --input-input-field-text-color-success-filled-enabled: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --input-input-field-text-color-success-filled-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --input-label-label-color: var(--neutral-ink-500 *, #a8a8a8);
+  --input-label-secondary-label-color: var(--neutral-ink-900, #d9d9d9);
+  --input-leading-icon-icon-states-default: var(--neutral-ink-500 *, #a8a8a8);
+  --input-password-strength-color-label: var(--neutral-ink-400, #8a8a8b);
+  --input-password-strength-color-track: var(--neutral-ink-tint-50, #a8a8a814);
+  --input-password-strength-color-caption-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --input-password-strength-color-caption-ink: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --input-password-strength-color-caption-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --input-password-strength-color-caption-warning: var(
+    --feedback-warning-500 *,
+    #e09c42
+  );
+  --input-password-strength-color-loader-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --input-password-strength-color-loader-ink: var(--neutral-ink-500 *, #a8a8a8);
+  --input-password-strength-color-loader-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --input-password-strength-color-loader-warning: var(
+    --feedback-warning-500 *,
+    #e09c42
+  );
+  --selection-controls-advanced-selection-controls-color-fill-selected-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --selection-controls-advanced-selection-controls-color-fill-unselected-disabled: var(
+    --transparent,
+    #00000000
+  );
+  --selection-controls-advanced-selection-controls-color-fill-unselected-enabled: var(
+    --transparent,
+    #00000000
+  );
+  --selection-controls-advanced-selection-controls-color-fill-unselected-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --selection-controls-advanced-selection-controls-color-icon-selected-enabled: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --selection-controls-advanced-selection-controls-color-icon-selected-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --selection-controls-advanced-selection-controls-color-icon-unselected-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --selection-controls-advanced-selection-controls-color-icon-unselected-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --selection-controls-advanced-selection-controls-color-icon-unselected-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --selection-controls-checkbox-border-unchecked-active: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --selection-controls-checkbox-border-unchecked-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --selection-controls-checkbox-border-unchecked-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --selection-controls-checkbox-border-unchecked-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --selection-controls-checkbox-fill-checked-active: var(
+    --brand-primary-900,
+    #97dede
+  );
+  --selection-controls-checkbox-fill-checked-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --selection-controls-checkbox-fill-checked-disabled: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --selection-controls-checkbox-fill-checked-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --selection-controls-checkbox-fill-unchecked-active: var(
+    --neutral-ink-100,
+    #28292d
+  );
+  --selection-controls-checkbox-fill-unchecked-default: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-checkbox-fill-unchecked-disabled: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-checkbox-fill-unchecked-hover: var(
+    --neutral-ink-50,
+    #1c1d22
+  );
+  --selection-controls-checkbox-icon-checked-active: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-checkbox-icon-checked-default: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-checkbox-icon-checked-disabled: var(
+    --brand-primary-100,
+    #102b2f
+  );
+  --selection-controls-checkbox-icon-checked-hover: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-favourite-button-icon-checked-active: var(
+    --feedback-warning-900,
+    #f1d3ac
+  );
+  --selection-controls-favourite-button-icon-checked-default: var(
+    --feedback-warning-800,
+    #ecc48e
+  );
+  --selection-controls-favourite-button-icon-checked-disabled: var(
+    --feedback-warning-300,
+    #845f2f
+  );
+  --selection-controls-favourite-button-icon-checked-hover: var(
+    --feedback-warning-900,
+    #f1d3ac
+  );
+  --selection-controls-favourite-button-icon-unchecked-active: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --selection-controls-favourite-button-icon-unchecked-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --selection-controls-favourite-button-icon-unchecked-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --selection-controls-favourite-button-icon-unchecked-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --selection-controls-label-checked-active: var(--neutral-ink-900, #d9d9d9);
+  --selection-controls-label-checked-default: var(--neutral-ink-900, #d9d9d9);
+  --selection-controls-label-checked-disabled: var(--neutral-ink-300, #656668);
+  --selection-controls-label-unchecked-active: var(--neutral-ink-900, #d9d9d9);
+  --selection-controls-label-unchecked-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --selection-controls-label-unchecked-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --selection-controls-label-unchecked-hover: var(--neutral-ink-700, #c4c4c4);
+  --selection-controls-radio-button-border-checked-active: var(
+    --brand-primary-900,
+    #97dede
+  );
+  --selection-controls-radio-button-border-checked-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --selection-controls-radio-button-border-checked-disabled: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --selection-controls-radio-button-border-checked-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --selection-controls-radio-button-border-unchecked-active: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --selection-controls-radio-button-border-unchecked-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --selection-controls-radio-button-border-unchecked-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --selection-controls-radio-button-border-unchecked-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --selection-controls-radio-button-fill-checked-active: var(
+    --neutral-ink-100,
+    #28292d
+  );
+  --selection-controls-radio-button-fill-checked-default: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-radio-button-fill-checked-disabled: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-radio-button-fill-checked-hover: var(
+    --neutral-ink-50,
+    #1c1d22
+  );
+  --selection-controls-radio-button-fill-unchecked-active: var(
+    --neutral-ink-100,
+    #28292d
+  );
+  --selection-controls-radio-button-fill-unchecked-default: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-radio-button-fill-unchecked-disabled: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-radio-button-fill-unchecked-hover: var(
+    --neutral-ink-50,
+    #1c1d22
+  );
+  --selection-controls-radio-button-icon-checked-active: var(
+    --brand-primary-900,
+    #97dede
+  );
+  --selection-controls-radio-button-icon-checked-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --selection-controls-radio-button-icon-checked-disabled: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --selection-controls-radio-button-icon-checked-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --selection-controls-state-overlay---fav-fill-checked-active: var(
+    --feedback-warning-tint-100,
+    #e09c4229
+  );
+  --selection-controls-state-overlay---fav-fill-checked-hover: var(
+    --feedback-warning-tint-50,
+    #e09c4214
+  );
+  --selection-controls-state-overlay---fav-fill-unchecked-active: var(
+    --neutral-ink-tint-100,
+    #a8a8a829
+  );
+  --selection-controls-state-overlay---fav-fill-unchecked-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --selection-controls-state-overlay-fill-checked-active: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --selection-controls-state-overlay-fill-checked-hover: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --selection-controls-state-overlay-fill-unchecked-active: var(
+    --neutral-ink-tint-100,
+    #a8a8a829
+  );
+  --selection-controls-state-overlay-fill-unchecked-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --selection-controls-switch-border-unchecked-active: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --selection-controls-switch-border-unchecked-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --selection-controls-switch-border-unchecked-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --selection-controls-switch-border-unchecked-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --selection-controls-switch-fill-checked-active: var(
+    --brand-primary-900,
+    #97dede
+  );
+  --selection-controls-switch-fill-checked-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --selection-controls-switch-fill-checked-disabled: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --selection-controls-switch-fill-checked-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --selection-controls-switch-fill-unchecked-active: var(
+    --neutral-ink-100,
+    #28292d
+  );
+  --selection-controls-switch-fill-unchecked-default: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-switch-fill-unchecked-disabled: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-switch-fill-unchecked-hover: var(
+    --neutral-ink-50,
+    #1c1d22
+  );
+  --selection-controls-switch-icon-checked-active: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-switch-icon-checked-default: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --selection-controls-switch-icon-checked-disabled: var(
+    --brand-primary-100,
+    #102b2f
+  );
+  --selection-controls-switch-icon-checked-hover: var(--neutral-ink-0, #16171c);
+  --selection-controls-switch-icon-unchecked-active: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --selection-controls-switch-icon-unchecked-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --selection-controls-switch-icon-unchecked-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --selection-controls-switch-icon-unchecked-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --slider-color-bar-disabled: var(--brand-primary-300, #116d6f);
+  --slider-color-bar-enabled: var(--brand-primary-500 *, #12b5b5);
+  --slider-color-handle-disabled: var(--brand-primary-300, #116d6f);
+  --slider-color-handle-enabled: var(--brand-primary-500 *, #12b5b5);
+  --slider-color-handle-hover: var(--brand-primary-700, #5ecdcd);
+  --slider-color-text-enabled: var(--neutral-ink-500 *, #a8a8a8);
+  --slider-color-track-enabled: var(--neutral-ink-tint-50, #a8a8a814);
+  --toggle-button-color-outline: var(--neutral-surface-500 *, #34344c);
+  --toggle-button-color-content-selected-disabled-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --toggle-button-color-content-selected-disabled-default: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --toggle-button-color-content-selected-disabled-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --toggle-button-color-content-selected-enabled-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --toggle-button-color-content-selected-enabled-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --toggle-button-color-content-selected-enabled-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --toggle-button-color-content-selected-hover-danger: var(
+    --feedback-danger-700,
+    #efa7ac
+  );
+  --toggle-button-color-content-selected-hover-default: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --toggle-button-color-content-selected-hover-success: var(
+    --feedback-success-700,
+    #76cd91
+  );
+  --toggle-button-color-content-unselected-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --toggle-button-color-content-unselected-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --toggle-button-color-content-unselected-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --toggle-button-color-fill-selected-disabled-danger: var(
+    --feedback-danger-tint-50,
+    #e77e8514
+  );
+  --toggle-button-color-fill-selected-disabled-default: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --toggle-button-color-fill-selected-disabled-success: var(
+    --feedback-success-tint-50,
+    #35b55d14
+  );
+  --toggle-button-color-fill-selected-enabled-danger: var(
+    --feedback-danger-tint-50,
+    #e77e8514
+  );
+  --toggle-button-color-fill-selected-enabled-default: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --toggle-button-color-fill-selected-enabled-success: var(
+    --feedback-success-tint-50,
+    #35b55d14
+  );
+  --toggle-button-color-fill-selected-hover-danger: var(
+    --feedback-danger-tint-100,
+    #e77e8529
+  );
+  --toggle-button-color-fill-selected-hover-default: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --toggle-button-color-fill-selected-hover-success: var(
+    --feedback-success-tint-100,
+    #35b55d29
+  );
+  --toggle-button-color-fill-unselected-disabled: var(--transparent, #00000000);
+  --toggle-button-color-fill-unselected-enabled: var(--transparent, #00000000);
+  --toggle-button-color-fill-unselected-hover: var(
+    --neutral-ink-tint-100,
+    #a8a8a829
+  );
+  /* number */
+  --button-border-radius-large: var(--br-border-radius-50-(04), 0.25rem);
+  --button-border-radius-medium: var(--br-border-radius-50-(04), 0.25rem);
+  --button-border-radius-small: var(--br-border-radius-50-(04), 0.25rem);
+  --button-border-radius-x-small: var(--br-border-radius-50-(04), 0.25rem);
+  --button-gap-large: var(--dm-dimension-50-(04), 0.25rem);
+  --button-gap-medium: var(--dm-dimension-50-(04), 0.25rem);
+  --button-gap-small: var(--dm-dimension-50-(04), 0.25rem);
+  --button-gap-x-small: var(--dm-dimension-50-(04), 0.25rem);
+  --button-icon-size-x-small: var(--dm-dimension-200-(16), 1rem);
+  --button-icon-size-small: var(--dm-dimension-250-(20), 1.25rem);
+  --button-icon-size-large: var(--dm-dimension-300-(24), 1.5rem);
+  --button-icon-size-medium: var(--dm-dimension-300-(24), 1.5rem);
+  --button-padding-h-x-small: var(--dm-dimension-100-(08), 0.5rem);
+  --button-padding-h-small: var(--dm-dimension-150-(12), 0.75rem);
+  --button-padding-h-large: var(--dm-dimension-200-(16), 1rem);
+  --button-padding-h-medium: var(--dm-dimension-200-(16), 1rem);
+  --button-padding-h---icon-only-x-small: var(--dm-dimension-50-(04), 0.25rem);
+  --button-padding-h---icon-only-small: var(--dm-dimension-75-(06), 0.375rem);
+  --button-padding-h---icon-only-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --button-padding-h---icon-only-large: var(--dm-dimension-150-(12), 0.75rem);
+  --button-padding-v-x-small: var(--dm-dimension-50-(04), 0.25rem);
+  --button-padding-v-small: var(--dm-dimension-75-(06), 0.375rem);
+  --button-padding-v-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --button-padding-v-large: var(--dm-dimension-150-(12), 0.75rem);
+  --calendar-popup-calendar-day-size-border-radius: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --calendar-popup-calendar-day-size-calendar-day: var(
+    --dm-dimension-450-(36),
+    2.25rem
+  );
+  --calendar-popup-calendar-day-size-calendar-year: var(
+    --dm-dimension-900-(72),
+    4.5rem
+  );
+  --calendar-popup-header-padding-v: var(--dm-dimension-100-(08), 0.5rem);
+  --calendar-popup-header-padding-h: var(--dm-dimension-250-(20), 1.25rem);
+  --file-upload-border-radius-medium: var(--br-border-radius-50-(04), 0.25rem);
+  --file-upload-file-file-list-border-radius-medium: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --file-upload-file-gap-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --file-upload-file-icon-border-radius-medium: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --file-upload-file-icon-padding-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --file-upload-file-icon-size-medium: var(--dm-dimension-300-(24), 1.5rem);
+  --file-upload-file-padding-h-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --file-upload-file-padding-v-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --file-upload-file-text-gap-medium: var(--dm-dimension-50-(04), 0.25rem);
+  --file-upload-gap-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --file-upload-icon-border-radius-medium: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --file-upload-icon-padding-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --file-upload-icon-size-medium: var(--dm-dimension-300-(24), 1.5rem);
+  --file-upload-padding-h-medium: var(--dm-dimension-150-(12), 0.75rem);
+  --file-upload-padding-v-medium: var(--dm-dimension-150-(12), 0.75rem);
+  --file-upload-text-gap-medium: var(--dm-dimension-50-(04), 0.25rem);
+  --input-action-icon-icon-border-radius-large: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --input-action-icon-icon-border-radius-medium: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --input-action-icon-icon-border-radius-small: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --input-action-icon-icon-border-radius-x-small: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --input-action-icon-icon-padding-x-small: var(--dm-dimension-0-(00), 0rem);
+  --input-action-icon-icon-padding-large: var(--dm-dimension-25-(02), 0.125rem);
+  --input-action-icon-icon-padding-medium: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --input-action-icon-icon-padding-small: var(--dm-dimension-25-(02), 0.125rem);
+  --input-action-icon-icon-size-small: var(--dm-dimension-200-(16), 1rem);
+  --input-action-icon-icon-size-x-small: var(--dm-dimension-200-(16), 1rem);
+  --input-action-icon-icon-size-large: var(--dm-dimension-250-(20), 1.25rem);
+  --input-action-icon-icon-size-medium: var(--dm-dimension-250-(20), 1.25rem);
+  --input-background-border-radius-medium: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --input-background-stroke-width-disabled: 0.0625rem;
+  --input-background-stroke-width-enabled: 0.0625rem;
+  --input-background-stroke-width-success: 0.0625rem;
+  --input-background-stroke-width-danger: 0.125rem;
+  --input-clear-icon-clear-icon-border-radius-large: var(
+    --br-border-radius-25-(02),
+    0.125rem
+  );
+  --input-clear-icon-clear-icon-border-radius-medium: var(
+    --br-border-radius-25-(02),
+    0.125rem
+  );
+  --input-clear-icon-clear-icon-border-radius-small: var(
+    --br-border-radius-25-(02),
+    0.125rem
+  );
+  --input-clear-icon-clear-icon-padding-medium: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --input-clear-icon-clear-icon-padding-small: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --input-clear-icon-clear-icon-size-x-small: var(
+    --dm-dimension-150-(12),
+    0.75rem
+  );
+  --input-clear-icon-clear-icon-size-large: var(--dm-dimension-200-(16), 1rem);
+  --input-clear-icon-clear-icon-size-medium: var(--dm-dimension-200-(16), 1rem);
+  --input-clear-icon-clear-icon-size-small: var(--dm-dimension-200-(16), 1rem);
+  --input-cursor-height-x-small: var(--dm-dimension-200-(16), 1rem);
+  --input-cursor-height-small: var(--dm-dimension-250-(20), 1.25rem);
+  --input-cursor-height-large: var(--dm-dimension-300-(24), 1.5rem);
+  --input-cursor-height-medium: var(--dm-dimension-300-(24), 1.5rem);
+  --input-cursor-width-large: var(--dm-dimension-25-(02), 0.125rem);
+  --input-cursor-width-medium: var(--dm-dimension-25-(02), 0.125rem);
+  --input-cursor-width-small: var(--dm-dimension-25-(02), 0.125rem);
+  --input-cursor-width-x-small: var(--dm-dimension-25-(02), 0.125rem);
+  --input-feedback-icon-large: var(--dm-dimension-200-(16), 1rem);
+  --input-feedback-icon-medium: var(--dm-dimension-200-(16), 1rem);
+  --input-feedback-icon-small: var(--dm-dimension-200-(16), 1rem);
+  --input-feedback-icon-x-small: var(--dm-dimension-200-(16), 1rem);
+  --input-flag-flag-gap-large: var(--dm-dimension-25-(02), 0.125rem);
+  --input-flag-flag-gap-medium: var(--dm-dimension-25-(02), 0.125rem);
+  --input-flag-flag-gap-small: var(--dm-dimension-25-(02), 0.125rem);
+  --input-flag-flag-gap-x-small: var(--dm-dimension-25-(02), 0.125rem);
+  --input-flag-flag-icon-size-x-small: var(--dm-dimension-175-(14), 0.875rem);
+  --input-flag-flag-icon-size-large: var(--dm-dimension-200-(16), 1rem);
+  --input-flag-flag-icon-size-medium: var(--dm-dimension-200-(16), 1rem);
+  --input-flag-flag-icon-size-small: var(--dm-dimension-200-(16), 1rem);
+  --input-flag-flag-padding-h-large: var(--dm-dimension-25-(02), 0.125rem);
+  --input-flag-flag-padding-h-medium: var(--dm-dimension-25-(02), 0.125rem);
+  --input-flag-flag-padding-h-small: var(--dm-dimension-25-(02), 0.125rem);
+  --input-flag-flag-padding-h-x-small: var(--dm-dimension-25-(02), 0.125rem);
+  --input-flag-flag-padding-v-large: var(--dm-dimension-0-(00), 0rem);
+  --input-flag-flag-padding-v-medium: var(--dm-dimension-0-(00), 0rem);
+  --input-flag-flag-padding-v-small: var(--dm-dimension-0-(00), 0rem);
+  --input-flag-flag-padding-v-x-small: var(--dm-dimension-0-(00), 0rem);
+  --input-flag-flag-size-x-small: var(--dm-dimension-200-(16), 1rem);
+  --input-flag-flag-size-small: var(--dm-dimension-250-(20), 1.25rem);
+  --input-flag-flag-size-large: var(--dm-dimension-300-(24), 1.5rem);
+  --input-flag-flag-size-medium: var(--dm-dimension-300-(24), 1.5rem);
+  --input-info-icon-border-radius-large: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --input-info-icon-border-radius-small: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --input-info-icon-size-large: var(--dm-dimension-250-(20), 1.25rem);
+  --input-info-icon-size-small: var(--dm-dimension-250-(20), 1.25rem);
+  --input-input-caption-gap-large: var(--dm-dimension-50-(04), 0.25rem);
+  --input-input-caption-gap-small: var(--dm-dimension-50-(04), 0.25rem);
+  --input-input-caption-icon-padding-small: var(--dm-dimension-0-(00), 0rem);
+  --input-input-caption-icon-padding-large: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --input-input-caption-icon-size-large: var(--dm-dimension-200-(16), 1rem);
+  --input-input-caption-icon-size-small: var(--dm-dimension-200-(16), 1rem);
+  --input-input-field-border-radius-large: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --input-input-field-border-radius-medium: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --input-input-field-border-radius-small: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --input-input-field-gap-large: var(--dm-dimension-50-(04), 0.25rem);
+  --input-input-field-gap-medium: var(--dm-dimension-50-(04), 0.25rem);
+  --input-input-field-gap-small: var(--dm-dimension-50-(04), 0.25rem);
+  --input-input-field-padding-h-large: var(--dm-dimension-100-(08), 0.5rem);
+  --input-input-field-padding-h-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --input-input-field-padding-h-small: var(--dm-dimension-100-(08), 0.5rem);
+  --input-input-field-padding-v-small: var(--dm-dimension-75-(06), 0.375rem);
+  --input-input-field-padding-v-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --input-input-field-padding-v-large: var(--dm-dimension-150-(12), 0.75rem);
+  --input-label-padding: var(--dm-dimension-100-(08), 0.5rem);
+  --input-leading-icon-icon-size-x-small: var(--dm-dimension-200-(16), 1rem);
+  --input-leading-icon-icon-size-small: var(--dm-dimension-250-(20), 1.25rem);
+  --input-leading-icon-icon-size-large: var(--dm-dimension-300-(24), 1.5rem);
+  --input-leading-icon-icon-size-medium: var(--dm-dimension-300-(24), 1.5rem);
+  --input-password-strength-border-radius-large: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --input-password-strength-border-radius-small: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --input-password-strength-gap-large: var(--dm-dimension-50-(04), 0.25rem);
+  --input-password-strength-gap-small: var(--dm-dimension-50-(04), 0.25rem);
+  --input-password-strength-height-large: var(--dimension-100-(8), 0.5rem);
+  --input-password-strength-height-small: var(--dimension-100-(8), 0.5rem);
+  --selection-controls-advanced-selection-controls-border-radius-large: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --selection-controls-advanced-selection-controls-border-radius-medium: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --selection-controls-advanced-selection-controls-border-radius-small: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --selection-controls-advanced-selection-controls-gap-large: var(
+    --dm-dimension-50-(04),
+    0.25rem
+  );
+  --selection-controls-advanced-selection-controls-gap-medium: var(
+    --dm-dimension-50-(04),
+    0.25rem
+  );
+  --selection-controls-advanced-selection-controls-gap-small: var(
+    --dm-dimension-50-(04),
+    0.25rem
+  );
+  --selection-controls-advanced-selection-controls-icon-size-large: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --selection-controls-advanced-selection-controls-icon-size-medium: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --selection-controls-advanced-selection-controls-icon-size-small: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --selection-controls-advanced-selection-controls-padding-h-large: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --selection-controls-advanced-selection-controls-padding-h-medium: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --selection-controls-advanced-selection-controls-padding-h-small: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --selection-controls-advanced-selection-controls-padding-v-small: var(
+    --dm-dimension-0-(00),
+    0rem
+  );
+  --selection-controls-advanced-selection-controls-padding-v-large: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --selection-controls-advanced-selection-controls-padding-v-medium: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --selection-controls-checkbox-border-radius-large: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --selection-controls-checkbox-border-radius-medium: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --selection-controls-checkbox-border-radius-small: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --selection-controls-checkbox-gap-small: var(--dm-dimension-50-(04), 0.25rem);
+  --selection-controls-checkbox-gap-large: var(--dm-dimension-100-(08), 0.5rem);
+  --selection-controls-checkbox-gap-medium: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --selection-controls-checkbox-icon-size-small: var(
+    --dm-dimension-200-(16),
+    1rem
+  );
+  --selection-controls-checkbox-icon-size-large: var(
+    --dm-dimension-300-(24),
+    1.5rem
+  );
+  --selection-controls-checkbox-size-small: var(--dm-dimension-200-(16), 1rem);
+  --selection-controls-checkbox-size-medium: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --selection-controls-checkbox-size-large: var(
+    --dm-dimension-300-(24),
+    1.5rem
+  );
+  --selection-controls-favourite-button-gap-large: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --selection-controls-favourite-button-gap-medium: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --selection-controls-favourite-button-gap-small: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --selection-controls-favourite-button-size-medium: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --selection-controls-favourite-button-size-small: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --selection-controls-favourite-button-size-large: var(
+    --dm-dimension-300-(24),
+    1.5rem
+  );
+  --selection-controls-radio-button-border-radius-large: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --selection-controls-radio-button-border-radius-medium: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --selection-controls-radio-button-border-radius-small: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --selection-controls-radio-button-gap-large: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --selection-controls-radio-button-gap-medium: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --selection-controls-radio-button-gap-small: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --selection-controls-radio-button-icon-size-small: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --selection-controls-radio-button-icon-size-medium: var(
+    --dm-dimension-175-(14),
+    0.875rem
+  );
+  --selection-controls-radio-button-icon-size-large: var(
+    --dm-dimension-200-(16),
+    1rem
+  );
+  --selection-controls-radio-button-size-medium: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --selection-controls-radio-button-size-large: var(
+    --dm-dimension-300-(24),
+    1.5rem
+  );
+  --selection-controls-selection-control-group-gap-medium: var(
+    --dm-dimension-200-(16),
+    1rem
+  );
+  --selection-controls-selection-control-group-padding-v-medium: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --selection-controls-state-overlay---fav-border-radius-large: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --selection-controls-state-overlay---fav-border-radius-medium: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --selection-controls-state-overlay---fav-border-radius-small: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --selection-controls-state-overlay---fav-size-small: var(
+    --dm-dimension-300-(24),
+    1.5rem
+  );
+  --selection-controls-state-overlay---fav-size-medium: var(
+    --dm-dimension-400-(32),
+    2rem
+  );
+  --selection-controls-state-overlay---fav-size-large: var(
+    --dm-dimension-500-(40),
+    2.5rem
+  );
+  --selection-controls-state-overlay-border-radius-large: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --selection-controls-state-overlay-border-radius-medium: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --selection-controls-state-overlay-border-radius-small: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --selection-controls-state-overlay-size-small: var(
+    --dm-dimension-300-(24),
+    1.5rem
+  );
+  --selection-controls-state-overlay-size-medium: var(
+    --dm-dimension-400-(32),
+    2rem
+  );
+  --selection-controls-state-overlay-size-large: var(
+    --dm-dimension-500-(40),
+    2.5rem
+  );
+  --selection-controls-switch-border-radius-small: var(
+    --br-border-radius-100-(08),
+    0.5rem
+  );
+  --selection-controls-switch-border-radius-medium: var(
+    --br-border-radius-125-(10),
+    0.625rem
+  );
+  --selection-controls-switch-border-radius-large: var(
+    --br-border-radius-150-(12),
+    0.75rem
+  );
+  --selection-controls-switch-height-small: var(--dm-dimension-200-(16), 1rem);
+  --selection-controls-switch-height-medium: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --selection-controls-switch-height-large: var(
+    --dm-dimension-300-(24),
+    1.5rem
+  );
+  --selection-controls-switch-icon-size-small: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --selection-controls-switch-icon-size-medium: var(
+    --dm-dimension-175-(14),
+    0.875rem
+  );
+  --selection-controls-switch-icon-size-large: var(
+    --dm-dimension-200-(16),
+    1rem
+  );
+  --selection-controls-switch-width-small: var(--dm-dimension-400-(32), 2rem);
+  --selection-controls-switch-width-medium: var(
+    --dm-dimension-500-(40),
+    2.5rem
+  );
+  --selection-controls-switch-width-large: var(--dm-dimension-600-(48), 3rem);
+  --slider-gap-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --slider-handle-border-radius-small: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --slider-handle-size-medium: var(--dm-dimension-250-(20), 1.25rem);
+  --slider-track-border-radius-medium: var(--br-border-radius-50-(04), 0.25rem);
+  --slider-track-border-radius-small: var(--br-border-radius-50-(04), 0.25rem);
+  --slider-track-height-medium: var(--dm-dimension-75-(06), 0.375rem);
+  --toggle-button-border-radius-medium: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --toggle-button-gap-medium: var(--dm-dimension-50-(04), 0.25rem);
+  --toggle-button-icon-size-medium: var(--dm-dimension-300-(24), 1.5rem);
+  --toggle-button-padding-h-medium: var(--dm-dimension-200-(16), 1rem);
+  --toggle-button-padding-v-medium: var(--dm-dimension-50-(04), 0.25rem);
+  --toggle-group-border-radius-medium: var(--br-border-radius-50-(04), 0.25rem);
+  --toggle-group-padding-h-medium: var(--dm-dimension-50-(04), 0.25rem);
+  --toggle-group-padding-v-medium: var(--dm-dimension-50-(04), 0.25rem);
+}
+[data-theme="Mode 1"] {
+  /* color */
+  --app-bar-outline: var(--neutral-surface-300, #292a3a);
+  --app-bar-surface: var(--neutral-surface-100, #1c1d27);
+  --app-bar-user-menu-button-fill-collapsed-default: var(
+    --transparent,
+    #00000000
+  );
+  --app-bar-user-menu-button-fill-collapsed-hover: var(
+    --neutral-ink-tint-100,
+    #a8a8a829
+  );
+  --app-bar-user-menu-button-fill-expanded-default: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --app-bar-user-menu-button-fill-expanded-hover: var(
+    --neutral-ink-tint-100,
+    #a8a8a829
+  );
+  --app-bar-user-menu-button-icon-collapsed-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --app-bar-user-menu-button-icon-collapsed-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --app-bar-user-menu-button-icon-expanded-default: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --app-bar-user-menu-button-icon-expanded-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --breadcrumbs-icon: var(--neutral-ink-300, #656668);
+  --drawer-outline: var(--neutral-surface-300, #292a3a);
+  --drawer-surface: var(--neutral-surface-100, #1c1d27);
+  --drawer-accordion-icon-fill-selected-default: var(--transparent, #00000000);
+  --drawer-accordion-icon-fill-selected-disabled: var(--transparent, #00000000);
+  --drawer-accordion-icon-fill-selected-hover: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --drawer-accordion-icon-fill-unselected-default: var(
+    --transparent,
+    #00000000
+  );
+  --drawer-accordion-icon-fill-unselected-disabled: var(
+    --transparent,
+    #00000000
+  );
+  --drawer-accordion-icon-fill-unselected-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --drawer-accordion-icon-icon-selected-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --drawer-accordion-icon-icon-selected-disabled: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --drawer-accordion-icon-icon-selected-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --drawer-accordion-icon-icon-unselected-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --drawer-accordion-icon-icon-unselected-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --drawer-accordion-icon-icon-unselected-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --drawer-company-drawer-area-content-outline: var(
+    --neutral-surface-300,
+    #292a3a
+  );
+  --drawer-company-drawer-button-fill-selected-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --drawer-company-drawer-button-fill-selected-disabled: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --drawer-company-drawer-button-fill-selected-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --drawer-company-drawer-button-fill-unselected-default: var(
+    --transparent,
+    #00000000
+  );
+  --drawer-company-drawer-button-fill-unselected-disabled: var(
+    --transparent,
+    #00000000
+  );
+  --drawer-company-drawer-button-fill-unselected-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --drawer-company-drawer-button-icon-selected-default: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --drawer-company-drawer-button-icon-selected-disabled: var(
+    --brand-primary-100,
+    #102b2f
+  );
+  --drawer-company-drawer-button-icon-selected-hover: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --drawer-company-drawer-button-icon-unselected-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --drawer-company-drawer-button-icon-unselected-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --drawer-company-drawer-button-icon-unselected-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --drawer-company-drawer-button-outline-compact-unselected-default: var(
+    --transparent,
+    #00000000
+  );
+  --drawer-company-drawer-button-outline-compact-unselected-disabled: var(
+    --transparent,
+    #00000000
+  );
+  --drawer-company-drawer-button-outline-compact-unselected-hover: var(
+    --transparent,
+    #00000000
+  );
+  --drawer-company-drawer-button-outline-full-unselected-default: var(
+    --neutral-surface-300,
+    #292a3a
+  );
+  --drawer-company-drawer-button-outline-full-unselected-disabled: var(
+    --neutral-surface-300,
+    #292a3a
+  );
+  --drawer-company-drawer-button-outline-full-unselected-hover: var(
+    --neutral-surface-500 *,
+    #34344c
+  );
+  --drawer-company-drawer-button-text-selected-default: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --drawer-company-drawer-button-text-selected-disabled: var(
+    --brand-primary-100,
+    #102b2f
+  );
+  --drawer-company-drawer-button-text-selected-hover: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --drawer-company-drawer-button-text-unselected-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --drawer-company-drawer-button-text-unselected-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --drawer-company-drawer-button-text-unselected-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --drawer-drawer-expand-area-content-text: var(--neutral-ink-500 *, #a8a8a8);
+  --drawer-drawer-expand-area-expand-icon-fill-collapsed-default: var(
+    --transparent,
+    #00000000
+  );
+  --drawer-drawer-expand-area-expand-icon-fill-collapsed-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --drawer-drawer-expand-area-expand-icon-fill-expanded-default: var(
+    --transparent,
+    #00000000
+  );
+  --drawer-drawer-expand-area-expand-icon-fill-expanded-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --drawer-drawer-expand-area-expand-icon-icon-collapsed-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --drawer-drawer-expand-area-expand-icon-icon-collapsed-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --drawer-drawer-expand-area-expand-icon-icon-expanded-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --drawer-drawer-expand-area-expand-icon-icon-expanded-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --drawer-footer-area-content-divider: var(--neutral-surface-500 *, #34344c);
+  --drawer-menu-item-counter-selected-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --drawer-menu-item-counter-selected-disabled: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --drawer-menu-item-counter-selected-hover: var(--brand-primary-700, #5ecdcd);
+  --drawer-menu-item-counter-unselected-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --drawer-menu-item-counter-unselected-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --drawer-menu-item-counter-unselected-hover: var(--neutral-ink-700, #c4c4c4);
+  --drawer-menu-item-fill-selected-default: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --drawer-menu-item-fill-selected-disabled: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --drawer-menu-item-fill-selected-hover: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --drawer-menu-item-fill-unselected-default: var(--transparent, #00000000);
+  --drawer-menu-item-fill-unselected-disabled: var(--transparent, #00000000);
+  --drawer-menu-item-fill-unselected-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --drawer-menu-item-icon-selected-default: var(--brand-primary-500 *, #12b5b5);
+  --drawer-menu-item-icon-selected-disabled: var(--brand-primary-300, #116d6f);
+  --drawer-menu-item-icon-selected-hover: var(--brand-primary-700, #5ecdcd);
+  --drawer-menu-item-icon-unselected-default: var(--neutral-ink-500 *, #a8a8a8);
+  --drawer-menu-item-icon-unselected-disabled: var(--neutral-ink-300, #656668);
+  --drawer-menu-item-icon-unselected-hover: var(--neutral-ink-700, #c4c4c4);
+  --drawer-menu-item-text-selected-default: var(--brand-primary-500 *, #12b5b5);
+  --drawer-menu-item-text-selected-disabled: var(--brand-primary-300, #116d6f);
+  --drawer-menu-item-text-selected-hover: var(--brand-primary-700, #5ecdcd);
+  --drawer-menu-item-text-unselected-default: var(--neutral-ink-500 *, #a8a8a8);
+  --drawer-menu-item-text-unselected-disabled: var(--neutral-ink-300, #656668);
+  --drawer-menu-item-text-unselected-hover: var(--neutral-ink-700, #c4c4c4);
+  --drawer-menu-items-area-content-divider: var(--neutral-surface-300, #292a3a);
+  --link-color-content-active-ink: var(--neutral-ink-900, #d9d9d9);
+  --link-color-content-active-primary: var(--brand-primary-900, #97dede);
+  --link-color-content-active-secondary: var(--brand-secondary-900, #c1d2ff);
+  --link-color-content-active-tertiary: var(--brand-tertiary-900, #e1c9fa);
+  --link-color-content-disabled-ink: var(--neutral-ink-300, #656668);
+  --link-color-content-disabled-primary: var(--brand-primary-300, #116d6f);
+  --link-color-content-disabled-secondary: var(--brand-secondary-300, #465d98);
+  --link-color-content-disabled-tertiary: var(--brand-tertiary-300, #705292);
+  --link-color-content-enabled-ink: var(--neutral-ink-500 *, #a8a8a8);
+  --link-color-content-enabled-primary: var(--brand-primary-500 *, #12b5b5);
+  --link-color-content-enabled-secondary: var(--brand-secondary-500 *, #7199fe);
+  --link-color-content-enabled-tertiary: var(--brand-tertiary-500 *, #bb85f4);
+  --link-color-content-hover-ink: var(--neutral-ink-700, #c4c4c4);
+  --link-color-content-hover-primary: var(--brand-primary-700, #5ecdcd);
+  --link-color-content-hover-secondary: var(--brand-secondary-700, #9ebafe);
+  --link-color-content-hover-tertiary: var(--brand-tertiary-700, #d1acf8);
+  --link-color-fill-active-ink: var(--neutral-ink-tint-100, #a8a8a829);
+  --link-color-fill-active-primary: var(--brand-primary-tint-100, #12b5b529);
+  --link-color-fill-active-secondary: var(
+    --brand-secondary-tint-100,
+    #7199fe29
+  );
+  --link-color-fill-active-tertiary: var(--brand-tertiary-tint-100, #bb85f429);
+  --link-color-fill-disabled-ink: var(--transparent, #00000000);
+  --link-color-fill-disabled-primary: var(--transparent, #00000000);
+  --link-color-fill-disabled-secondary: var(--transparent, #00000000);
+  --link-color-fill-disabled-tertiary: var(--transparent, #00000000);
+  --link-color-fill-enabled-ink: var(--transparent, #00000000);
+  --link-color-fill-enabled-primary: var(--transparent, #00000000);
+  --link-color-fill-enabled-secondary: var(--transparent, #00000000);
+  --link-color-fill-enabled-tertiary: var(--transparent, #00000000);
+  --link-color-fill-hover-ink: var(--neutral-ink-tint-50, #a8a8a814);
+  --link-color-fill-hover-primary: var(--brand-primary-tint-50, #12b5b514);
+  --link-color-fill-hover-secondary: var(--brand-secondary-tint-50, #7199fe14);
+  --link-color-fill-hover-tertiary: var(--brand-tertiary-tint-50, #bb85f414);
+  --page-title-fill: var(--neutral-surface-50, #171821);
+  --page-title-icon: var(--neutral-ink-900, #d9d9d9);
+  --page-title-title: var(--neutral-ink-900, #d9d9d9);
+  --pagination-ellipses-content: var(--neutral-ink-400, #8a8a8b);
+  --pagination-ellipses-fill: var(--transparent, #00000000);
+  --pagination-page-button-content-active-disabled: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --pagination-page-button-content-active-enabled: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --pagination-page-button-content-active-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --pagination-page-button-content-inactive-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --pagination-page-button-content-inactive-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --pagination-page-button-content-inactive-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --pagination-page-button-fill-active-disabled: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --pagination-page-button-fill-active-enabled: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --pagination-page-button-fill-active-hover: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --pagination-page-button-fill-inactive-disabled: var(
+    --transparent,
+    #00000000
+  );
+  --pagination-page-button-fill-inactive-enabled: var(--transparent, #00000000);
+  --pagination-page-button-fill-inactive-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --stepper-color-fill-completed-default: var(--transparent, #00000000);
+  --stepper-color-fill-completed-disabled: var(--transparent, #00000000);
+  --stepper-color-fill-completed-hover: var(--transparent, #00000000);
+  --stepper-color-fill-completed-selected: var(--transparent, #00000000);
+  --stepper-color-fill-incomplete-default: var(--transparent, #00000000);
+  --stepper-color-fill-incomplete-disabled: var(--transparent, #00000000);
+  --stepper-color-fill-incomplete-hover: var(--transparent, #00000000);
+  --stepper-color-fill-incomplete-selected: var(--transparent, #00000000);
+  --stepper-color-indicator-selected: var(--brand-primary-500 *, #12b5b5);
+  --stepper-color-text,-icon-completed-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --stepper-color-text,-icon-completed-disabled: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --stepper-color-text,-icon-completed-hover: var(--brand-primary-700, #5ecdcd);
+  --stepper-color-text,-icon-completed-selected: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --stepper-color-text,-icon-incomplete-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --stepper-color-text,-icon-incomplete-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --stepper-color-text,-icon-incomplete-hover: var(--neutral-ink-700, #c4c4c4);
+  --stepper-color-text,-icon-incomplete-selected: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --tabs-color-fill-default: var(--transparent, #00000000);
+  --tabs-color-fill-disabled: var(--transparent, #00000000);
+  --tabs-color-fill-hover: var(--transparent, #00000000);
+  --tabs-color-fill-selected: var(--transparent, #00000000);
+  --tabs-color-indicator-selected: var(--brand-primary-500 *, #12b5b5);
+  --tabs-color-text,-icon-default: var(--neutral-ink-500 *, #a8a8a8);
+  --tabs-color-text,-icon-disabled: var(--neutral-ink-300, #656668);
+  --tabs-color-text,-icon-hover: var(--neutral-ink-700, #c4c4c4);
+  --tabs-color-text,-icon-selected: var(--brand-primary-500 *, #12b5b5);
+  --tabs-tabs-group-fill: var(--transparent, #00000000);
+  --tabs-tabs-group-stroke: var(--neutral-surface-400, #2e2f40);
+  --user-menu-popup-copyright-text: var(--neutral-ink-500 *, #a8a8a8);
+  --user-menu-popup-divider: var(--neutral-surface-500 *, #34344c);
+  --user-menu-popup-surface: var(--neutral-surface-100, #1c1d27);
+  --user-menu-popup-header-surface: var(--neutral-surface-0, #13141a);
+  --user-menu-popup-header-text: var(--neutral-ink-900, #d9d9d9);
+  --workspace-list-surface: var(--neutral-surface-100, #1c1d27);
+  --workspace-list-footer-divider: var(--neutral-surface-500 *, #34344c);
+  --workspace-list-header-divider: var(--neutral-surface-500 *, #34344c);
+  --workspace-list-header-text: var(--neutral-ink-500 *, #a8a8a8);
+  --workspace-list-workspace-list-item-color-fill-selected-default: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --workspace-list-workspace-list-item-color-fill-selected-disabled: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --workspace-list-workspace-list-item-color-fill-selected-hover: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --workspace-list-workspace-list-item-color-fill-unselected-default: var(
+    --transparent,
+    #00000000
+  );
+  --workspace-list-workspace-list-item-color-fill-unselected-disabled: var(
+    --transparent,
+    #00000000
+  );
+  --workspace-list-workspace-list-item-color-fill-unselected-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --workspace-list-workspace-list-item-color-indicator-selected-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --workspace-list-workspace-list-item-color-indicator-selected-disabled: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --workspace-list-workspace-list-item-color-indicator-selected-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --workspace-list-workspace-list-item-color-tag-selected-content: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --workspace-list-workspace-list-item-color-tag-selected-fill: var(
+    --feedback-danger-50,
+    #211a1f
+  );
+  --workspace-list-workspace-list-item-color-text-selected-default: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --workspace-list-workspace-list-item-color-text-selected-disabled: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --workspace-list-workspace-list-item-color-text-selected-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --workspace-list-workspace-list-item-color-text-unselected-default: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --workspace-list-workspace-list-item-color-text-unselected-disabled: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --workspace-list-workspace-list-item-color-text-unselected-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  /* number */
+  --app-bar-gap: var(--dm-dimension-200-(16), 1rem);
+  --app-bar-padding-h: var(--dm-dimension-200-(16), 1rem);
+  --app-bar-height: var(--dm-dimension-1000-(80), 5rem);
+  --app-bar-user-menu-button-gap: var(--dm-dimension-0-(00), 0rem);
+  --app-bar-user-menu-button-border-radius: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --app-bar-user-menu-button-padding-h: var(--dm-dimension-50-(04), 0.25rem);
+  --app-bar-user-menu-button-padding-v: var(--dm-dimension-50-(04), 0.25rem);
+  --app-bar-user-menu-button-icon-size: var(--dm-dimension-300-(24), 1.5rem);
+  --breadcrumbs-gap: var(--dm-dimension-50-(04), 0.25rem);
+  --drawer-accordion-icon-spacing-gap: var(--dm-dimension-25-(02), 0.125rem);
+  --drawer-accordion-icon-spacing-padding-h: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --drawer-accordion-icon-spacing-padding-v: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --drawer-accordion-icon-spacing-border-radius: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --drawer-accordion-icon-spacing-icon-size: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --drawer-company-drawer-area-content-padding-h: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --drawer-company-drawer-area-content-height: var(
+    --dm-dimension-1000-(80),
+    5rem
+  );
+  --drawer-company-drawer-button-content-text-gap: var(
+    --dm-dimension-0-(00),
+    0rem
+  );
+  --drawer-company-drawer-button-content-border-radius: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --drawer-company-drawer-button-content-content-padding-left: var(
+    --dm-dimension-50-(04),
+    0.25rem
+  );
+  --drawer-company-drawer-button-content-content-padding-v: var(
+    --dm-dimension-50-(04),
+    0.25rem
+  );
+  --drawer-company-drawer-button-content-content-gap-compact: var(
+    --dm-dimension-0-(00),
+    0rem
+  );
+  --drawer-company-drawer-button-content-content-gap-full: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --drawer-company-drawer-button-content-content-padding-right-compact: var(
+    --dm-dimension-0-(00),
+    0rem
+  );
+  --drawer-company-drawer-button-content-content-padding-right-full: var(
+    --dm-dimension-50-(04),
+    0.25rem
+  );
+  --drawer-drawer-expand-area-content-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --drawer-drawer-expand-area-content-padding-v: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --drawer-drawer-expand-area-content-padding-h: var(
+    --dm-dimension-200-(16),
+    1rem
+  );
+  --drawer-drawer-expand-area-expand-icon-size-padding: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --drawer-drawer-expand-area-expand-icon-size-border-radius: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --drawer-drawer-expand-area-expand-icon-size-icon-size: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --drawer-footer-area-content-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --drawer-footer-area-content-padding-h: var(--dm-dimension-100-(08), 0.5rem);
+  --drawer-footer-area-content-padding-v: var(--dm-dimension-200-(16), 1rem);
+  --drawer-menu-item-content-level-1-border-radius: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --drawer-menu-item-content-level-1-gap: var(--dm-dimension-50-(04), 0.25rem);
+  --drawer-menu-item-content-level-1-padding-h: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --drawer-menu-item-content-level-1-padding-v: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --drawer-menu-item-content-level-1-icon-size: var(
+    --dm-dimension-300-(24),
+    1.5rem
+  );
+  --drawer-menu-item-counter-padding-v: var(--dm-dimension-25-(02), 0.125rem);
+  --drawer-menu-items-area-content-padding-bottom: var(
+    --dm-dimension-0-(00),
+    0rem
+  );
+  --drawer-menu-items-area-content-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --drawer-menu-items-area-content-padding-h: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --drawer-menu-items-area-content-padding-top: var(
+    --dm-dimension-200-(16),
+    1rem
+  );
+  --link-border-radius-large: var(--br-border-radius-50-(04), 0.25rem);
+  --link-border-radius-medium: var(--br-border-radius-50-(04), 0.25rem);
+  --link-border-radius-small: var(--br-border-radius-50-(04), 0.25rem);
+  --link-gap-large: var(--dm-dimension-0-(00), 0rem);
+  --link-gap-medium: var(--dm-dimension-0-(00), 0rem);
+  --link-gap-small: var(--dm-dimension-0-(00), 0rem);
+  --link-icon-small: var(--dm-dimension-200-(16), 1rem);
+  --link-icon-medium: var(--dm-dimension-250-(20), 1.25rem);
+  --link-icon-large: var(--dm-dimension-300-(24), 1.5rem);
+  --link-inner-padding-h-large: var(--dm-dimension-25-(02), 0.125rem);
+  --link-inner-padding-h-medium: var(--dm-dimension-25-(02), 0.125rem);
+  --link-inner-padding-h-small: var(--dm-dimension-25-(02), 0.125rem);
+  --link-padding-h-large: var(--dm-dimension-0-(00), 0rem);
+  --link-padding-h-medium: var(--dm-dimension-0-(00), 0rem);
+  --link-padding-h-small: var(--dm-dimension-0-(00), 0rem);
+  --link-padding-v-large: var(--dm-dimension-0-(00), 0rem);
+  --link-padding-v-medium: var(--dm-dimension-0-(00), 0rem);
+  --link-padding-v-small: var(--dm-dimension-0-(00), 0rem);
+  --options-bar-content-gap: var(--dm-dimension-200-(16), 1rem);
+  --options-bar-gap: var(--dm-dimension-200-(16), 1rem);
+  --options-bar-padding-v: var(--dm-dimension-200-(16), 1rem);
+  --options-bar-padding-h: var(--dm-dimension-500-(40), 2.5rem);
+  --options-bar-options-bar-items-content-gap: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --options-bar-options-bar-items-padding-h: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --options-bar-options-bar-items-padding-v: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --page-footer-buttons-gap: var(--dm-dimension-200-(16), 1rem);
+  --page-footer-padding-v: var(--dm-dimension-400-(32), 2rem);
+  --page-footer-padding-h: var(--dm-dimension-500-(40), 2.5rem);
+  --page-title-title-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --page-title-gap: var(--dm-dimension-150-(12), 0.75rem);
+  --page-title-padding-bottom: var(--dm-dimension-200-(16), 1rem);
+  --page-title-padding-top: var(--dm-dimension-400-(32), 2rem);
+  --page-title-icon-size: var(--dm-dimension-450-(36), 2.25rem);
+  --page-title-padding-h: var(--dm-dimension-500-(40), 2.5rem);
+  --pagination-ellipses-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --pagination-ellipses-padding-h: var(--dm-dimension-100-(08), 0.5rem);
+  --pagination-ellipses-padding-v: var(--dm-dimension-100-(08), 0.5rem);
+  --pagination-pagination-button-border-radius: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --pagination-pagination-button-min-width: var(
+    --dm-dimension-500-(40),
+    2.5rem
+  );
+  --stepper-min-width-large: 8rem;
+  --stepper-min-width-small: 8rem;
+  --tabs-border-radius-large: var(--br-border-radius-0-(00), 0rem);
+  --tabs-border-radius-small: var(--br-border-radius-0-(00), 0rem);
+  --tabs-gap-large: var(--dm-dimension-50-(04), 0.25rem);
+  --tabs-gap-small: var(--dm-dimension-50-(04), 0.25rem);
+  --tabs-indicator-thickness-large: var(--dm-dimension-25-(02), 0.125rem);
+  --tabs-indicator-thickness-small: var(--dm-dimension-25-(02), 0.125rem);
+  --tabs-min-width-large: 8rem;
+  --tabs-min-width-small: 8rem;
+  --tabs-padding-h-small: var(--dm-dimension-150-(12), 0.75rem);
+  --tabs-padding-h-large: var(--dm-dimension-200-(16), 1rem);
+  --tabs-padding-h---scroll-button-small: var(--dm-dimension-75-(06), 0.375rem);
+  --tabs-padding-h---scroll-button-large: var(--dm-dimension-100-(08), 0.5rem);
+  --tabs-padding-v-small: var(--dm-dimension-75-(06), 0.375rem);
+  --tabs-padding-v-large: var(--dm-dimension-100-(08), 0.5rem);
+  --user-menu-popup-content-gap: var(--dm-dimension-0-(00), 0rem);
+  --user-menu-popup-content-padding-h: var(--dm-dimension-0-(00), 0rem);
+  --user-menu-popup-content-padding-v: var(--dm-dimension-0-(00), 0rem);
+  --user-menu-popup-footer-padding-h: var(--dm-dimension-100-(08), 0.5rem);
+  --user-menu-popup-footer-padding-v: var(--dm-dimension-100-(08), 0.5rem);
+  --user-menu-popup-header-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --user-menu-popup-header-padding-h: var(--dm-dimension-150-(12), 0.75rem);
+  --user-menu-popup-header-padding-v: var(--dm-dimension-150-(12), 0.75rem);
+  --user-menu-popup-user-list-item-content-content-gap: var(
+    --dm-dimension-0-(00),
+    0rem
+  );
+  --user-menu-popup-user-list-item-content-gap: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --workspace-list-content-gap: var(--dm-dimension-0-(00), 0rem);
+  --workspace-list-content-padding-h: var(--dm-dimension-0-(00), 0rem);
+  --workspace-list-content-padding-v: var(--dm-dimension-0-(00), 0rem);
+  --workspace-list-footer-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --workspace-list-footer-padding-h: var(--dm-dimension-100-(08), 0.5rem);
+  --workspace-list-footer-padding-v: var(--dm-dimension-100-(08), 0.5rem);
+  --workspace-list-header-padding-h: var(--dm-dimension-100-(08), 0.5rem);
+  --workspace-list-header-padding-v: var(--dm-dimension-100-(08), 0.5rem);
+  --workspace-list-workspace-list-item-content-content-gap: var(
+    --dm-dimension-0-(00),
+    0rem
+  );
+  --workspace-list-workspace-list-item-content-gap: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --workspace-list-workspace-list-item-content-padding-h: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --workspace-list-workspace-list-item-content-padding-v: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+}
+[data-theme="Mode 1"] {
+  /* color */
+  --avatar-view-only-content-default-pink: var(
+    --non-semantic-pink-500 *,
+    #e4819b
+  );
+  --avatar-view-only-content-default-primary: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --avatar-view-only-content-default-purple: var(
+    --non-semantic-purple-500 *,
+    #ce7fdc
+  );
+  --avatar-view-only-content-default-red: var(
+    --non-semantic-red-500 *,
+    #fb746a
+  );
+  --avatar-view-only-content-default-secondary: var(
+    --brand-secondary-500 *,
+    #7199fe
+  );
+  --avatar-view-only-content-default-tertiary: var(
+    --brand-tertiary-500 *,
+    #bb85f4
+  );
+  --avatar-view-only-fill-default-pink: var(--non-semantic-pink-100, #32232b);
+  --avatar-view-only-fill-default-primary: var(--brand-primary-100, #102b2f);
+  --avatar-view-only-fill-default-purple: var(
+    --non-semantic-purple-100,
+    #2e2336
+  );
+  --avatar-view-only-fill-default-red: var(--non-semantic-red-100, #362123);
+  --avatar-view-only-fill-default-secondary: var(
+    --brand-secondary-100,
+    #20273b
+  );
+  --avatar-view-only-fill-default-tertiary: var(--brand-tertiary-100, #2b243a);
+  --avatar-view-only-outline-default-pink: var(
+    --non-semantic-pink-200,
+    #543541
+  );
+  --avatar-view-only-outline-default-primary: var(--brand-primary-200, #114649);
+  --avatar-view-only-outline-default-purple: var(
+    --non-semantic-purple-200,
+    #4d3455
+  );
+  --avatar-view-only-outline-default-red: var(--non-semantic-red-200, #5b3131);
+  --avatar-view-only-outline-default-secondary: var(
+    --brand-secondary-200,
+    #2f3d60
+  );
+  --avatar-view-only-outline-default-tertiary: var(
+    --brand-tertiary-200,
+    #47365d
+  );
+  --divider-chalk: var(--common-chalk-300, #ffffff66);
+  --divider-ink: var(--neutral-ink-0, #16171c);
+  --divider-surface: var(--neutral-surface-400, #2e2f40);
+  --info-icon-color-fill-enabled: var(--transparent, #00000000);
+  --info-icon-color-fill-hover: var(--neutral-ink-tint-50, #a8a8a814);
+  --info-icon-color-icon-enabled: var(--neutral-ink-500 *, #a8a8a8);
+  --info-icon-color-icon-hover: var(--neutral-ink-700, #c4c4c4);
+  --list-fill: var(--neutral-surface-200, #22232f);
+  --list-list-item-fill-danger-disabled: var(--transparent, #00000000);
+  --list-list-item-fill-danger-enabled: var(--transparent, #00000000);
+  --list-list-item-fill-danger-hover: var(
+    --feedback-danger-tint-100,
+    #e77e8529
+  );
+  --list-list-item-fill-selected-disabled: var(--transparent, #00000000);
+  --list-list-item-fill-selected-enabled: var(--transparent, #00000000);
+  --list-list-item-fill-selected-hover: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --list-list-item-fill-unselected-disabled: var(--transparent, #00000000);
+  --list-list-item-fill-unselected-enabled: var(--transparent, #00000000);
+  --list-list-item-fill-unselected-hover: var(--neutral-ink-tint-50, #a8a8a814);
+  --list-list-item-icon-danger-disabled: var(--feedback-danger-300, #884e54);
+  --list-list-item-icon-danger-enabled: var(--feedback-danger-500 *, #e77e85);
+  --list-list-item-icon-danger-hover: var(--feedback-danger-700, #efa7ac);
+  --list-list-item-icon-selected-disabled: var(--brand-primary-300, #116d6f);
+  --list-list-item-icon-selected-enabled: var(--neutral-ink-900, #d9d9d9);
+  --list-list-item-icon-selected-hover: var(--brand-primary-700, #5ecdcd);
+  --list-list-item-icon-unselected-disabled: var(--neutral-ink-300, #656668);
+  --list-list-item-icon-unselected-enabled: var(--neutral-ink-500 *, #a8a8a8);
+  --list-list-item-icon-unselected-hover: var(--neutral-ink-700, #c4c4c4);
+  --list-list-item-text-danger-disabled: var(--feedback-danger-300, #884e54);
+  --list-list-item-text-danger-enabled: var(--feedback-danger-500 *, #e77e85);
+  --list-list-item-text-danger-hover: var(--feedback-danger-700, #efa7ac);
+  --list-list-item-text-selected-disabled: var(--brand-primary-300, #116d6f);
+  --list-list-item-text-selected-enabled: var(--neutral-ink-900, #d9d9d9);
+  --list-list-item-text-selected-hover: var(--brand-primary-700, #5ecdcd);
+  --list-list-item-text-unselected-disabled: var(--neutral-ink-300, #656668);
+  --list-list-item-text-unselected-enabled: var(--neutral-ink-500 *, #a8a8a8);
+  --list-list-item-text-unselected-hover: var(--neutral-ink-700, #c4c4c4);
+  --notification-badge-color-fill: var(--feedback-danger-500 *, #e77e85);
+  --notification-badge-color-text: var(--neutral-ink-0, #16171c);
+  --status-badge-color-fill: var(--neutral-ink-0, #16171c);
+  --status-badge-color-icon: var(--feedback-success-500 *, #35b55d);
+  --table-divider: var(--neutral-surface-500 *, #34344c);
+  --table-surface: var(--neutral-surface-100, #1c1d27);
+  --table-table-cell-row-state-danger-enabled: var(
+    --feedback-danger-tint-50,
+    #e77e8514
+  );
+  --table-table-cell-row-state-danger-hover: var(
+    --feedback-danger-tint-100,
+    #e77e8529
+  );
+  --table-table-cell-row-state-selected-enabled: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --table-table-cell-row-state-selected-hover: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --table-table-cell-row-state-unselected-enabled: var(
+    --transparent,
+    #00000000
+  );
+  --table-table-cell-row-state-unselected-hover: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --table-table-cell-text-color-enabled: var(--neutral-ink-500 *, #a8a8a8);
+  --table-table-cell-text-color-hover: var(--neutral-ink-700, #c4c4c4);
+  --table-table-cell-zebra-stripe-enabled: var(--neutral-surface-200, #22232f);
+  --table-table-header-cell-sort-icon-icon-background-none-enabled: var(
+    --transparent,
+    #00000000
+  );
+  --table-table-header-cell-sort-icon-icon-background-none-hover: var(
+    --neutral-ink-tint-100,
+    #a8a8a829
+  );
+  --table-table-header-cell-sort-icon-icon-background-up-down-enabled: var(
+    --transparent,
+    #00000000
+  );
+  --table-table-header-cell-sort-icon-icon-background-up-down-hover: var(
+    --neutral-ink-tint-100,
+    #a8a8a829
+  );
+  --table-table-header-cell-sort-icon-icon-color-none-enabled: var(
+    --transparent,
+    #00000000
+  );
+  --table-table-header-cell-sort-icon-icon-color-up-down-enabled: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --table-table-header-cell-sort-icon-icon-color-up-down-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --table-table-header-cell-text-color-text-high-emphasis: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --table-table-header-cell-text-color-text-low-emphasis: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --tooltip-surface: var(--neutral-surface-0, #13141a);
+  --tooltip-text: var(--neutral-ink-500 *, #a8a8a8);
+  /* number */
+  --avatar-view-only-border-radius-round-large: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --avatar-view-only-border-radius-round-medium: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --avatar-view-only-border-radius-round-small: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --avatar-view-only-border-radius-round-x-large: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --avatar-view-only-border-radius-round-x-small: var(
+    --br-border-radius-9999,
+    624.9375rem
+  );
+  --avatar-view-only-border-radius-square-large: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --avatar-view-only-border-radius-square-medium: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --avatar-view-only-border-radius-square-small: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --avatar-view-only-border-radius-square-x-large: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --avatar-view-only-border-radius-square-x-small: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --avatar-view-only-icon-size-small: var(--dm-dimension-250-(20), 1.25rem);
+  --avatar-view-only-icon-size-x-small: var(--dm-dimension-250-(20), 1.25rem);
+  --avatar-view-only-icon-size-large: var(--dm-dimension-300-(24), 1.5rem);
+  --avatar-view-only-icon-size-medium: var(--dm-dimension-300-(24), 1.5rem);
+  --avatar-view-only-icon-size-x-large: var(--dm-dimension-300-(24), 1.5rem);
+  --avatar-view-only-size-x-small: var(--dm-dimension-300-(24), 1.5rem);
+  --avatar-view-only-size-small: var(--dm-dimension-400-(32), 2rem);
+  --avatar-view-only-size-medium: var(--dm-dimension-500-(40), 2.5rem);
+  --avatar-view-only-size-large: var(--dm-dimension-600-(48), 3rem);
+  --avatar-view-only-size-x-large: var(--dm-dimension-700-(56), 3.5rem);
+  --chip-border-radius-large: var(--br-border-radius-50-(04), 0.25rem);
+  --chip-border-radius-small: var(--br-border-radius-50-(04), 0.25rem);
+  --chip-chips-group-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --chip-clear-icon-size-large: var(--dm-dimension-200-(16), 1rem);
+  --chip-clear-icon-size-small: var(--dm-dimension-200-(16), 1rem);
+  --chip-gap-large: var(--dm-dimension-50-(04), 0.25rem);
+  --chip-gap-small: var(--dm-dimension-50-(04), 0.25rem);
+  --chip-icon-size-large: var(--dm-dimension-250-(20), 1.25rem);
+  --chip-icon-size-small: var(--dm-dimension-250-(20), 1.25rem);
+  --chip-padding-h-small: var(--dm-dimension-50-(04), 0.25rem);
+  --chip-padding-h-large: var(--dm-dimension-100-(08), 0.5rem);
+  --chip-padding-v-small: var(--dm-dimension-0-(00), 0rem);
+  --chip-padding-v-large: var(--dm-dimension-25-(02), 0.125rem);
+  --info-icon-border-radius-large: var(--br-border-radius-9999, 624.9375rem);
+  --info-icon-border-radius-medium: var(--br-border-radius-9999, 624.9375rem);
+  --info-icon-border-radius-small: var(--br-border-radius-9999, 624.9375rem);
+  --info-icon-size-small: var(--dm-dimension-200-(16), 1rem);
+  --info-icon-size-medium: var(--dm-dimension-250-(20), 1.25rem);
+  --info-icon-size-large: var(--dm-dimension-300-(24), 1.5rem);
+  --list-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --list-text-list-item-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --list-text-list-item-padding-v: var(--dm-dimension-150-(12), 0.75rem);
+  --list-text-list-item-padding-h: var(--dm-dimension-200-(16), 1rem);
+  --list-text-list-item-icon-size: var(--dm-dimension-300-(24), 1.5rem);
+  --notification-badge-text-badge-padding: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --notification-badge-simple-badge-size: var(--dm-dimension-100-(08), 0.5rem);
+  --notification-badge-text-badge-min-width: var(--dm-dimension-200-(16), 1rem);
+  --notification-badge-border-radius: var(--br-border-radius-9999, 624.9375rem);
+  --status-badge-border-radius: var(--br-border-radius-9999, 624.9375rem);
+  --status-badge-size-x-small: var(--dm-dimension-125-(10), 0.625rem);
+  --status-badge-size-small: var(--dm-dimension-150-(12), 0.75rem);
+  --status-badge-size-medium: var(--dm-dimension-175-(14), 0.875rem);
+  --status-badge-size-large: var(--dm-dimension-200-(16), 1rem);
+  --status-badge-size-x-large: var(--dm-dimension-250-(20), 1.25rem);
+  --table-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --table-table-cell-actions-gap-large: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-actions-gap-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-actions-gap-small: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-actions-padding-h-large: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-cell-actions-padding-h-medium: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-cell-actions-padding-h-small: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-cell-actions-padding-v-medium: var(
+    --dm-dimension-75-(06),
+    0.375rem
+  );
+  --table-table-cell-actions-padding-v-small: var(
+    --dm-dimension-75-(06),
+    0.375rem
+  );
+  --table-table-cell-actions-padding-v-large: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-cell-checkbox---advanced-padding-h-large: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --table-table-cell-checkbox---advanced-padding-h-medium: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --table-table-cell-checkbox---advanced-padding-h-small: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --table-table-cell-checkbox---advanced-padding-v-small: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-cell-checkbox---advanced-padding-v-medium: var(
+    --dm-dimension-150-(12),
+    0.75rem
+  );
+  --table-table-cell-checkbox---advanced-padding-v-large: var(
+    --dm-dimension-175-(14),
+    0.875rem
+  );
+  --table-table-cell-checkbox-padding-h-large: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-cell-checkbox-padding-h-medium: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-cell-checkbox-padding-h-small: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-cell-checkbox-padding-v-small: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-cell-checkbox-padding-v-medium: var(
+    --dm-dimension-150-(12),
+    0.75rem
+  );
+  --table-table-cell-checkbox-padding-v-large: var(
+    --dm-dimension-175-(14),
+    0.875rem
+  );
+  --table-table-cell-link-gap-large: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-link-gap-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-link-gap-small: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-link-padding-h-large: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-link-padding-h-medium: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-cell-link-padding-h-small: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-link-padding-v-small: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-link-padding-v-medium: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --table-table-cell-link-padding-v-large: var(
+    --dm-dimension-150-(12),
+    0.75rem
+  );
+  --table-table-cell-tag-gap-large: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-tag-gap-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-tag-gap-small: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-tag-padding-h-large: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-tag-padding-h-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-tag-padding-h-small: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-tag-padding-v-small: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-tag-padding-v-medium: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --table-table-cell-tag-padding-v-large: var(--dm-dimension-150-(12), 0.75rem);
+  --table-table-cell-text-gap-large: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-text-gap-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-text-gap-small: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-text-padding-h-large: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-text-padding-h-medium: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-cell-text-padding-h-small: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-text-padding-v-small: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-cell-text-padding-v-medium: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --table-table-cell-text-padding-v-large: var(
+    --dm-dimension-150-(12),
+    0.75rem
+  );
+  --table-table-footer-padding-v: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-footer-rows-per-page-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-footer-padding-h: var(--dm-dimension-200-(16), 1rem);
+  --table-table-header-cell-actions-gap-large: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-actions-gap-medium: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-actions-gap-small: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-actions-padding-h-large: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-actions-padding-h-small: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-actions-padding-v-large: var(
+    --dm-dimension-75-(06),
+    0.375rem
+  );
+  --table-table-header-cell-actions-padding-v-medium: var(
+    --dm-dimension-75-(06),
+    0.375rem
+  );
+  --table-table-header-cell-actions-padding-v-small: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --table-table-header-cell-checkbox---advanced-padding-h-large: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-checkbox---advanced-padding-h-medium: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-checkbox---advanced-padding-h-small: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-checkbox---advanced-padding-v-large: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --table-table-header-cell-checkbox---advanced-padding-v-medium: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --table-table-header-cell-checkbox---advanced-padding-v-small: var(
+    --dm-dimension-150-(12),
+    0.75rem
+  );
+  --table-table-header-cell-checkbox-padding-h-large: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-checkbox-padding-h-medium: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-checkbox-padding-h-small: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-checkbox-padding-v-large: var(
+    --dm-dimension-150-(12),
+    0.75rem
+  );
+  --table-table-header-cell-checkbox-padding-v-medium: var(
+    --dm-dimension-150-(12),
+    0.75rem
+  );
+  --table-table-header-cell-checkbox-padding-v-small: var(
+    --dm-dimension-150-(12),
+    0.75rem
+  );
+  --table-table-header-cell-sort-icon-size-padding: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --table-table-header-cell-sort-icon-size-border-radius: var(
+    --br-border-radius-50-(04),
+    0.25rem
+  );
+  --table-table-header-cell-sort-icon-size-icon-size: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --table-table-header-cell-text-text-gap: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --table-table-header-cell-text-text-padding-v: var(
+    --dm-dimension-25-(02),
+    0.125rem
+  );
+  --table-table-header-cell-text-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --table-table-header-cell-text-padding-h: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --table-table-header-cell-text-padding-v: var(
+    --dm-dimension-125-(10),
+    0.625rem
+  );
+  --table-table-header-cell-text-icon-size: var(
+    --dm-dimension-250-(20),
+    1.25rem
+  );
+  --tag-border-radius-large: var(--br-border-radius-50-(04), 0.25rem);
+  --tag-border-radius-small: var(--br-border-radius-50-(04), 0.25rem);
+  --tag-border-radius-x-large: var(--br-border-radius-100-(08), 0.5rem);
+  --tag-gap-large: var(--dm-dimension-50-(04), 0.25rem);
+  --tag-gap-small: var(--dm-dimension-50-(04), 0.25rem);
+  --tag-gap-x-large: var(--dm-dimension-50-(04), 0.25rem);
+  --tag-icon-size-large: var(--dm-dimension-250-(20), 1.25rem);
+  --tag-icon-size-small: var(--dm-dimension-250-(20), 1.25rem);
+  --tag-icon-size-x-large: var(--dm-dimension-300-(24), 1.5rem);
+  --tag-padding-h-large: var(--dm-dimension-100-(08), 0.5rem);
+  --tag-padding-h-small: var(--dm-dimension-100-(08), 0.5rem);
+  --tag-padding-h-x-large: var(--dm-dimension-100-(08), 0.5rem);
+  --tag-padding-v-small: var(--dm-dimension-0-(00), 0rem);
+  --tag-padding-v-large: var(--dm-dimension-25-(02), 0.125rem);
+  --tag-padding-v-x-large: var(--dm-dimension-50-(04), 0.25rem);
+  --tag-tags-group-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --tooltip-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --tooltip-gap: var(--dm-dimension-50-(04), 0.25rem);
+  --tooltip-padding-h: var(--dm-dimension-100-(08), 0.5rem);
+  --tooltip-padding-v: var(--dm-dimension-125-(10), 0.625rem);
+}
+[data-theme="Mode 1"] {
+  /* color */
+  --alert-content-fill-danger: var(--feedback-danger-50, #211a1f);
+  --alert-content-fill-info: var(--feedback-info-50, #171c27);
+  --alert-content-fill-primary: var(--brand-primary-50, #101e23);
+  --alert-content-fill-success: var(--feedback-success-50, #131e1c);
+  --alert-content-fill-warning: var(--feedback-warning-50, #211c1a);
+  --alert-content-icon-danger: var(--feedback-danger-500 *, #e77e85);
+  --alert-content-icon-info: var(--feedback-info-500 *, #689eed);
+  --alert-content-icon-primary: var(--brand-primary-500 *, #12b5b5);
+  --alert-content-icon-success: var(--feedback-success-500 *, #35b55d);
+  --alert-content-icon-warning: var(--feedback-warning-500 *, #e09c42);
+  --alert-content-outline-danger: var(--feedback-danger-300, #884e54);
+  --alert-content-outline-info: var(--feedback-info-300, #41608e);
+  --alert-content-outline-primary: var(--brand-primary-300, #116d6f);
+  --alert-content-outline-success: var(--feedback-success-300, #256d3e);
+  --alert-content-outline-warning: var(--feedback-warning-300, #845f2f);
+  --alert-content-paragraph-danger: var(--neutral-ink-500 *, #a8a8a8);
+  --alert-content-paragraph-info: var(--neutral-ink-500 *, #a8a8a8);
+  --alert-content-paragraph-primary: var(--neutral-ink-500 *, #a8a8a8);
+  --alert-content-paragraph-success: var(--neutral-ink-500 *, #a8a8a8);
+  --alert-content-paragraph-warning: var(--neutral-ink-500 *, #a8a8a8);
+  --alert-content-title-danger: var(--neutral-ink-900, #d9d9d9);
+  --alert-content-title-info: var(--neutral-ink-900, #d9d9d9);
+  --alert-content-title-primary: var(--neutral-ink-900, #d9d9d9);
+  --alert-content-title-success: var(--neutral-ink-900, #d9d9d9);
+  --alert-content-title-warning: var(--neutral-ink-900, #d9d9d9);
+  --close-icon-on-color-fill-default-danger: var(--transparent, #00000000);
+  --close-icon-on-color-fill-default-info: var(--transparent, #00000000);
+  --close-icon-on-color-fill-default-ink: var(--transparent, #00000000);
+  --close-icon-on-color-fill-default-primary: var(--transparent, #00000000);
+  --close-icon-on-color-fill-default-success: var(--transparent, #00000000);
+  --close-icon-on-color-fill-default-warning: var(--transparent, #00000000);
+  --close-icon-on-color-fill-disabled-danger: var(--transparent, #00000000);
+  --close-icon-on-color-fill-disabled-info: var(--transparent, #00000000);
+  --close-icon-on-color-fill-disabled-ink: var(--transparent, #00000000);
+  --close-icon-on-color-fill-disabled-primary: var(--transparent, #00000000);
+  --close-icon-on-color-fill-disabled-success: var(--transparent, #00000000);
+  --close-icon-on-color-fill-disabled-warning: var(--transparent, #00000000);
+  --close-icon-on-color-fill-hover-danger: var(--feedback-danger-400, #ab5f66);
+  --close-icon-on-color-fill-hover-info: var(--feedback-info-400, #5076b1);
+  --close-icon-on-color-fill-hover-ink: var(--neutral-ink-400, #8a8a8b);
+  --close-icon-on-color-fill-hover-primary: var(--brand-primary-400, #118789);
+  --close-icon-on-color-fill-hover-success: var(
+    --feedback-success-400,
+    #2b8749
+  );
+  --close-icon-on-color-fill-hover-warning: var(
+    --common-charcoal-100,
+    #0e101229
+  );
+  --close-icon-on-color-icon-default-danger: var(
+    --feedback-danger-100,
+    #322228
+  );
+  --close-icon-on-color-icon-default-info: var(--feedback-info-100, #1e2838);
+  --close-icon-on-color-icon-default-ink: var(--neutral-ink-100, #28292d);
+  --close-icon-on-color-icon-default-primary: var(--brand-primary-100, #102b2f);
+  --close-icon-on-color-icon-default-success: var(
+    --feedback-success-100,
+    #162b21
+  );
+  --close-icon-on-color-icon-default-warning: var(
+    --common-charcoal-500 *,
+    #0e1012a3
+  );
+  --close-icon-on-color-icon-disabled-danger: var(
+    --feedback-danger-300,
+    #884e54
+  );
+  --close-icon-on-color-icon-disabled-info: var(--feedback-info-300, #41608e);
+  --close-icon-on-color-icon-disabled-ink: var(--neutral-ink-300, #656668);
+  --close-icon-on-color-icon-disabled-primary: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --close-icon-on-color-icon-disabled-success: var(
+    --feedback-success-300,
+    #256d3e
+  );
+  --close-icon-on-color-icon-disabled-warning: var(
+    --common-charcoal-300,
+    #0e101266
+  );
+  --close-icon-on-color-icon-hover-danger: var(--feedback-danger-50, #211a1f);
+  --close-icon-on-color-icon-hover-info: var(--feedback-info-50, #171c27);
+  --close-icon-on-color-icon-hover-ink: var(--neutral-ink-50, #1c1d22);
+  --close-icon-on-color-icon-hover-primary: var(--brand-primary-50, #101e23);
+  --close-icon-on-color-icon-hover-success: var(--feedback-success-50, #131e1c);
+  --close-icon-on-color-icon-hover-warning: var(
+    --common-charcoal-700,
+    #0e1012d6
+  );
+  --close-icon-on-surface-fill-default: var(--transparent, #00000000);
+  --close-icon-on-surface-fill-disabled: var(--transparent, #00000000);
+  --close-icon-on-surface-fill-hover: var(--neutral-ink-tint-50, #a8a8a814);
+  --close-icon-on-surface-icon-default: var(--neutral-ink-500 *, #a8a8a8);
+  --close-icon-on-surface-icon-disabled: var(--neutral-ink-300, #656668);
+  --close-icon-on-surface-icon-hover: var(--neutral-ink-700, #c4c4c4);
+  --confirmation-modal-fill: var(--neutral-surface-200, #22232f);
+  --confirmation-modal-content-paragraph: var(--neutral-ink-500 *, #a8a8a8);
+  --confirmation-modal-content-title: var(--neutral-ink-900, #d9d9d9);
+  --confirmation-modal-content-icon-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --confirmation-modal-content-icon-info: var(--feedback-info-500 *, #689eed);
+  --confirmation-modal-content-icon-primary: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --confirmation-modal-content-icon-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --confirmation-modal-content-icon-warning: var(
+    --feedback-warning-500 *,
+    #e09c42
+  );
+  --progress-bar-on-color-indicator-danger: var(--feedback-danger-300, #884e54);
+  --progress-bar-on-color-indicator-info: var(--feedback-info-300, #41608e);
+  --progress-bar-on-color-indicator-ink: var(--neutral-ink-300, #656668);
+  --progress-bar-on-color-indicator-primary: var(--brand-primary-300, #116d6f);
+  --progress-bar-on-color-indicator-success: var(
+    --feedback-success-300,
+    #256d3e
+  );
+  --progress-bar-on-color-indicator-warning: var(
+    --feedback-warning-300,
+    #845f2f
+  );
+  --progress-bar-on-color-track-danger: var(--feedback-danger-600, #eb9399);
+  --progress-bar-on-color-track-info: var(--feedback-info-600, #80aef0);
+  --progress-bar-on-color-track-ink: var(--neutral-ink-600, #b6b6b6);
+  --progress-bar-on-color-track-primary: var(--brand-primary-600, #38c1c1);
+  --progress-bar-on-color-track-success: var(--feedback-success-600, #55c177);
+  --progress-bar-on-color-track-warning: var(--feedback-warning-600, #e5ac60);
+  --progress-bar-on-surface-indicator-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --progress-bar-on-surface-indicator-info: var(--feedback-info-500 *, #689eed);
+  --progress-bar-on-surface-indicator-ink: var(--neutral-ink-500 *, #a8a8a8);
+  --progress-bar-on-surface-indicator-primary: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --progress-bar-on-surface-indicator-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --progress-bar-on-surface-indicator-warning: var(
+    --feedback-warning-500 *,
+    #e09c42
+  );
+  --progress-bar-on-surface-track-danger: var(--neutral-ink-tint-50, #a8a8a814);
+  --progress-bar-on-surface-track-info: var(--neutral-ink-tint-50, #a8a8a814);
+  --progress-bar-on-surface-track-ink: var(--neutral-ink-tint-50, #a8a8a814);
+  --progress-bar-on-surface-track-primary: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --progress-bar-on-surface-track-success: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --progress-bar-on-surface-track-warning: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --snackbar-fill: var(--common-charcoal-900, #0e1012);
+  --snackbar-icon: var(--common-chalk-900, #ffffff);
+  --snackbar-text: var(--common-chalk-900, #ffffff);
+  --toast-content-high-emphasis-caption-danger: var(
+    --feedback-danger-200,
+    #55343a
+  );
+  --toast-content-high-emphasis-caption-info: var(--feedback-info-200, #2c3e5b);
+  --toast-content-high-emphasis-caption-success: var(
+    --feedback-success-200,
+    #1c452d
+  );
+  --toast-content-high-emphasis-caption-warning: var(
+    --common-charcoal-500 *,
+    #0e1012a3
+  );
+  --toast-content-high-emphasis-fill-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --toast-content-high-emphasis-fill-info: var(--feedback-info-500 *, #689eed);
+  --toast-content-high-emphasis-fill-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --toast-content-high-emphasis-fill-warning: var(
+    --feedback-warning-500 *,
+    #e09c42
+  );
+  --toast-content-high-emphasis-icon-danger: var(--neutral-ink-0, #16171c);
+  --toast-content-high-emphasis-icon-info: var(--neutral-ink-0, #16171c);
+  --toast-content-high-emphasis-icon-success: var(--neutral-ink-0, #16171c);
+  --toast-content-high-emphasis-icon-warning: var(
+    --common-charcoal-900,
+    #0e1012
+  );
+  --toast-content-high-emphasis-paragraph-danger: var(--neutral-ink-0, #16171c);
+  --toast-content-high-emphasis-paragraph-info: var(--neutral-ink-0, #16171c);
+  --toast-content-high-emphasis-paragraph-success: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --toast-content-high-emphasis-paragraph-warning: var(
+    --common-charcoal-900,
+    #0e1012
+  );
+  --toast-content-high-emphasis-title-danger: var(--neutral-ink-0, #16171c);
+  --toast-content-high-emphasis-title-info: var(--neutral-ink-0, #16171c);
+  --toast-content-high-emphasis-title-success: var(--neutral-ink-0, #16171c);
+  --toast-content-high-emphasis-title-warning: var(
+    --common-charcoal-900,
+    #0e1012
+  );
+  --toast-content-low-emphasis-caption-danger: var(--neutral-ink-400, #8a8a8b);
+  --toast-content-low-emphasis-caption-info: var(--neutral-ink-400, #8a8a8b);
+  --toast-content-low-emphasis-caption-success: var(--neutral-ink-400, #8a8a8b);
+  --toast-content-low-emphasis-caption-warning: var(--neutral-ink-400, #8a8a8b);
+  --toast-content-low-emphasis-fill-danger: var(--neutral-surface-100, #1c1d27);
+  --toast-content-low-emphasis-fill-info: var(--neutral-surface-100, #1c1d27);
+  --toast-content-low-emphasis-fill-success: var(
+    --neutral-surface-100,
+    #1c1d27
+  );
+  --toast-content-low-emphasis-fill-warning: var(
+    --neutral-surface-100,
+    #1c1d27
+  );
+  --toast-content-low-emphasis-icon-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --toast-content-low-emphasis-icon-info: var(--feedback-info-500 *, #689eed);
+  --toast-content-low-emphasis-icon-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --toast-content-low-emphasis-icon-warning: var(
+    --feedback-warning-500 *,
+    #e09c42
+  );
+  --toast-content-low-emphasis-paragraph-danger: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --toast-content-low-emphasis-paragraph-info: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --toast-content-low-emphasis-paragraph-success: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --toast-content-low-emphasis-paragraph-warning: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --toast-content-low-emphasis-title-danger: var(--neutral-ink-900, #d9d9d9);
+  --toast-content-low-emphasis-title-info: var(--neutral-ink-900, #d9d9d9);
+  --toast-content-low-emphasis-title-success: var(--neutral-ink-900, #d9d9d9);
+  --toast-content-low-emphasis-title-warning: var(--neutral-ink-900, #d9d9d9);
+  /* number */
+  --alert-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --alert-text-gap: var(--dm-dimension-50-(04), 0.25rem);
+  --alert-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --alert-content-gap: var(--dm-dimension-150-(12), 0.75rem);
+  --alert-padding: var(--dm-dimension-200-(16), 1rem);
+  --alert-icon-size: var(--dm-dimension-300-(24), 1.5rem);
+  --close-icon-padding: var(--dm-dimension-25-(02), 0.125rem);
+  --close-icon-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --close-icon-icon-size: var(--dm-dimension-250-(20), 1.25rem);
+  --confirmation-modal-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --confirmation-modal-content-gap: var(--dm-dimension-300-(24), 1.5rem);
+  --confirmation-modal-content-padding-bottom: var(
+    --dm-dimension-400-(32),
+    2rem
+  );
+  --confirmation-modal-content-padding-top: var(--dm-dimension-400-(32), 2rem);
+  --confirmation-modal-content-padding-h: var(--dm-dimension-800-(64), 4rem);
+  --confirmation-modal-content-icon-border-radius: var(
+    --br-border-radius-0-(00),
+    0rem
+  );
+  --confirmation-modal-content-icon-icon-padding: var(
+    --dm-dimension-0-(00),
+    0rem
+  );
+  --confirmation-modal-content-icon-icon-size: var(
+    --dm-dimension-800-(64),
+    4rem
+  );
+  --confirmation-modal-footer-gap: var(--dm-dimension-200-(16), 1rem);
+  --confirmation-modal-footer-padding-v: var(--dm-dimension-400-(32), 2rem);
+  --confirmation-modal-footer-padding-h: var(--dm-dimension-800-(64), 4rem);
+  --confirmation-modal-header-gap: var(--dm-dimension-200-(16), 1rem);
+  --confirmation-modal-header-padding-h: var(--dm-dimension-200-(16), 1rem);
+  --confirmation-modal-header-padding-v: var(--dm-dimension-200-(16), 1rem);
+  --progress-bar-border-radius: var(--br-border-radius-25-(02), 0.125rem);
+  --progress-bar-height: var(--dm-dimension-100-(08), 0.5rem);
+  --snackbar-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --snackbar-content-padding: var(--dm-dimension-75-(06), 0.375rem);
+  --toast-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --toast-indicator-width: var(--dm-dimension-50-(04), 0.25rem);
+  --toast-text-gap: var(--dm-dimension-50-(04), 0.25rem);
+  --toast-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --toast-content-gap: var(--dm-dimension-150-(12), 0.75rem);
+  --toast-padding: var(--dm-dimension-200-(16), 1rem);
+  --toast-icon-size: var(--dm-dimension-300-(24), 1.5rem);
+}
+[data-theme="Mode 1"] {
+  /* number */
+  --typography-font-size-body-2: 0.875rem;
+  --typography-font-size-body-1: 1rem;
+  --typography-line-height-body-2: 1.25rem;
+  --typography-line-height-body-1: 1.5rem;
+  --br-border-radius-0-(00): 0rem;
+  --br-border-radius-25-(02): 0.125rem;
+  --br-border-radius-50-(04): 0.25rem;
+  --br-border-radius-100-(08): 0.5rem;
+  --br-border-radius-125-(10): 0.625rem;
+  --br-border-radius-150-(12): 0.75rem;
+  --br-border-radius-9999: 624.9375rem;
+  --dm-dimension-0-(00): 0rem;
+  --dm-dimension-25-(02): 0.125rem;
+  --dm-dimension-50-(04): 0.25rem;
+  --dm-dimension-75-(06): 0.375rem;
+  --dm-dimension-100-(08): 0.5rem;
+  --dm-dimension-125-(10): 0.625rem;
+  --dm-dimension-150-(12): 0.75rem;
+  --dm-dimension-175-(14): 0.875rem;
+  --dm-dimension-200-(16): 1rem;
+  --dm-dimension-250-(20): 1.25rem;
+  --dm-dimension-300-(24): 1.5rem;
+  --dm-dimension-400-(32): 2rem;
+  --dm-dimension-450-(36): 2.25rem;
+  --dm-dimension-500-(40): 2.5rem;
+  --dm-dimension-600-(48): 3rem;
+  --dm-dimension-700-(56): 3.5rem;
+  --dm-dimension-800-(64): 4rem;
+  --dm-dimension-900-(72): 4.5rem;
+  --dm-dimension-1000-(80): 5rem;
+  --gp-0-(00): var(--dm-dimension-0-(00), 0rem);
+  --gp-25-(02): var(--dm-dimension-25-(02), 0.125rem);
+  --gp-50-(04): var(--dm-dimension-50-(04), 0.25rem);
+  --gp-100-(08): var(--dm-dimension-100-(08), 0.5rem);
+  --gp-150-(12): var(--dm-dimension-150-(12), 0.75rem);
+  --gp-200-(16): var(--dm-dimension-200-(16), 1rem);
+  --gp-300-(24): var(--dm-dimension-300-(24), 1.5rem);
+  --pd-0-(00): var(--dm-dimension-0-(00), 0rem);
+  --pd-25-(02): var(--dm-dimension-25-(02), 0.125rem);
+  --pd-50-(04): var(--dm-dimension-50-(04), 0.25rem);
+  --pd-75-(06): var(--dm-dimension-75-(06), 0.375rem);
+  --pd-100-(08): var(--dm-dimension-100-(08), 0.5rem);
+  --pd-125-(10): var(--dm-dimension-125-(10), 0.625rem);
+  --pd-150-(12): var(--dm-dimension-150-(12), 0.75rem);
+  --pd-175-(14): var(--dm-dimension-175-(14), 0.875rem);
+  --pd-200-(16): var(--dm-dimension-200-(16), 1rem);
+  --pd-250-(20): var(--dm-dimension-250-(20), 1.25rem);
+  --pd-300-(24): var(--dm-dimension-300-(24), 1.5rem);
+  --pd-400-(32): var(--dm-dimension-400-(32), 2rem);
+  --pd-500-(40): var(--dm-dimension-500-(40), 2.5rem);
+  --pd-800-(64): var(--dm-dimension-800-(64), 4rem);
+  --sz-25-(02): var(--dm-dimension-25-(02), 0.125rem);
+  --sz-50-(04): var(--dm-dimension-50-(04), 0.25rem);
+  --sz-75-(06): var(--dm-dimension-75-(06), 0.375rem);
+  --sz-100-(08): var(--dm-dimension-100-(08), 0.5rem);
+  --sz-125-(10): var(--dm-dimension-125-(10), 0.625rem);
+  --sz-150-(12): var(--dm-dimension-150-(12), 0.75rem);
+  --sz-175-(14): var(--dm-dimension-175-(14), 0.875rem);
+  --sz-200-(16): var(--dm-dimension-200-(16), 1rem);
+  --sz-250-(20): var(--dm-dimension-250-(20), 1.25rem);
+  --sz-300-(24): var(--dm-dimension-300-(24), 1.5rem);
+  --sz-400-(32): var(--dm-dimension-400-(32), 2rem);
+  --sz-450-(36): var(--dm-dimension-450-(36), 2.25rem);
+  --sz-500-(40): var(--dm-dimension-500-(40), 2.5rem);
+  --sz-600-(48): var(--dm-dimension-600-(48), 3rem);
+  --sz-700-(56): var(--dm-dimension-700-(56), 3.5rem);
+  --sz-800-(64): var(--dm-dimension-800-(64), 4rem);
+  --sz-900-(72): var(--dm-dimension-900-(72), 4.5rem);
+  /* string */
+  --typography-font-family-body: Inter;
+}
+[data-theme="dark mode AA"] {
+  /* color */
+  --transparent: #00000000;
+  --brand-primary-100: #102b2f;
+  --brand-primary-200: #114649;
+  --brand-primary-300: #116d6f;
+  --brand-primary-400: #118789;
+  --brand-primary-50: #101e23;
+  --brand-primary-500*: #12b5b5;
+  --brand-primary-600: #38c1c1;
+  --brand-primary-700: #5ecdcd;
+  --brand-primary-900: #97dede;
+  --brand-primary-tint-100: #12b5b529;
+  --brand-primary-tint-50: #12b5b514;
+  --brand-secondary-100: #20273b;
+  --brand-secondary-200: #2f3d60;
+  --brand-secondary-300: #465d98;
+  --brand-secondary-500*: #7199fe;
+  --brand-secondary-700: #9ebafe;
+  --brand-secondary-900: #c1d2ff;
+  --brand-secondary-tint-100: #7199fe29;
+  --brand-secondary-tint-50: #7199fe14;
+  --brand-tertiary-100: #2b243a;
+  --brand-tertiary-200: #47365d;
+  --brand-tertiary-300: #705292;
+  --brand-tertiary-500*: #bb85f4;
+  --brand-tertiary-700: #d1acf8;
+  --brand-tertiary-900: #e1c9fa;
+  --brand-tertiary-tint-100: #bb85f429;
+  --brand-tertiary-tint-50: #bb85f414;
+  --common-chalk-300: #ffffff66;
+  --common-chalk-600: #ffffffb8;
+  --common-chalk-900: #ffffff;
+  --common-charcoal-100: #0e101229;
+  --common-charcoal-300: #0e101266;
+  --common-charcoal-400: #0e10128f;
+  --common-charcoal-500*: #0e1012a3;
+  --common-charcoal-700: #0e1012d6;
+  --common-charcoal-900: #0e1012;
+  --feedback-danger-100: #322228;
+  --feedback-danger-200: #55343a;
+  --feedback-danger-300: #884e54;
+  --feedback-danger-400: #ab5f66;
+  --feedback-danger-50: #211a1f;
+  --feedback-danger-500*: #e77e85;
+  --feedback-danger-600: #eb9399;
+  --feedback-danger-700: #efa7ac;
+  --feedback-danger-tint-100: #e77e8529;
+  --feedback-danger-tint-50: #e77e8514;
+  --feedback-info-100: #1e2838;
+  --feedback-info-200: #2c3e5b;
+  --feedback-info-300: #41608e;
+  --feedback-info-400: #5076b1;
+  --feedback-info-50: #171c27;
+  --feedback-info-500*: #689eed;
+  --feedback-info-600: #80aef0;
+  --feedback-info-700: #98bdf3;
+  --feedback-info-tint-100: #689eed29;
+  --feedback-info-tint-50: #689eed14;
+  --feedback-success-100: #162b21;
+  --feedback-success-200: #1c452d;
+  --feedback-success-300: #256d3e;
+  --feedback-success-400: #2b8749;
+  --feedback-success-50: #131e1c;
+  --feedback-success-500*: #35b55d;
+  --feedback-success-600: #55c177;
+  --feedback-success-700: #76cd91;
+  --feedback-success-tint-100: #35b55d29;
+  --feedback-success-tint-50: #35b55d14;
+  --feedback-warning-300: #845f2f;
+  --feedback-warning-50: #211c1a;
+  --feedback-warning-500*: #e09c42;
+  --feedback-warning-600: #e5ac60;
+  --feedback-warning-700: #eabc7e;
+  --feedback-warning-800: #ecc48e;
+  --feedback-warning-900: #f1d3ac;
+  --feedback-warning-tint-100: #e09c4229;
+  --feedback-warning-tint-50: #e09c4214;
+  --neutral-ink-0: #16171c;
+  --neutral-ink-100: #28292d;
+  --neutral-ink-300: #656668;
+  --neutral-ink-400: #8a8a8b;
+  --neutral-ink-50: #1c1d22;
+  --neutral-ink-500*: #a8a8a8;
+  --neutral-ink-600: #b6b6b6;
+  --neutral-ink-700: #c4c4c4;
+  --neutral-ink-900: #d9d9d9;
+  --neutral-ink-tint-100: #a8a8a829;
+  --neutral-ink-tint-50: #a8a8a814;
+  --neutral-surface-0: #13141a;
+  --neutral-surface-100: #1c1d27;
+  --neutral-surface-200: #22232f;
+  --neutral-surface-300: #292a3a;
+  --neutral-surface-400: #2e2f40;
+  --neutral-surface-50: #171821;
+  --neutral-surface-500*: #34344c;
+  --neutral-surface-700: #767685;
+  --non-semantic-blue-500*: #42a3f0;
+  --non-semantic-deeporange-500*: #ff7347;
+  --non-semantic-deeppurple-500*: #ab91d4;
+  --non-semantic-grey-500*: #9e9e9e;
+  --non-semantic-orange-500*: #ff9800;
+  --non-semantic-pink-100: #32232b;
+  --non-semantic-pink-200: #543541;
+  --non-semantic-pink-50: #211a21;
+  --non-semantic-pink-500*: #e4819b;
+  --non-semantic-purple-100: #2e2336;
+  --non-semantic-purple-200: #4d3455;
+  --non-semantic-purple-500*: #ce7fdc;
+  --non-semantic-red-100: #362123;
+  --non-semantic-red-200: #5b3131;
+  --non-semantic-red-500*: #fb746a;
+  --non-semantic-teal-500*: #00b2a2;
+  --shadows-12dp-main-colour: #17192033;
+  --shadows-12dp-secondary-colour: #17192033;
+  --shadows-16dp-main-colour: #17192033;
+  --shadows-16dp-secondary-colour: #17192033;
+  --shadows-20dp-main-colour: #1719203d;
+  --shadows-20dp-secondary-colour: #1719203d;
+  --shadows-24dp-main-colour: #1719203d;
+  --shadows-24dp-secondary-colour: #1719207a;
+  --shadows-28dp-main-colour: #17192052;
+  --shadows-28dp-secondary-colour: #1719207a;
+  --shadows-2dp-main-colour: #17192029;
+  --shadows-2dp-secondary-colour: #17192029;
+  --shadows-4dp-main-colour: #17192029;
+  --shadows-4dp-secondary-colour: #17192029;
+  --shadows-8dp-main-colour: #17192029;
+  --shadows-8dp-secondary-colour: #17192029;
+  /* number */
+  --shadows-12dp-main-position-x: 0rem;
+  --shadows-12dp-main-spread: 0rem;
+  --shadows-12dp-main-blur: 0.75rem;
+  --shadows-12dp-main-position-y: 0.75rem;
+  --shadows-12dp-secondary-position-x: 0rem;
+  --shadows-12dp-secondary-spread: 0rem;
+  --shadows-12dp-secondary-position-y: 1rem;
+  --shadows-12dp-secondary-blur: 1.5rem;
+  --shadows-16dp-main-position-x: 0rem;
+  --shadows-16dp-main-spread: 0rem;
+  --shadows-16dp-main-blur: 1rem;
+  --shadows-16dp-main-position-y: 1rem;
+  --shadows-16dp-secondary-position-x: 0rem;
+  --shadows-16dp-secondary-spread: 0rem;
+  --shadows-16dp-secondary-position-y: 1.5rem;
+  --shadows-16dp-secondary-blur: 2rem;
+  --shadows-20dp-main-position-x: 0rem;
+  --shadows-20dp-main-spread: 0rem;
+  --shadows-20dp-main-blur: 1.25rem;
+  --shadows-20dp-main-position-y: 1.25rem;
+  --shadows-20dp-secondary-position-x: 0rem;
+  --shadows-20dp-secondary-spread: 0rem;
+  --shadows-20dp-secondary-position-y: 2rem;
+  --shadows-20dp-secondary-blur: 2.5rem;
+  --shadows-24dp-main-position-x: 0rem;
+  --shadows-24dp-main-spread: 0rem;
+  --shadows-24dp-main-blur: 1.5rem;
+  --shadows-24dp-main-position-y: 1.5rem;
+  --shadows-24dp-secondary-position-x: 0rem;
+  --shadows-24dp-secondary-spread: 0rem;
+  --shadows-24dp-secondary-position-y: 2.5rem;
+  --shadows-24dp-secondary-blur: 3rem;
+  --shadows-28dp-main-position-x: 0rem;
+  --shadows-28dp-main-spread: 0rem;
+  --shadows-28dp-main-blur: 1.75rem;
+  --shadows-28dp-main-position-y: 1.75rem;
+  --shadows-28dp-secondary-position-x: 0rem;
+  --shadows-28dp-secondary-spread: 0rem;
+  --shadows-28dp-secondary-position-y: 3rem;
+  --shadows-28dp-secondary-blur: 3.5rem;
+  --shadows-2dp-main-position-x: 0rem;
+  --shadows-2dp-main-blur: 0.125rem;
+  --shadows-2dp-main-position-y: 0.125rem;
+  --shadows-2dp-main-spread: 0.125rem;
+  --shadows-2dp-secondary-position-x: 0rem;
+  --shadows-2dp-secondary-spread: 0rem;
+  --shadows-2dp-secondary-position-y: 0.125rem;
+  --shadows-2dp-secondary-blur: 0.25rem;
+  --shadows-4dp-main-position-x: 0rem;
+  --shadows-4dp-main-spread: 0rem;
+  --shadows-4dp-main-blur: 0.25rem;
+  --shadows-4dp-main-position-y: 0.25rem;
+  --shadows-4dp-secondary-position-x: 0rem;
+  --shadows-4dp-secondary-spread: 0rem;
+  --shadows-4dp-secondary-position-y: 0.25rem;
+  --shadows-4dp-secondary-blur: 0.5rem;
+  --shadows-8dp-main-position-x: 0rem;
+  --shadows-8dp-main-spread: 0rem;
+  --shadows-8dp-main-blur: 0.5rem;
+  --shadows-8dp-main-position-y: 0.5rem;
+  --shadows-8dp-secondary-position-x: 0rem;
+  --shadows-8dp-secondary-spread: 0rem;
+  --shadows-8dp-secondary-position-y: 0.25rem;
+  --shadows-8dp-secondary-blur: 1rem;
+}
+[data-theme="light mode AA"] {
+  /* color */
+  --transparent: #ffffff00;
+  --brand-primary-100: #d7e9e9;
+  --brand-primary-200: #b0d2d2;
+  --brand-primary-300: #74b1b1;
+  --brand-primary-400: #4c9a9a;
+  --brand-primary-50: #ebf4f4;
+  --brand-primary-500*: #077373;
+  --brand-primary-600: #055f5f;
+  --brand-primary-700: #044d4d;
+  --brand-primary-900: #002626;
+  --brand-primary-tint-100: #07737329;
+  --brand-primary-tint-50: #07737314;
+  --brand-secondary-100: #d1d5ec;
+  --brand-secondary-200: #b2b9df;
+  --brand-secondary-300: #8b96cf;
+  --brand-secondary-500*: #3e51ae;
+  --brand-secondary-700: #273693;
+  --brand-secondary-900: #0c166e;
+  --brand-secondary-tint-100: #3e51ae29;
+  --brand-secondary-tint-50: #3e51ae14;
+  --brand-tertiary-100: #ecddfc;
+  --brand-tertiary-200: #d9bbf9;
+  --brand-tertiary-300: #bd89f5;
+  --brand-tertiary-500*: #892ced;
+  --brand-tertiary-700: #6b1be5;
+  --brand-tertiary-900: #4a08dc;
+  --brand-tertiary-tint-100: #892ced29;
+  --brand-tertiary-tint-50: #892ced14;
+  --common-chalk-300: #ffffff66;
+  --common-chalk-600: #ffffffb8;
+  --common-chalk-900: #ffffff;
+  --common-charcoal-100: #0e101229;
+  --common-charcoal-300: #0e101266;
+  --common-charcoal-400: #0e10128f;
+  --common-charcoal-500*: #0e1012a3;
+  --common-charcoal-700: #0e1012d6;
+  --common-charcoal-900: #0e1012;
+  --feedback-danger-100: #f4dedf;
+  --feedback-danger-200: #eabcbf;
+  --feedback-danger-300: #da8a8f;
+  --feedback-danger-400: #cf686f;
+  --feedback-danger-50: #faeeef;
+  --feedback-danger-500*: #bd2e37;
+  --feedback-danger-600: #b1252d;
+  --feedback-danger-700: #a61c22;
+  --feedback-danger-tint-100: #bd2e3729;
+  --feedback-danger-tint-50: #bd2e3714;
+  --feedback-info-100: #dae6f7;
+  --feedback-info-200: #b5ccef;
+  --feedback-info-300: #7ea7e3;
+  --feedback-info-400: #598ddb;
+  --feedback-info-50: #edf2fb;
+  --feedback-info-500*: #1861cd;
+  --feedback-info-600: #1353c3;
+  --feedback-info-700: #0e44ba;
+  --feedback-info-tint-100: #1861cd29;
+  --feedback-info-tint-50: #1861cd14;
+  --feedback-success-100: #dbe9db;
+  --feedback-success-200: #b8d3b7;
+  --feedback-success-300: #83b281;
+  --feedback-success-400: #5f9c5d;
+  --feedback-success-50: #edf4ed;
+  --feedback-success-500*: #21761e;
+  --feedback-success-600: #1a6718;
+  --feedback-success-700: #135811;
+  --feedback-success-tint-100: #21761e29;
+  --feedback-success-tint-50: #21761e14;
+  --feedback-warning-300: #e7b87b;
+  --feedback-warning-50: #f9ecdc;
+  --feedback-warning-500*: #d78923;
+  --feedback-warning-600: #cf7a1c;
+  --feedback-warning-700: #c16010;
+  --feedback-warning-800: #b44905;
+  --feedback-warning-900: #ac3f04;
+  --feedback-warning-tint-100: #e09c4229;
+  --feedback-warning-tint-50: #e09c4214;
+  --neutral-ink-0: #fdfdfe;
+  --neutral-ink-100: #e5e6e8;
+  --neutral-ink-300: #a5a8ae;
+  --neutral-ink-400: #7e838b;
+  --neutral-ink-50: #e5e6e8;
+  --neutral-ink-500*: #5e646e;
+  --neutral-ink-600: #50555f;
+  --neutral-ink-700: #424750;
+  --neutral-ink-900: #1e2129;
+  --neutral-ink-tint-100: #5e646e29;
+  --neutral-ink-tint-50: #5e646e14;
+  --neutral-surface-0: #fafafb;
+  --neutral-surface-100: #fdfdfd;
+  --neutral-surface-200: #f8f8fa;
+  --neutral-surface-300: #f1f1f4;
+  --neutral-surface-400: #ececf1;
+  --neutral-surface-50: #fefefe;
+  --neutral-surface-500*: #d3d4de;
+  --neutral-surface-700: #b5b5c6;
+  --non-semantic-blue-500*: #1666b6;
+  --non-semantic-deeporange-500*: #d84315;
+  --non-semantic-deeppurple-500*: #673ab7;
+  --non-semantic-grey-500*: #666666;
+  --non-semantic-orange-500*: #e07f00;
+  --non-semantic-pink-100: #f4dde3;
+  --non-semantic-pink-200: #eabac7;
+  --non-semantic-pink-50: #faeef1;
+  --non-semantic-pink-500*: #bd2850;
+  --non-semantic-purple-100: #f0def3;
+  --non-semantic-purple-200: #e1bde7;
+  --non-semantic-purple-500*: #a131b4;
+  --non-semantic-red-100: #f5dddb;
+  --non-semantic-red-200: #ecbbb7;
+  --non-semantic-red-500*: #c3291d;
+  --non-semantic-teal-500*: #007066;
+  --shadows-12dp-main-colour: #5e646e0a;
+  --shadows-12dp-secondary-colour: #5e646e0a;
+  --shadows-16dp-main-colour: #5e646e14;
+  --shadows-16dp-secondary-colour: #5e646e14;
+  --shadows-20dp-main-colour: #5e646e1a;
+  --shadows-20dp-secondary-colour: #5e646e1a;
+  --shadows-24dp-main-colour: #5e646e1a;
+  --shadows-24dp-secondary-colour: #5e646e3d;
+  --shadows-28dp-main-colour: #5e646e29;
+  --shadows-28dp-secondary-colour: #5e646e3d;
+  --shadows-2dp-main-colour: #5e646e08;
+  --shadows-2dp-secondary-colour: #5e646e08;
+  --shadows-4dp-main-colour: #5e646e08;
+  --shadows-4dp-secondary-colour: #5e646e08;
+  --shadows-8dp-main-colour: #5e646e08;
+  --shadows-8dp-secondary-colour: #5e646e08;
+  /* number */
+  --shadows-12dp-main-position-x: 0rem;
+  --shadows-12dp-main-spread: 0rem;
+  --shadows-12dp-main-blur: 0.75rem;
+  --shadows-12dp-main-position-y: 0.75rem;
+  --shadows-12dp-secondary-position-x: 0rem;
+  --shadows-12dp-secondary-spread: 0rem;
+  --shadows-12dp-secondary-position-y: 1rem;
+  --shadows-12dp-secondary-blur: 1.5rem;
+  --shadows-16dp-main-position-x: 0rem;
+  --shadows-16dp-main-spread: 0rem;
+  --shadows-16dp-main-blur: 1rem;
+  --shadows-16dp-main-position-y: 1rem;
+  --shadows-16dp-secondary-position-x: 0rem;
+  --shadows-16dp-secondary-spread: 0rem;
+  --shadows-16dp-secondary-position-y: 1.5rem;
+  --shadows-16dp-secondary-blur: 2rem;
+  --shadows-20dp-main-position-x: 0rem;
+  --shadows-20dp-main-spread: 0rem;
+  --shadows-20dp-main-blur: 1.25rem;
+  --shadows-20dp-main-position-y: 1.25rem;
+  --shadows-20dp-secondary-position-x: 0rem;
+  --shadows-20dp-secondary-spread: 0rem;
+  --shadows-20dp-secondary-position-y: 2rem;
+  --shadows-20dp-secondary-blur: 2.5rem;
+  --shadows-24dp-main-position-x: 0rem;
+  --shadows-24dp-main-spread: 0rem;
+  --shadows-24dp-main-blur: 1.5rem;
+  --shadows-24dp-main-position-y: 1.5rem;
+  --shadows-24dp-secondary-position-x: 0rem;
+  --shadows-24dp-secondary-spread: 0rem;
+  --shadows-24dp-secondary-position-y: 2.5rem;
+  --shadows-24dp-secondary-blur: 3rem;
+  --shadows-28dp-main-position-x: 0rem;
+  --shadows-28dp-main-spread: 0rem;
+  --shadows-28dp-main-blur: 1.75rem;
+  --shadows-28dp-main-position-y: 1.75rem;
+  --shadows-28dp-secondary-position-x: 0rem;
+  --shadows-28dp-secondary-spread: 0rem;
+  --shadows-28dp-secondary-position-y: 3rem;
+  --shadows-28dp-secondary-blur: 3.5rem;
+  --shadows-2dp-main-position-x: 0rem;
+  --shadows-2dp-main-blur: 0.125rem;
+  --shadows-2dp-main-position-y: 0.125rem;
+  --shadows-2dp-main-spread: 0.125rem;
+  --shadows-2dp-secondary-position-x: 0rem;
+  --shadows-2dp-secondary-spread: 0rem;
+  --shadows-2dp-secondary-position-y: 0.125rem;
+  --shadows-2dp-secondary-blur: 0.25rem;
+  --shadows-4dp-main-position-x: 0rem;
+  --shadows-4dp-main-spread: 0rem;
+  --shadows-4dp-main-blur: 0.25rem;
+  --shadows-4dp-main-position-y: 0.25rem;
+  --shadows-4dp-secondary-position-x: 0rem;
+  --shadows-4dp-secondary-spread: 0rem;
+  --shadows-4dp-secondary-position-y: 0.25rem;
+  --shadows-4dp-secondary-blur: 0.5rem;
+  --shadows-8dp-main-position-x: 0rem;
+  --shadows-8dp-main-spread: 0rem;
+  --shadows-8dp-main-blur: 0.5rem;
+  --shadows-8dp-main-position-y: 0.5rem;
+  --shadows-8dp-secondary-position-x: 0rem;
+  --shadows-8dp-secondary-spread: 0rem;
+  --shadows-8dp-secondary-position-y: 0.25rem;
+  --shadows-8dp-secondary-blur: 1rem;
+}
+[data-theme="dark mode AAA"] {
+  /* color */
+  --transparent: #ffffff00;
+  --brand-primary-100: #113135;
+  --brand-primary-200: #115053;
+  --brand-primary-300: #127f82;
+  --brand-primary-400: #139fa0;
+  --brand-primary-50: #102125;
+  --brand-primary-500*: #14d6d6;
+  --brand-primary-600: #3adddd;
+  --brand-primary-700: #5fe3e3;
+  --brand-primary-900: #98eded;
+  --brand-primary-tint-100: #14d6d629;
+  --brand-primary-tint-50: #14d6d614;
+  --brand-secondary-100: #282d3b;
+  --brand-secondary-200: #3f4861;
+  --brand-secondary-300: #637198;
+  --brand-secondary-500*: #a4bdff;
+  --brand-secondary-700: #c1d2ff;
+  --brand-secondary-900: #d7e2ff;
+  --brand-secondary-tint-100: #a4bdff29;
+  --brand-secondary-tint-50: #a4bdff14;
+  --brand-tertiary-100: #2f2a3a;
+  --brand-tertiary-200: #4e445e;
+  --brand-tertiary-300: #7d6a95;
+  --brand-tertiary-500*: #d2aff8;
+  --brand-tertiary-700: #e0c9fa;
+  --brand-tertiary-900: #ebdcfc;
+  --brand-tertiary-tint-100: #d2aff829;
+  --brand-tertiary-tint-50: #d2aff814;
+  --common-chalk-300: #ffffff66;
+  --common-chalk-600: #ffffffb8;
+  --common-chalk-900: #ffffff;
+  --common-charcoal-100: #0e101229;
+  --common-charcoal-300: #0e101266;
+  --common-charcoal-400: #0e10128f;
+  --common-charcoal-500*: #0e1012a3;
+  --common-charcoal-700: #0e1012d6;
+  --common-charcoal-900: #0e1012;
+  --feedback-danger-100: #36282d;
+  --feedback-danger-200: #5c4044;
+  --feedback-danger-300: #966366;
+  --feedback-danger-400: #bc7a7d;
+  --feedback-danger-50: #231d21;
+  --feedback-danger-500*: #ffa3a5;
+  --feedback-danger-600: #ffb2b3;
+  --feedback-danger-700: #ffc0c2;
+  --feedback-danger-tint-100: #ffa3a529;
+  --feedback-danger-tint-50: #ffa3a514;
+  --feedback-info-100: #272d39;
+  --feedback-info-200: #3d495c;
+  --feedback-info-300: #5f7291;
+  --feedback-info-400: #758eb4;
+  --feedback-info-50: #1b1f28;
+  --feedback-info-500*: #9dbff1;
+  --feedback-info-600: #adc9f3;
+  --feedback-info-700: #bcd3f5;
+  --feedback-info-tint-100: #9dbff129;
+  --feedback-info-tint-50: #9dbff114;
+  --feedback-success-100: #1e3028;
+  --feedback-success-200: #2b4f3a;
+  --feedback-success-300: #407d55;
+  --feedback-success-400: #4d9c67;
+  --feedback-success-50: #17201f;
+  --feedback-success-500*: #65d287;
+  --feedback-success-600: #7ed99a;
+  --feedback-success-700: #96e0ad;
+  --feedback-success-tint-100: #65d28729;
+  --feedback-success-tint-50: #65d28714;
+  --feedback-warning-300: #896b44;
+  --feedback-warning-50: #211e1d;
+  --feedback-warning-500*: #e8b168;
+  --feedback-warning-600: #ecbd80;
+  --feedback-warning-700: #efca98;
+  --feedback-warning-800: #f1d0a4;
+  --feedback-warning-900: #f5ddbd;
+  --feedback-warning-tint-100: #e8b16829;
+  --feedback-warning-tint-50: #e8b16814;
+  --neutral-ink-0: #141419;
+  --neutral-ink-100: #2c2d31;
+  --neutral-ink-300: #727375;
+  --neutral-ink-400: #9c9c9d;
+  --neutral-ink-50: #1e1f24;
+  --neutral-ink-500*: #bfbfbf;
+  --neutral-ink-600: #c9c9c9;
+  --neutral-ink-700: #d3d3d3;
+  --neutral-ink-900: #e3e3e3;
+  --neutral-ink-tint-100: #bfbfbf29;
+  --neutral-ink-tint-50: #bfbfbf14;
+  --neutral-surface-0: #111217;
+  --neutral-surface-100: #171821;
+  --neutral-surface-200: #1b1c27;
+  --neutral-surface-300: #212230;
+  --neutral-surface-400: #272838;
+  --neutral-surface-50: #14151b;
+  --neutral-surface-500*: #34344c;
+  --neutral-surface-700: #5d5d70;
+  --non-semantic-blue-500*: #84c3f5;
+  --non-semantic-deeporange-500*: #ffa68a;
+  --non-semantic-deeppurple-500*: #c8b5e8;
+  --non-semantic-grey-500*: #bdbdbd;
+  --non-semantic-orange-500*: #ffad33;
+  --non-semantic-pink-100: #352932;
+  --non-semantic-pink-200: #5a414d;
+  --non-semantic-pink-50: #221d24;
+  --non-semantic-pink-500*: #f6a7c2;
+  --non-semantic-purple-100: #322a38;
+  --non-semantic-purple-200: #54435a;
+  --non-semantic-purple-500*: #e3acec;
+  --non-semantic-red-100: #35292c;
+  --non-semantic-red-200: #5b4042;
+  --non-semantic-red-500*: #faa59e;
+  --non-semantic-teal-500*: #00d6c2;
+  --shadows-12dp-main-colour: #1e212933;
+  --shadows-12dp-secondary-colour: #1e212933;
+  --shadows-16dp-main-colour: #1e212933;
+  --shadows-16dp-secondary-colour: #1e212933;
+  --shadows-20dp-main-colour: #1e21293d;
+  --shadows-20dp-secondary-colour: #1e21293d;
+  --shadows-24dp-main-colour: #1e21293d;
+  --shadows-24dp-secondary-colour: #1e21297a;
+  --shadows-28dp-main-colour: #1e212952;
+  --shadows-28dp-secondary-colour: #1e21297a;
+  --shadows-2dp-main-colour: #1e212929;
+  --shadows-2dp-secondary-colour: #1e212929;
+  --shadows-4dp-main-colour: #1e212929;
+  --shadows-4dp-secondary-colour: #1e212929;
+  --shadows-8dp-main-colour: #1e212929;
+  --shadows-8dp-secondary-colour: #1e212929;
+  /* number */
+  --shadows-12dp-main-position-x: 0rem;
+  --shadows-12dp-main-spread: 0rem;
+  --shadows-12dp-main-blur: 0.75rem;
+  --shadows-12dp-main-position-y: 0.75rem;
+  --shadows-12dp-secondary-position-x: 0rem;
+  --shadows-12dp-secondary-spread: 0rem;
+  --shadows-12dp-secondary-position-y: 1rem;
+  --shadows-12dp-secondary-blur: 1.5rem;
+  --shadows-16dp-main-position-x: 0rem;
+  --shadows-16dp-main-spread: 0rem;
+  --shadows-16dp-main-blur: 1rem;
+  --shadows-16dp-main-position-y: 1rem;
+  --shadows-16dp-secondary-position-x: 0rem;
+  --shadows-16dp-secondary-spread: 0rem;
+  --shadows-16dp-secondary-position-y: 1.5rem;
+  --shadows-16dp-secondary-blur: 2rem;
+  --shadows-20dp-main-position-x: 0rem;
+  --shadows-20dp-main-spread: 0rem;
+  --shadows-20dp-main-blur: 1.25rem;
+  --shadows-20dp-main-position-y: 1.25rem;
+  --shadows-20dp-secondary-position-x: 0rem;
+  --shadows-20dp-secondary-spread: 0rem;
+  --shadows-20dp-secondary-position-y: 2rem;
+  --shadows-20dp-secondary-blur: 2.5rem;
+  --shadows-24dp-main-position-x: 0rem;
+  --shadows-24dp-main-spread: 0rem;
+  --shadows-24dp-main-blur: 1.5rem;
+  --shadows-24dp-main-position-y: 1.5rem;
+  --shadows-24dp-secondary-position-x: 0rem;
+  --shadows-24dp-secondary-spread: 0rem;
+  --shadows-24dp-secondary-position-y: 2.5rem;
+  --shadows-24dp-secondary-blur: 3rem;
+  --shadows-28dp-main-position-x: 0rem;
+  --shadows-28dp-main-spread: 0rem;
+  --shadows-28dp-main-blur: 1.75rem;
+  --shadows-28dp-main-position-y: 1.75rem;
+  --shadows-28dp-secondary-position-x: 0rem;
+  --shadows-28dp-secondary-spread: 0rem;
+  --shadows-28dp-secondary-position-y: 3rem;
+  --shadows-28dp-secondary-blur: 3.5rem;
+  --shadows-2dp-main-position-x: 0rem;
+  --shadows-2dp-main-blur: 0.125rem;
+  --shadows-2dp-main-position-y: 0.125rem;
+  --shadows-2dp-main-spread: 0.125rem;
+  --shadows-2dp-secondary-position-x: 0rem;
+  --shadows-2dp-secondary-spread: 0rem;
+  --shadows-2dp-secondary-position-y: 0.125rem;
+  --shadows-2dp-secondary-blur: 0.25rem;
+  --shadows-4dp-main-position-x: 0rem;
+  --shadows-4dp-main-spread: 0rem;
+  --shadows-4dp-main-blur: 0.25rem;
+  --shadows-4dp-main-position-y: 0.25rem;
+  --shadows-4dp-secondary-position-x: 0rem;
+  --shadows-4dp-secondary-spread: 0rem;
+  --shadows-4dp-secondary-position-y: 0.25rem;
+  --shadows-4dp-secondary-blur: 0.5rem;
+  --shadows-8dp-main-position-x: 0rem;
+  --shadows-8dp-main-spread: 0rem;
+  --shadows-8dp-main-blur: 0.5rem;
+  --shadows-8dp-main-position-y: 0.5rem;
+  --shadows-8dp-secondary-position-x: 0rem;
+  --shadows-8dp-secondary-spread: 0rem;
+  --shadows-8dp-secondary-position-y: 0.25rem;
+  --shadows-8dp-secondary-blur: 1rem;
+}
+[data-theme="light mode AAA"] {
+  /* color */
+  --transparent: #ffffff00;
+  --brand-primary-100: #d7e3e3;
+  --brand-primary-200: #afc8c8;
+  --brand-primary-300: #739e9e;
+  --brand-primary-400: #4b8282;
+  --brand-primary-50: #ebf1f1;
+  --brand-primary-500*: #055252;
+  --brand-primary-600: #044242;
+  --brand-primary-700: #033232;
+  --brand-primary-900: #001212;
+  --brand-primary-tint-100: #05525229;
+  --brand-primary-tint-50: #05525214;
+  --brand-secondary-100: #dee1ed;
+  --brand-secondary-200: #bec3db;
+  --brand-secondary-300: #8d95c0;
+  --brand-secondary-500*: #33428f;
+  --brand-secondary-700: #1f2b71;
+  --brand-secondary-900: #080e48;
+  --brand-secondary-tint-100: #33428f29;
+  --brand-secondary-tint-50: #33428f14;
+  --brand-tertiary-100: #e6d9f4;
+  --brand-tertiary-200: #cdb3e9;
+  --brand-tertiary-300: #a879d9;
+  --brand-tertiary-500*: #6110b7;
+  --brand-tertiary-700: #4609a4;
+  --brand-tertiary-900: #26018b;
+  --brand-tertiary-tint-100: #6110b729;
+  --brand-tertiary-tint-50: #6110b714;
+  --common-chalk-300: #ffffff66;
+  --common-chalk-600: #ffffffb8;
+  --common-chalk-900: #ffffff;
+  --common-charcoal-100: #0e101229;
+  --common-charcoal-300: #0e101266;
+  --common-charcoal-400: #0e10128f;
+  --common-charcoal-500*: #0e1012a3;
+  --common-charcoal-700: #0e1012d6;
+  --common-charcoal-900: #0e1012;
+  --feedback-danger-100: #ecdbdd;
+  --feedback-danger-200: #d9b8ba;
+  --feedback-danger-300: #bc8386;
+  --feedback-danger-400: #a95f64;
+  --feedback-danger-50: #f5edee;
+  --feedback-danger-500*: #872128;
+  --feedback-danger-600: #781a20;
+  --feedback-danger-700: #691318;
+  --feedback-danger-tint-100: #87212829;
+  --feedback-danger-tint-50: #87212814;
+  --feedback-info-100: #d9e1ee;
+  --feedback-info-200: #b3c3dc;
+  --feedback-info-300: #7a97c2;
+  --feedback-info-400: #5479b1;
+  --feedback-info-50: #ecf0f6;
+  --feedback-info-500*: #114592;
+  --feedback-info-600: #0d3983;
+  --feedback-info-700: #092d74;
+  --feedback-info-tint-100: #11459229;
+  --feedback-info-tint-50: #11459214;
+  --feedback-success-100: #dae3da;
+  --feedback-success-200: #b5c7b4;
+  --feedback-success-300: #7d9e7c;
+  --feedback-success-400: #588256;
+  --feedback-success-50: #ecf1ec;
+  --feedback-success-500*: #175115;
+  --feedback-success-600: #124410;
+  --feedback-success-700: #0d360c;
+  --feedback-success-tint-100: #17511529;
+  --feedback-success-tint-50: #17511514;
+  --feedback-warning-300: #d2ab77;
+  --feedback-warning-50: #f3e9db;
+  --feedback-warning-500*: #b4731d;
+  --feedback-warning-600: #a76417;
+  --feedback-warning-700: #924b0d;
+  --feedback-warning-800: #7e3303;
+  --feedback-warning-900: #732b02;
+  --feedback-warning-tint-100: #b4731d29;
+  --feedback-warning-tint-50: #b4731d14;
+  --neutral-ink-0: #fdfdfd;
+  --neutral-ink-100: #e1e2e3;
+  --neutral-ink-300: #97999d;
+  --neutral-ink-400: #6a6d73;
+  --neutral-ink-50: #f0f0f1;
+  --neutral-ink-500*: #44484f;
+  --neutral-ink-600: #383c42;
+  --neutral-ink-700: #2c2f35;
+  --neutral-ink-900: #0f1114;
+  --neutral-ink-tint-100: #44484f29;
+  --neutral-ink-tint-50: #44484f14;
+  --neutral-surface-0: #fafafb;
+  --neutral-surface-100: #fdfdfd;
+  --neutral-surface-200: #f8f8fa;
+  --neutral-surface-300: #f1f1f4;
+  --neutral-surface-400: #ececf1;
+  --neutral-surface-50: #f2f2f5;
+  --neutral-surface-500*: #d3d4de;
+  --neutral-surface-700: #b5b5c6;
+  --non-semantic-blue-500*: #0f4880;
+  --non-semantic-deeporange-500*: #c33d13;
+  --non-semantic-deeppurple-500*: #553097;
+  --non-semantic-grey-500*: #474747;
+  --non-semantic-orange-500*: #b26500;
+  --non-semantic-pink-100: #ecdbdf;
+  --non-semantic-pink-200: #d8b7c0;
+  --non-semantic-pink-50: #f5edef;
+  --non-semantic-pink-500*: #871d39;
+  --non-semantic-purple-100: #e9dceb;
+  --non-semantic-purple-200: #d2b9d6;
+  --non-semantic-purple-500*: #732380;
+  --non-semantic-red-100: #ecdbd9;
+  --non-semantic-red-200: #d9b7b4;
+  --non-semantic-red-500*: #8a1d15;
+  --non-semantic-teal-500*: #00524a;
+  --shadows-12dp-main-colour: #5e646e14;
+  --shadows-12dp-secondary-colour: #5e646e14;
+  --shadows-16dp-main-colour: #5e646e14;
+  --shadows-16dp-secondary-colour: #5e646e14;
+  --shadows-20dp-main-colour: #5e646e1a;
+  --shadows-20dp-secondary-colour: #5e646e1a;
+  --shadows-24dp-main-colour: #5e646e1a;
+  --shadows-24dp-secondary-colour: #5e646e3d;
+  --shadows-28dp-main-colour: #5e646e29;
+  --shadows-28dp-secondary-colour: #5e646e3d;
+  --shadows-2dp-main-colour: #5e646e0f;
+  --shadows-2dp-secondary-colour: #5e646e0f;
+  --shadows-4dp-main-colour: #5e646e0f;
+  --shadows-4dp-secondary-colour: #5e646e0f;
+  --shadows-8dp-main-colour: #5e646e0f;
+  --shadows-8dp-secondary-colour: #5e646e0f;
+  /* number */
+  --shadows-12dp-main-position-x: 0rem;
+  --shadows-12dp-main-spread: 0rem;
+  --shadows-12dp-main-blur: 0.75rem;
+  --shadows-12dp-main-position-y: 0.75rem;
+  --shadows-12dp-secondary-position-x: 0rem;
+  --shadows-12dp-secondary-spread: 0rem;
+  --shadows-12dp-secondary-position-y: 1rem;
+  --shadows-12dp-secondary-blur: 1.5rem;
+  --shadows-16dp-main-position-x: 0rem;
+  --shadows-16dp-main-spread: 0rem;
+  --shadows-16dp-main-blur: 1rem;
+  --shadows-16dp-main-position-y: 1rem;
+  --shadows-16dp-secondary-position-x: 0rem;
+  --shadows-16dp-secondary-spread: 0rem;
+  --shadows-16dp-secondary-position-y: 1.5rem;
+  --shadows-16dp-secondary-blur: 2rem;
+  --shadows-20dp-main-position-x: 0rem;
+  --shadows-20dp-main-spread: 0rem;
+  --shadows-20dp-main-blur: 1.25rem;
+  --shadows-20dp-main-position-y: 1.25rem;
+  --shadows-20dp-secondary-position-x: 0rem;
+  --shadows-20dp-secondary-spread: 0rem;
+  --shadows-20dp-secondary-position-y: 2rem;
+  --shadows-20dp-secondary-blur: 2.5rem;
+  --shadows-24dp-main-position-x: 0rem;
+  --shadows-24dp-main-spread: 0rem;
+  --shadows-24dp-main-blur: 1.5rem;
+  --shadows-24dp-main-position-y: 1.5rem;
+  --shadows-24dp-secondary-position-x: 0rem;
+  --shadows-24dp-secondary-spread: 0rem;
+  --shadows-24dp-secondary-position-y: 2.5rem;
+  --shadows-24dp-secondary-blur: 3rem;
+  --shadows-28dp-main-position-x: 0rem;
+  --shadows-28dp-main-spread: 0rem;
+  --shadows-28dp-main-blur: 1.75rem;
+  --shadows-28dp-main-position-y: 1.75rem;
+  --shadows-28dp-secondary-position-x: 0rem;
+  --shadows-28dp-secondary-spread: 0rem;
+  --shadows-28dp-secondary-position-y: 3rem;
+  --shadows-28dp-secondary-blur: 3.5rem;
+  --shadows-2dp-main-position-x: 0rem;
+  --shadows-2dp-main-blur: 0.125rem;
+  --shadows-2dp-main-position-y: 0.125rem;
+  --shadows-2dp-main-spread: 0.125rem;
+  --shadows-2dp-secondary-position-x: 0rem;
+  --shadows-2dp-secondary-spread: 0rem;
+  --shadows-2dp-secondary-position-y: 0.125rem;
+  --shadows-2dp-secondary-blur: 0.25rem;
+  --shadows-4dp-main-position-x: 0rem;
+  --shadows-4dp-main-spread: 0rem;
+  --shadows-4dp-main-blur: 0.25rem;
+  --shadows-4dp-main-position-y: 0.25rem;
+  --shadows-4dp-secondary-position-x: 0rem;
+  --shadows-4dp-secondary-spread: 0rem;
+  --shadows-4dp-secondary-position-y: 0.25rem;
+  --shadows-4dp-secondary-blur: 0.5rem;
+  --shadows-8dp-main-position-x: 0rem;
+  --shadows-8dp-main-spread: 0rem;
+  --shadows-8dp-main-blur: 0.5rem;
+  --shadows-8dp-main-position-y: 0.5rem;
+  --shadows-8dp-secondary-position-x: 0rem;
+  --shadows-8dp-secondary-spread: 0rem;
+  --shadows-8dp-secondary-position-y: 0.25rem;
+  --shadows-8dp-secondary-blur: 1rem;
+}
+[data-theme="Mode 1"] {
+  /* number */
+  --base-layout-page-content-gap: var(--dm-dimension-250-(20), 1.25rem);
+  --base-layout-page-content-padding-v: var(--dm-dimension-300-(24), 1.5rem);
+  --base-layout-page-content-padding-h: var(--dm-dimension-500-(40), 2.5rem);
+}
+[data-theme="Mode 1"] {
+  /* color */
+  --accordion-surface: var(--neutral-surface-100, #1c1d27);
+  --accordion-header-color-description: var(--neutral-ink-500 *, #a8a8a8);
+  --accordion-header-color-icon-collapsed: var(--neutral-ink-500 *, #a8a8a8);
+  --accordion-header-color-icon-expanded: var(--neutral-ink-900, #d9d9d9);
+  --accordion-header-color-title-collapsed: var(--neutral-ink-500 *, #a8a8a8);
+  --accordion-header-color-title-expanded: var(--neutral-ink-900, #d9d9d9);
+  --article-card-content-color-captions-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --article-card-content-color-captions-hover: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --article-card-content-color-outline-enabled: var(
+    --neutral-surface-400,
+    #2e2f40
+  );
+  --article-card-content-color-outline-hover: var(
+    --neutral-surface-500 *,
+    #34344c
+  );
+  --article-card-content-color-paragraph-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --article-card-content-color-paragraph-hover: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --article-card-content-color-surface-enabled: var(
+    --neutral-surface-200,
+    #22232f
+  );
+  --article-card-content-color-surface-hover: var(
+    --neutral-surface-300,
+    #292a3a
+  );
+  --article-card-content-color-title-enabled: var(--neutral-ink-900, #d9d9d9);
+  --article-card-content-color-title-hover: var(--neutral-ink-900, #d9d9d9);
+  --content-header-color-icon: var(--neutral-ink-900, #d9d9d9);
+  --content-header-color-title-high-emphasis: var(--neutral-ink-900, #d9d9d9);
+  --content-header-color-title-low-emphasis: var(--neutral-ink-500 *, #a8a8a8);
+  --experiment-card-content-color-outline-enabled: var(
+    --neutral-surface-400,
+    #2e2f40
+  );
+  --experiment-card-content-color-outline-hover: var(
+    --neutral-surface-500 *,
+    #34344c
+  );
+  --experiment-card-content-color-paragraph-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --experiment-card-content-color-paragraph-hover: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --experiment-card-content-color-surface-enabled: var(
+    --neutral-surface-200,
+    #22232f
+  );
+  --experiment-card-content-color-surface-hover: var(
+    --neutral-surface-300,
+    #292a3a
+  );
+  --experiment-card-content-color-title-enabled: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --experiment-card-content-color-title-hover: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --list-card-color-enabled-icon: var(--neutral-ink-900, #d9d9d9);
+  --list-card-color-enabled-outline: var(--neutral-surface-400, #2e2f40);
+  --list-card-color-enabled-surface: var(--neutral-surface-200, #22232f);
+  --list-card-color-enabled-text: var(--neutral-ink-500 *, #a8a8a8);
+  --list-card-color-enabled-title: var(--neutral-ink-900, #d9d9d9);
+  --list-card-color-hover-icon: var(--neutral-ink-900, #d9d9d9);
+  --list-card-color-hover-outline: var(--neutral-surface-500 *, #34344c);
+  --list-card-color-hover-surface: var(--neutral-surface-300, #292a3a);
+  --list-card-color-hover-text: var(--neutral-ink-500 *, #a8a8a8);
+  --list-card-color-hover-title: var(--neutral-ink-900, #d9d9d9);
+  --overview-panel-footer-surface: var(--neutral-surface-100, #1c1d27);
+  --overview-panel-header-icon: var(--neutral-ink-900, #d9d9d9);
+  --overview-panel-header-surface: var(--neutral-surface-100, #1c1d27);
+  --permissions-card-outline: var(--neutral-surface-400, #2e2f40);
+  --permissions-card-surface: var(--neutral-surface-200, #22232f);
+  --permissions-card-content-colors-text-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --permissions-card-header-colors-check-icon-enabled: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --permissions-card-header-colors-check-icon-hover: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --permissions-card-header-colors-icon-enabled: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --permissions-card-header-colors-icon-hover: var(--neutral-ink-900, #d9d9d9);
+  --permissions-card-header-colors-surface-enabled: var(
+    --neutral-surface-300,
+    #292a3a
+  );
+  --permissions-card-header-colors-surface-hover: var(
+    --neutral-surface-400,
+    #2e2f40
+  );
+  --permissions-card-header-colors-title-enabled: var(
+    --neutral-ink-900,
+    #d9d9d9
+  );
+  --permissions-card-header-colors-title-hover: var(--neutral-ink-900, #d9d9d9);
+  --project-card-content-color-outline-enabled: var(
+    --neutral-surface-400,
+    #2e2f40
+  );
+  --project-card-content-color-outline-hover: var(
+    --neutral-surface-500 *,
+    #34344c
+  );
+  --project-card-content-color-paragraph-enabled: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --project-card-content-color-paragraph-hover: var(--neutral-ink-700, #c4c4c4);
+  --project-card-content-color-surface-enabled: var(
+    --neutral-surface-200,
+    #22232f
+  );
+  --project-card-content-color-surface-hover: var(
+    --neutral-surface-300,
+    #292a3a
+  );
+  --project-card-content-color-title-enabled: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --project-card-content-color-title-hover: var(--brand-primary-700, #5ecdcd);
+  --side-banner-permissions-colors-billing: var(
+    --non-semantic-orange-500 *,
+    #ff9800
+  );
+  --side-banner-permissions-colors-data: var(
+    --non-semantic-purple-500 *,
+    #ce7fdc
+  );
+  --side-banner-permissions-colors-experiments: var(
+    --non-semantic-grey-500 *,
+    #9e9e9e
+  );
+  --side-banner-permissions-colors-projects: var(
+    --non-semantic-blue-500 *,
+    #42a3f0
+  );
+  --side-banner-permissions-colors-readonly: var(
+    --non-semantic-red-500 *,
+    #fb746a
+  );
+  --side-banner-permissions-colors-security: var(
+    --non-semantic-deeporange-500 *,
+    #ff7347
+  );
+  --side-banner-permissions-colors-usage-tracking: var(
+    --non-semantic-deeppurple-500 *,
+    #ab91d4
+  );
+  --side-banner-permissions-colors-users: var(
+    --non-semantic-teal-500 *,
+    #00b2a2
+  );
+  --video-card-content-color-play-button-enabled: var(
+    --common-chalk-600,
+    #ffffffb8
+  );
+  --video-card-content-color-play-button-hover: var(
+    --common-chalk-900,
+    #ffffff
+  );
+  --video-card-content-color-surface-enabled: var(--transparent, #00000000);
+  --video-card-content-color-surface-hover: var(--transparent, #00000000);
+  --video-card-content-color-video-timer-background: var(
+    --common-charcoal-400,
+    #0e10128f
+  );
+  --video-card-content-color-video-timer-text: var(
+    --common-chalk-600,
+    #ffffffb8
+  );
+  --widget-color-enabled-icon: var(--neutral-ink-900, #d9d9d9);
+  --widget-color-enabled-outline: var(--neutral-surface-400, #2e2f40);
+  --widget-color-enabled-surface: var(--neutral-surface-200, #22232f);
+  --widget-color-enabled-text: var(--neutral-ink-500 *, #a8a8a8);
+  --widget-color-enabled-title: var(--neutral-ink-900, #d9d9d9);
+  --widget-color-enabled-value: var(--neutral-ink-900, #d9d9d9);
+  --widget-color-hover-icon: var(--neutral-ink-900, #d9d9d9);
+  --widget-color-hover-outline: var(--neutral-surface-500 *, #34344c);
+  --widget-color-hover-surface: var(--neutral-surface-300, #292a3a);
+  --widget-color-hover-text: var(--neutral-ink-500 *, #a8a8a8);
+  --widget-color-hover-title: var(--neutral-ink-900, #d9d9d9);
+  --widget-color-hover-value: var(--neutral-ink-900, #d9d9d9);
+  /* number */
+  --accordion-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --accordion-content-padding-h: var(--dm-dimension-200-(16), 1rem);
+  --accordion-content-padding-v: var(--dm-dimension-200-(16), 1rem);
+  --accordion-header-content-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --accordion-header-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --accordion-header-padding-h: var(--dm-dimension-200-(16), 1rem);
+  --article-card-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --article-card-content-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --article-card-content-options-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --article-card-content-padding-h: var(--dm-dimension-200-(16), 1rem);
+  --article-card-content-padding-v: var(--dm-dimension-200-(16), 1rem);
+  --content-header-content-gap-large: var(--dm-dimension-100-(08), 0.5rem);
+  --content-header-content-gap-medium: var(--dm-dimension-100-(08), 0.5rem);
+  --content-header-content-gap-small: var(--dm-dimension-100-(08), 0.5rem);
+  --content-header-icon-size-medium: var(--dm-dimension-250-(20), 1.25rem);
+  --content-header-icon-size-small: var(--dm-dimension-250-(20), 1.25rem);
+  --content-header-icon-size-large: var(--dm-dimension-300-(24), 1.5rem);
+  --content-header-padding-h-medium: var(--dm-dimension-200-(16), 1rem);
+  --content-header-padding-h-small: var(--dm-dimension-200-(16), 1rem);
+  --content-header-padding-h-large: var(--dm-dimension-400-(32), 2rem);
+  --content-header-padding-v-small: var(--dm-dimension-75-(06), 0.375rem);
+  --content-header-padding-v-medium: var(--dm-dimension-125-(10), 0.625rem);
+  --content-header-padding-v-large: var(--dm-dimension-200-(16), 1rem);
+  --experiment-card-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --experiment-card-image-height: 5rem;
+  --experiment-card-content-options-gap: var(--dm-dimension-200-(16), 1rem);
+  --experiment-card-content-gap: var(--dm-dimension-300-(24), 1.5rem);
+  --experiment-card-content-padding-h: var(--dm-dimension-300-(24), 1.5rem);
+  --experiment-card-content-padding-v: var(--dm-dimension-300-(24), 1.5rem);
+  --list-card-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --list-card-title-gap: var(--dm-dimension-50-(04), 0.25rem);
+  --list-card-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --list-card-title-content-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --list-card-padding-h: var(--dm-dimension-200-(16), 1rem);
+  --list-card-padding-v: var(--dm-dimension-200-(16), 1rem);
+  --list-card-icon-size: var(--dm-dimension-300-(24), 1.5rem);
+  --overview-panel-content-gap: var(--dm-dimension-200-(16), 1rem);
+  --overview-panel-content-padding-v: var(--dm-dimension-200-(16), 1rem);
+  --overview-panel-content-padding-h: var(--dm-dimension-400-(32), 2rem);
+  --overview-panel-footer-content-gap: var(--dm-dimension-200-(16), 1rem);
+  --overview-panel-footer-gap: var(--dm-dimension-200-(16), 1rem);
+  --overview-panel-footer-padding-h: var(--dm-dimension-400-(32), 2rem);
+  --overview-panel-footer-padding-v: var(--dm-dimension-400-(32), 2rem);
+  --overview-panel-form-field-gap: var(--dm-dimension-200-(16), 1rem);
+  --overview-panel-form-row-gap: var(--dm-dimension-200-(16), 1rem);
+  --overview-panel-header-content-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --overview-panel-header-gap: var(--dm-dimension-200-(16), 1rem);
+  --overview-panel-header-padding-v: var(--dm-dimension-200-(16), 1rem);
+  --overview-panel-header-icon-size: var(--dm-dimension-400-(32), 2rem);
+  --overview-panel-header-padding-h: var(--dm-dimension-400-(32), 2rem);
+  --overview-panel-info-section-content-padding-top: var(
+    --dm-dimension-200-(16),
+    1rem
+  );
+  --overview-panel-info-section-list-gap: var(--dm-dimension-200-(16), 1rem);
+  --overview-panel-info-section-list-padding: var(
+    --dm-dimension-200-(16),
+    1rem
+  );
+  --permissions-card-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --permissions-card-content-gap: var(--dm-dimension-200-(16), 1rem);
+  --permissions-card-content-padding-v: var(--dm-dimension-200-(16), 1rem);
+  --permissions-card-content-padding-h: var(--dm-dimension-250-(20), 1.25rem);
+  --permissions-card-header-content-gap: var(--dm-dimension-50-(04), 0.25rem);
+  --permissions-card-header-gap: var(--dm-dimension-200-(16), 1rem);
+  --permissions-card-header-padding-v: var(--dm-dimension-200-(16), 1rem);
+  --permissions-card-header-padding-h: var(--dm-dimension-250-(20), 1.25rem);
+  --project-card-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --project-card-image-height: 5rem;
+  --project-card-content-options-gap: var(--dm-dimension-200-(16), 1rem);
+  --project-card-content-gap: var(--dm-dimension-300-(24), 1.5rem);
+  --project-card-content-padding-h: var(--dm-dimension-300-(24), 1.5rem);
+  --project-card-content-padding-v: var(--dm-dimension-300-(24), 1.5rem);
+  --side-banner-permissions-thickness-small: var(
+    --dm-dimension-50-(04),
+    0.25rem
+  );
+  --side-banner-permissions-thickness-large: var(
+    --dm-dimension-100-(08),
+    0.5rem
+  );
+  --video-card-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --video-card-video-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --video-card-content-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --video-card-content-options-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --video-card-content-padding-v: var(--dm-dimension-100-(08), 0.5rem);
+  --video-card-content-padding-h: var(--dm-dimension-200-(16), 1rem);
+  --widget-border-radius: var(--br-border-radius-50-(04), 0.25rem);
+  --widget-title-gap: var(--dm-dimension-50-(04), 0.25rem);
+  --widget-link-padding: var(--dm-dimension-75-(06), 0.375rem);
+  --widget-options-gap: var(--dm-dimension-100-(08), 0.5rem);
+  --widget-gap: var(--dm-dimension-300-(24), 1.5rem);
+  --widget-padding-h: var(--dm-dimension-300-(24), 1.5rem);
+  --widget-padding-v: var(--dm-dimension-300-(24), 1.5rem);
+  --widget-icon-size: var(--dm-dimension-400-(32), 2rem);
+}
+[data-theme="Mode 1"] {
+  /* color */
+  --color-interactive-elements-contained-content-disabled-danger: var(
+    --feedback-danger-100,
+    #322228
+  );
+  --color-interactive-elements-contained-content-disabled-info: var(
+    --feedback-info-100,
+    #1e2838
+  );
+  --color-interactive-elements-contained-content-disabled-ink: var(
+    --neutral-ink-100,
+    #28292d
+  );
+  --color-interactive-elements-contained-content-disabled-primary: var(
+    --brand-primary-100,
+    #102b2f
+  );
+  --color-interactive-elements-contained-content-disabled-secondary: var(
+    --brand-secondary-100,
+    #20273b
+  );
+  --color-interactive-elements-contained-content-disabled-success: var(
+    --feedback-success-100,
+    #162b21
+  );
+  --color-interactive-elements-contained-content-disabled-tertiary: var(
+    --brand-tertiary-100,
+    #2b243a
+  );
+  --color-interactive-elements-contained-content-disabled-warning: var(
+    --common-charcoal-300,
+    #0e101266
+  );
+  --color-interactive-elements-contained-content-enabled-danger: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-enabled-info: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-enabled-ink: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-enabled-primary: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-enabled-secondary: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-enabled-success: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-enabled-tertiary: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-enabled-warning: var(
+    --common-charcoal-900,
+    #0e1012
+  );
+  --color-interactive-elements-contained-content-hover-danger: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-hover-info: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-hover-ink: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-hover-primary: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-hover-secondary: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-hover-success: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-hover-tertiary: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-contained-content-hover-warning: var(
+    --common-charcoal-900,
+    #0e1012
+  );
+  --color-interactive-elements-contained-fill-disabled-danger: var(
+    --feedback-danger-300,
+    #884e54
+  );
+  --color-interactive-elements-contained-fill-disabled-info: var(
+    --feedback-info-300,
+    #41608e
+  );
+  --color-interactive-elements-contained-fill-disabled-ink: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --color-interactive-elements-contained-fill-disabled-primary: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --color-interactive-elements-contained-fill-disabled-secondary: var(
+    --brand-secondary-300,
+    #465d98
+  );
+  --color-interactive-elements-contained-fill-disabled-success: var(
+    --feedback-success-300,
+    #256d3e
+  );
+  --color-interactive-elements-contained-fill-disabled-tertiary: var(
+    --brand-tertiary-300,
+    #705292
+  );
+  --color-interactive-elements-contained-fill-disabled-warning: var(
+    --feedback-warning-300,
+    #845f2f
+  );
+  --color-interactive-elements-contained-fill-enabled-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --color-interactive-elements-contained-fill-enabled-info: var(
+    --feedback-info-500 *,
+    #689eed
+  );
+  --color-interactive-elements-contained-fill-enabled-ink: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --color-interactive-elements-contained-fill-enabled-primary: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --color-interactive-elements-contained-fill-enabled-secondary: var(
+    --brand-secondary-500 *,
+    #7199fe
+  );
+  --color-interactive-elements-contained-fill-enabled-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --color-interactive-elements-contained-fill-enabled-tertiary: var(
+    --brand-tertiary-500 *,
+    #bb85f4
+  );
+  --color-interactive-elements-contained-fill-enabled-warning: var(
+    --feedback-warning-500 *,
+    #e09c42
+  );
+  --color-interactive-elements-contained-fill-hover-danger: var(
+    --feedback-danger-700,
+    #efa7ac
+  );
+  --color-interactive-elements-contained-fill-hover-info: var(
+    --feedback-info-700,
+    #98bdf3
+  );
+  --color-interactive-elements-contained-fill-hover-ink: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --color-interactive-elements-contained-fill-hover-primary: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --color-interactive-elements-contained-fill-hover-secondary: var(
+    --brand-secondary-700,
+    #9ebafe
+  );
+  --color-interactive-elements-contained-fill-hover-success: var(
+    --feedback-success-700,
+    #76cd91
+  );
+  --color-interactive-elements-contained-fill-hover-tertiary: var(
+    --brand-tertiary-700,
+    #d1acf8
+  );
+  --color-interactive-elements-contained-fill-hover-warning: var(
+    --feedback-warning-700,
+    #eabc7e
+  );
+  --color-interactive-elements-ghost-content-disabled-danger: var(
+    --feedback-danger-300,
+    #884e54
+  );
+  --color-interactive-elements-ghost-content-disabled-ink: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --color-interactive-elements-ghost-content-disabled-primary: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --color-interactive-elements-ghost-content-disabled-secondary: var(
+    --brand-secondary-300,
+    #465d98
+  );
+  --color-interactive-elements-ghost-content-disabled-tertiary: var(
+    --brand-tertiary-300,
+    #705292
+  );
+  --color-interactive-elements-ghost-content-enabled-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --color-interactive-elements-ghost-content-enabled-ink: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --color-interactive-elements-ghost-content-enabled-primary: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --color-interactive-elements-ghost-content-enabled-secondary: var(
+    --brand-secondary-500 *,
+    #7199fe
+  );
+  --color-interactive-elements-ghost-content-enabled-tertiary: var(
+    --brand-tertiary-500 *,
+    #bb85f4
+  );
+  --color-interactive-elements-ghost-content-hover-danger: var(
+    --feedback-danger-700,
+    #efa7ac
+  );
+  --color-interactive-elements-ghost-content-hover-ink: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --color-interactive-elements-ghost-content-hover-primary: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --color-interactive-elements-ghost-content-hover-secondary: var(
+    --brand-secondary-700,
+    #9ebafe
+  );
+  --color-interactive-elements-ghost-content-hover-tertiary: var(
+    --brand-tertiary-700,
+    #d1acf8
+  );
+  --color-interactive-elements-ghost-fill-disabled-danger: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-ghost-fill-disabled-ink: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-ghost-fill-disabled-primary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-ghost-fill-disabled-secondary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-ghost-fill-disabled-tertiary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-ghost-fill-enabled-danger: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-ghost-fill-enabled-ink: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-ghost-fill-enabled-primary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-ghost-fill-enabled-secondary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-ghost-fill-enabled-tertiary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-ghost-fill-hover-danger: var(
+    --feedback-danger-tint-100,
+    #e77e8529
+  );
+  --color-interactive-elements-ghost-fill-hover-ink: var(
+    --neutral-ink-tint-100,
+    #a8a8a829
+  );
+  --color-interactive-elements-ghost-fill-hover-primary: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --color-interactive-elements-ghost-fill-hover-secondary: var(
+    --brand-secondary-tint-100,
+    #7199fe29
+  );
+  --color-interactive-elements-ghost-fill-hover-tertiary: var(
+    --brand-tertiary-tint-100,
+    #bb85f429
+  );
+  --color-interactive-elements-outlined-content-disabled-danger: var(
+    --feedback-danger-300,
+    #884e54
+  );
+  --color-interactive-elements-outlined-content-disabled-ink: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --color-interactive-elements-outlined-content-disabled-primary: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --color-interactive-elements-outlined-content-disabled-secondary: var(
+    --brand-secondary-300,
+    #465d98
+  );
+  --color-interactive-elements-outlined-content-disabled-tertiary: var(
+    --brand-tertiary-300,
+    #705292
+  );
+  --color-interactive-elements-outlined-content-enabled-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --color-interactive-elements-outlined-content-enabled-ink: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --color-interactive-elements-outlined-content-enabled-primary: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --color-interactive-elements-outlined-content-enabled-secondary: var(
+    --brand-secondary-500 *,
+    #7199fe
+  );
+  --color-interactive-elements-outlined-content-enabled-tertiary: var(
+    --brand-tertiary-500 *,
+    #bb85f4
+  );
+  --color-interactive-elements-outlined-content-hover-danger: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-outlined-content-hover-ink: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-outlined-content-hover-primary: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-outlined-content-hover-secondary: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-outlined-content-hover-tertiary: var(
+    --neutral-ink-0,
+    #16171c
+  );
+  --color-interactive-elements-outlined-fill-disabled-danger: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-outlined-fill-disabled-ink: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-outlined-fill-disabled-primary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-outlined-fill-disabled-secondary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-outlined-fill-disabled-tertiary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-outlined-fill-enabled-danger: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-outlined-fill-enabled-ink: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-outlined-fill-enabled-primary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-outlined-fill-enabled-secondary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-outlined-fill-enabled-tertiary: var(
+    --transparent,
+    #00000000
+  );
+  --color-interactive-elements-outlined-fill-hover-danger: var(
+    --feedback-danger-700,
+    #efa7ac
+  );
+  --color-interactive-elements-outlined-fill-hover-ink: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --color-interactive-elements-outlined-fill-hover-primary: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --color-interactive-elements-outlined-fill-hover-secondary: var(
+    --brand-secondary-700,
+    #9ebafe
+  );
+  --color-interactive-elements-outlined-fill-hover-tertiary: var(
+    --brand-tertiary-700,
+    #d1acf8
+  );
+  --color-interactive-elements-outlined-outline-disabled-danger: var(
+    --feedback-danger-300,
+    #884e54
+  );
+  --color-interactive-elements-outlined-outline-disabled-ink: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --color-interactive-elements-outlined-outline-disabled-primary: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --color-interactive-elements-outlined-outline-disabled-secondary: var(
+    --brand-secondary-300,
+    #465d98
+  );
+  --color-interactive-elements-outlined-outline-disabled-tertiary: var(
+    --brand-tertiary-300,
+    #705292
+  );
+  --color-interactive-elements-outlined-outline-enabled-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --color-interactive-elements-outlined-outline-enabled-ink: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --color-interactive-elements-outlined-outline-enabled-primary: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --color-interactive-elements-outlined-outline-enabled-secondary: var(
+    --brand-secondary-500 *,
+    #7199fe
+  );
+  --color-interactive-elements-outlined-outline-enabled-tertiary: var(
+    --brand-tertiary-500 *,
+    #bb85f4
+  );
+  --color-interactive-elements-outlined-outline-hover-danger: var(
+    --feedback-danger-700,
+    #efa7ac
+  );
+  --color-interactive-elements-outlined-outline-hover-ink: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --color-interactive-elements-outlined-outline-hover-primary: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --color-interactive-elements-outlined-outline-hover-secondary: var(
+    --brand-secondary-700,
+    #9ebafe
+  );
+  --color-interactive-elements-outlined-outline-hover-tertiary: var(
+    --brand-tertiary-700,
+    #d1acf8
+  );
+  --color-interactive-elements-soft-content-disabled-danger: var(
+    --feedback-danger-300,
+    #884e54
+  );
+  --color-interactive-elements-soft-content-disabled-info: var(
+    --feedback-info-300,
+    #41608e
+  );
+  --color-interactive-elements-soft-content-disabled-ink: var(
+    --neutral-ink-300,
+    #656668
+  );
+  --color-interactive-elements-soft-content-disabled-primary: var(
+    --brand-primary-300,
+    #116d6f
+  );
+  --color-interactive-elements-soft-content-disabled-secondary: var(
+    --brand-secondary-300,
+    #465d98
+  );
+  --color-interactive-elements-soft-content-disabled-success: var(
+    --feedback-success-300,
+    #256d3e
+  );
+  --color-interactive-elements-soft-content-disabled-tertiary: var(
+    --brand-tertiary-300,
+    #705292
+  );
+  --color-interactive-elements-soft-content-disabled-warning: var(
+    --feedback-warning-300,
+    #845f2f
+  );
+  --color-interactive-elements-soft-content-enabled-danger: var(
+    --feedback-danger-500 *,
+    #e77e85
+  );
+  --color-interactive-elements-soft-content-enabled-info: var(
+    --feedback-info-500 *,
+    #689eed
+  );
+  --color-interactive-elements-soft-content-enabled-ink: var(
+    --neutral-ink-500 *,
+    #a8a8a8
+  );
+  --color-interactive-elements-soft-content-enabled-primary: var(
+    --brand-primary-500 *,
+    #12b5b5
+  );
+  --color-interactive-elements-soft-content-enabled-secondary: var(
+    --brand-secondary-500 *,
+    #7199fe
+  );
+  --color-interactive-elements-soft-content-enabled-success: var(
+    --feedback-success-500 *,
+    #35b55d
+  );
+  --color-interactive-elements-soft-content-enabled-tertiary: var(
+    --brand-tertiary-500 *,
+    #bb85f4
+  );
+  --color-interactive-elements-soft-content-enabled-warning: var(
+    --feedback-warning-800,
+    #ecc48e
+  );
+  --color-interactive-elements-soft-content-hover-danger: var(
+    --feedback-danger-700,
+    #efa7ac
+  );
+  --color-interactive-elements-soft-content-hover-info: var(
+    --feedback-info-700,
+    #98bdf3
+  );
+  --color-interactive-elements-soft-content-hover-ink: var(
+    --neutral-ink-700,
+    #c4c4c4
+  );
+  --color-interactive-elements-soft-content-hover-primary: var(
+    --brand-primary-700,
+    #5ecdcd
+  );
+  --color-interactive-elements-soft-content-hover-secondary: var(
+    --brand-secondary-700,
+    #9ebafe
+  );
+  --color-interactive-elements-soft-content-hover-success: var(
+    --feedback-success-700,
+    #76cd91
+  );
+  --color-interactive-elements-soft-content-hover-tertiary: var(
+    --brand-tertiary-700,
+    #d1acf8
+  );
+  --color-interactive-elements-soft-content-hover-warning: var(
+    --feedback-warning-900,
+    #f1d3ac
+  );
+  --color-interactive-elements-soft-fill-disabled-danger: var(
+    --feedback-danger-tint-50,
+    #e77e8514
+  );
+  --color-interactive-elements-soft-fill-disabled-info: var(
+    --feedback-info-tint-50,
+    #689eed14
+  );
+  --color-interactive-elements-soft-fill-disabled-ink: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --color-interactive-elements-soft-fill-disabled-primary: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --color-interactive-elements-soft-fill-disabled-secondary: var(
+    --brand-secondary-tint-50,
+    #7199fe14
+  );
+  --color-interactive-elements-soft-fill-disabled-success: var(
+    --feedback-success-tint-50,
+    #35b55d14
+  );
+  --color-interactive-elements-soft-fill-disabled-tertiary: var(
+    --brand-tertiary-tint-50,
+    #bb85f414
+  );
+  --color-interactive-elements-soft-fill-disabled-warning: var(
+    --feedback-warning-tint-50,
+    #e09c4214
+  );
+  --color-interactive-elements-soft-fill-enabled-danger: var(
+    --feedback-danger-tint-50,
+    #e77e8514
+  );
+  --color-interactive-elements-soft-fill-enabled-info: var(
+    --feedback-info-tint-50,
+    #689eed14
+  );
+  --color-interactive-elements-soft-fill-enabled-ink: var(
+    --neutral-ink-tint-50,
+    #a8a8a814
+  );
+  --color-interactive-elements-soft-fill-enabled-primary: var(
+    --brand-primary-tint-50,
+    #12b5b514
+  );
+  --color-interactive-elements-soft-fill-enabled-secondary: var(
+    --brand-secondary-tint-50,
+    #7199fe14
+  );
+  --color-interactive-elements-soft-fill-enabled-success: var(
+    --feedback-success-tint-50,
+    #35b55d14
+  );
+  --color-interactive-elements-soft-fill-enabled-tertiary: var(
+    --brand-tertiary-tint-50,
+    #bb85f414
+  );
+  --color-interactive-elements-soft-fill-enabled-warning: var(
+    --feedback-warning-tint-50,
+    #e09c4214
+  );
+  --color-interactive-elements-soft-fill-hover-danger: var(
+    --feedback-danger-tint-100,
+    #e77e8529
+  );
+  --color-interactive-elements-soft-fill-hover-info: var(
+    --feedback-info-tint-100,
+    #689eed29
+  );
+  --color-interactive-elements-soft-fill-hover-ink: var(
+    --neutral-ink-tint-100,
+    #a8a8a829
+  );
+  --color-interactive-elements-soft-fill-hover-primary: var(
+    --brand-primary-tint-100,
+    #12b5b529
+  );
+  --color-interactive-elements-soft-fill-hover-secondary: var(
+    --brand-secondary-tint-100,
+    #7199fe29
+  );
+  --color-interactive-elements-soft-fill-hover-success: var(
+    --feedback-success-tint-100,
+    #35b55d29
+  );
+  --color-interactive-elements-soft-fill-hover-tertiary: var(
+    --brand-tertiary-tint-100,
+    #bb85f429
+  );
+  --color-interactive-elements-soft-fill-hover-warning: var(
+    --feedback-warning-tint-100,
+    #e09c4229
+  );
+}

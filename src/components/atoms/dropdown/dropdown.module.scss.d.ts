@@ -1,0 +1,11 @@
+export declare const dropdown: string;
+export declare const dropdownItem: string;
+export declare const dropdownMenu: string;
+export declare const label: string;
+export declare const open: string;
+export declare const placeholder: string;
+export declare const remove: string;
+export declare const selected: string;
+export declare const selectedItem: string;
+export declare const selectedItems: string;
+export declare const wrapper: string;

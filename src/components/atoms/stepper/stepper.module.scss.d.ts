@@ -1,0 +1,15 @@
+export declare const active: string;
+export declare const bottom: string;
+export declare const completed: string;
+export declare const horizontal: string;
+export declare const left: string;
+export declare const loader: string;
+export declare const right: string;
+export declare const spin: string;
+export declare const step: string;
+export declare const stepIcon: string;
+export declare const stepLabel: string;
+export declare const stepLine: string;
+export declare const stepper: string;
+export declare const top: string;
+export declare const vertical: string;

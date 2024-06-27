@@ -1,0 +1,105 @@
+.sidebar {
+  position: fixed;
+  transition:
+    transform 0.3s ease,
+    height 0.3s ease,
+    width 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 150px;
+
+  &.top,
+  &.bottom {
+    left: 0;
+    right: 0;
+    height: 0;
+  }
+
+  &.left,
+  &.right {
+    top: 0;
+    bottom: 0;
+    width: 0;
+  }
+
+  &.top {
+    top: 0;
+    transform: translateY(-100%);
+  }
+
+  &.bottom {
+    bottom: 0;
+    transform: translateY(100%);
+  }
+
+  &.left {
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  &.right {
+    right: 0;
+    transform: translateX(100%);
+  }
+
+  &.open.top,
+  &.closed.top {
+    height: 100vh;
+  }
+
+  &.open.bottom,
+  &.closed.bottom {
+    height: 100vh;
+  }
+
+  &.open.left,
+  &.closed.left {
+    width: 300px;
+  }
+
+  &.open.right,
+  &.closed.right {
+    width: 300px;
+  }
+
+  &.open.top {
+    transform: translateY(0);
+  }
+
+  &.open.bottom {
+    transform: translateY(0);
+  }
+
+  &.open.left {
+    transform: translateX(0);
+  }
+
+  &.open.right {
+    transform: translateX(0);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: -1;
+  }
+
+  &.open .overlay {
+    display: block;
+  }
+
+  .content {
+    background: #f14ab99a;
+    z-index: 1;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,13 @@
+export declare const btn: string;
+export declare const contained: string;
+export declare const content: string;
+export declare const endIcon: string;
+export declare const fullWidth: string;
+export declare const inner: string;
+export declare const outlined: string;
+export declare const primary: string;
+export declare const secondary: string;
+export declare const startIcon: string;
+export declare const stuff: string;
+export declare const tertiary: string;
+export declare const text: string;

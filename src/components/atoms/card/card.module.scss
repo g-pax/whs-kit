@@ -1,0 +1,8 @@
+.root {
+  position: relative;
+  padding: var(--whs-card-padding, 1.25rem);
+  background-color: var(--whs-card-bg, #ffffff);
+  box-shadow: var(--whs-card-shadow, 0px 4px 8px rgba(0, 0, 0, 0.1));
+  border-radius: var(--whs-card-border-radius, 8px);
+  border: var(--whs-card-border, none);
+}

@@ -1,0 +1,66 @@
+.radioLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.radioInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radioCheckmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+.radioInput:checked + .radioCheckmark {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.radioCheckmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radioInput:checked + .radioCheckmark::after {
+  display: block;
+}
+
+.radioInput:checked + .radioCheckmark::after {
+  top: 5px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.labelText {
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+.disabled {
+  cursor: not-allowed;
+  color: #999;
+}
+
+.disabled .radioCheckmark {
+  background-color: #f5f5f5;
+  border-color: #ddd;
+}

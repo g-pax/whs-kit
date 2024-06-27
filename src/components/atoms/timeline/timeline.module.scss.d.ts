@@ -1,0 +1,9 @@
+export declare const alternating: string;
+export declare const left: string;
+export declare const right: string;
+export declare const timeline: string;
+export declare const timelineContent: string;
+export declare const timelineDescription: string;
+export declare const timelineEvent: string;
+export declare const timelineTime: string;
+export declare const timelineTitle: string;

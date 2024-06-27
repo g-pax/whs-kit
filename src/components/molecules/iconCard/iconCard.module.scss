@@ -1,0 +1,44 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.rounded {
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
+}
+
+.circular {
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+.squared {
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #f0f0f0;
+}
+
+.base {
+  width: fit-content;
+  padding: 0.5rem;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.tight {
+  gap: 0.5rem;
+}
+
+.loose {
+  gap: 1rem;
+}

@@ -1,0 +1,24 @@
+<html data-theme="whslight">
+  <button id="theme-toggle" style="position: fixed; top: 1rem; right: 1rem">
+    Toggle theme
+  </button>
+
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const html = document.querySelector("html");
+
+    themeToggle.addEventListener("click", () => {
+      const theme =
+        html.getAttribute("data-theme") === "whslight" ? "whsdark" : "whslight";
+      html.setAttribute("data-theme", theme);
+    });
+  </script>
+</html>
+<style>
+  #storybook-root {
+    height: 100dvh !important;
+    margin: 0 !important;
+    padding: 1.25rem !important;
+    width: 100% !important;
+  }
+</style>

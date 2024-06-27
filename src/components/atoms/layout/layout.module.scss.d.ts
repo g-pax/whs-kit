@@ -1,0 +1,13 @@
+export declare const bottom: string;
+export declare const collapsed: string;
+export declare const content: string;
+export declare const footer: string;
+export declare const header: string;
+export declare const horizontal: string;
+export declare const layout: string;
+export declare const layoutWithSider: string;
+export declare const left: string;
+export declare const right: string;
+export declare const sider: string;
+export declare const siderToggle: string;
+export declare const top: string;

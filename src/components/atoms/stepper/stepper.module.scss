@@ -1,0 +1,115 @@
+.stepper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  &.vertical {
+    flex-direction: column;
+    height: 100%;
+    align-items: flex-start;
+  }
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &.top,
+  &.bottom {
+    flex-direction: column;
+  }
+
+  &.top .stepLabel,
+  &.bottom .stepLabel {
+    margin-left: 0;
+  }
+
+  &.top .stepLabel {
+    margin-bottom: 8px;
+  }
+
+  &.bottom .stepLabel {
+    margin-top: 8px;
+  }
+
+  &.left .stepLabel {
+    margin-left: 8px;
+  }
+
+  &.right .stepLabel {
+    margin-right: 8px;
+  }
+}
+
+.stepIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  position: relative;
+
+  .loader {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #007bff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.stepLabel {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.stepLine {
+  // position: absolute;
+  // top: 50%;
+  // transform: translateY(-50%);
+  background-color: #ccc;
+
+  &.horizontal {
+    width: 100%;
+    height: 2px;
+    margin: 0 0.5rem;
+  }
+
+  &.vertical {
+    width: 2px;
+    height: 100%;
+    margin-top: 0.5rem 0;
+  }
+}
+
+.horizontal .stepLine {
+  width: calc(100% + 20px);
+}
+
+.vertical .stepLine {
+  height: calc(100% + 20px);
+  width: 2px;
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.completed {
+  background-color: #4caf50 !important;
+}
+
+.active {
+  background-color: #007bff !important;
+}

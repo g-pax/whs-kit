@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+  width: 100%;
+}
+
+.gridItem {
+  background: #f0f0f0;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

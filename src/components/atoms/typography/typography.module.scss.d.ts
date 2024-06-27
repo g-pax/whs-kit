@@ -1,0 +1,14 @@
+export declare const body1: string;
+export declare const body2: string;
+export declare const button: string;
+export declare const caption: string;
+export declare const h1: string;
+export declare const h2: string;
+export declare const h3: string;
+export declare const h4: string;
+export declare const h5: string;
+export declare const h6: string;
+export declare const overline: string;
+export declare const subtitle1: string;
+export declare const subtitle2: string;
+export declare const typography: string;

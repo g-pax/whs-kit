@@ -1,0 +1,34 @@
+.tabsWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-bottom: none;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    &.activeTab {
+      border: 1px solid #ccc;
+      border-bottom: 1px solid white;
+      background-color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+.tabContent {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

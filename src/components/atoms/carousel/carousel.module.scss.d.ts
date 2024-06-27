@@ -1,0 +1,9 @@
+export declare const active: string;
+export declare const bottom: string;
+export declare const carousel: string;
+export declare const carouselControls: string;
+export declare const carouselIndicators: string;
+export declare const carouselInner: string;
+export declare const carouselItem: string;
+export declare const center: string;
+export declare const top: string;
