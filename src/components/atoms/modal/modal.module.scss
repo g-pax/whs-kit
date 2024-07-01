@@ -28,23 +28,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px;
+  padding: 1rem;
   border-bottom: 1px solid #eee;
 }
 
 .header h2 {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .close {
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 1.5rem;
   cursor: pointer;
   margin-left: auto;
 }
 
 .content {
-  padding: 16px;
+  overflow: auto;
+  padding: 1rem;
 }

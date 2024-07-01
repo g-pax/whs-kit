@@ -22,9 +22,10 @@ const Button = ({
   color = "primary",
   startIcon,
   fullWidth = false,
+  className,
   ...props
 }: WhsButtonProps) => {
-  const btnClasses = clsx(styles.btn, {
+  const btnClasses = clsx(styles.btn, className, {
     [styles[variant]]: Boolean(variant),
     [styles[color]]: Boolean(color),
     [styles.fullWidth]: fullWidth,

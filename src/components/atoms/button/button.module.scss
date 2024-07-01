@@ -60,20 +60,20 @@
 
 .outlined {
   &.primary {
-    background-color: transparent;
+    background-color: var(--whs-btn-primary-outlined-bg, transparent);
     color: var(--whs-btn-primary-outlined-color, #0054ff);
-    border: var(--whs-btn-secondary-outlined-border, 2px solid #0054ff);
+    border: var(--whs-btn-primary-outlined-border, 2px solid #0054ff);
     &:hover {
       background-color: var(--whs-btn-primary-outlined-bg-hover, #0087ff);
       color: var(--whs-btn-primary-outlined-color-hover, #ffffff);
       border: var(
-        --whs-btn-secondary-outlined-border-hover,
+        --whs-btn-primary-outlined-border-hover,
         2px solid transparent
       );
     }
   }
   &.secondary {
-    background-color: transparent;
+    background-color: var(--whs-btn-primary-outlined-bg, transparent);
     color: var(--whs-btn-secondary-outlined-color, #0054ff);
     border: var(--whs-btn-secondary-outlined-border, 1px solid #0054ff);
     &:hover {
@@ -83,7 +83,7 @@
     }
   }
   &.tertiary {
-    background-color: transparent;
+    background-color: var(--whs-btn-primary-outlined-bg, transparent);
     color: var(--whs-btn-tertiary-outlined-color, #0054ff);
     border: var(--whs-btn-tertiary-outlined-border, 1px solid #0054ff);
     &:hover {

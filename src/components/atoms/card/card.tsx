@@ -2,7 +2,7 @@ import clsx from "clsx";
 import styles from "./card.module.scss";
 
 type DivProps = JSX.IntrinsicElements["div"];
-interface WhsCardProps extends DivProps {
+export interface WhsCardProps extends DivProps {
   height?: string;
   img?: string;
 }
