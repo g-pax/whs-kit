@@ -21,6 +21,7 @@
 }
 .contained {
   &.primary {
+    box-shadow: var(--whs-btn-primary-contained-box-shadow, none);
     background-color: var(--whs-btn-primary-contained-bg, #0054ff);
     color: var(--whs-btn-primary-contained-color, #ffffff);
     border: var(--whs-btn-primary-contained-border, 2px solid transparent);
@@ -35,6 +36,7 @@
   }
 
   &.secondary {
+    box-shadow: var(--whs-btn-secondary-contained-box-shadow, none);
     background-color: var(--whs-btn-secondary-contained-bg, #ffffff);
     color: var(--whs-btn-secondary-contained-color, #0054ff);
     border: var(--whs-btn-secondary-contained-border, 1px solid #0054ff);
@@ -48,6 +50,7 @@
     }
   }
   &.tertiary {
+    box-shadow: var(--whs-btn-tertiary-contained-box-shadow, none);
     background-color: var(--whs-btn-tertiary-contained-bg, #ffffff);
     color: var(--whs-btn-tertiary-contained-color, #0054ff);
     border: var(--whs-btn-tertiary-contained-border, 1px solid #0054ff);
@@ -61,6 +64,7 @@
 
 .outlined {
   &.primary {
+    box-shadow: var(--whs-btn-primary-outlined-box-shadow, none);
     background-color: var(--whs-btn-primary-outlined-bg, transparent);
     color: var(--whs-btn-primary-outlined-color, #0054ff);
     border: var(--whs-btn-primary-outlined-border, 2px solid #0054ff);
@@ -74,7 +78,8 @@
     }
   }
   &.secondary {
-    background-color: var(--whs-btn-primary-outlined-bg, transparent);
+    box-shadow: var(--whs-btn-secondary-outlined-box-shadow, none);
+    background-color: var(--whs-btn-secondary-outlined-bg, transparent);
     color: var(--whs-btn-secondary-outlined-color, #0054ff);
     border: var(--whs-btn-secondary-outlined-border, 1px solid #0054ff);
     &:hover {
@@ -84,7 +89,8 @@
     }
   }
   &.tertiary {
-    background-color: var(--whs-btn-primary-outlined-bg, transparent);
+    box-shadow: var(--whs-btn-tertiary-outlined-box-shadow, none);
+    background-color: var(--whs-btn-tertiary-outlined-bg, transparent);
     color: var(--whs-btn-tertiary-outlined-color, #0054ff);
     border: var(--whs-btn-tertiary-outlined-border, 1px solid #0054ff);
     &:hover {
@@ -97,6 +103,7 @@
 
 .text {
   &.primary {
+    box-shadow: var(--whs-btn-primary-text-box-shadow, none);
     background-color: transparent;
     color: var(--whs-btn-primary-text-color, #0054ff);
     border: var(--whs-btn-primary-text-border, 2px solid transparent);
@@ -107,6 +114,7 @@
     }
   }
   &.secondary {
+    box-shadow: var(--whs-btn-secondary-text-box-shadow, none);
     background-color: transparent;
     color: var(--whs-btn-secondary-text-color, #0054ff);
     border: var(--whs-btn-secondary-text-border, 1px solid #0054ff);
@@ -117,6 +125,7 @@
     }
   }
   &.tertiary {
+    box-shadow: var(--whs-btn-tertiary-text-box-shadow, none);
     background-color: transparent;
     color: var(--whs-btn-tertiary-text-color, #0054ff);
     border: var(--whs-btn-tertiary-text-border, 1px solid #0054ff);
