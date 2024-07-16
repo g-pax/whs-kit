@@ -2,8 +2,8 @@
   "name": "@g-pax/whskit",
   "version": "0.0.16",
   "type": "module",
-  "main": "dist/whs-library.umd.js",
-  "module": "dist/whs-library.es.js",
+  "main": "dist/whs-library.js",
+  "module": "dist/whs-library.js",
   "types": "dist/types/components/index.d.ts",
   "sideEffects": true,
   "files": [

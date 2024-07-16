@@ -1,1 +1,1 @@
-export { default as iconCard } from "./iconCard/iconCard";
+export { default as IconCard } from "./iconCard/iconCard";

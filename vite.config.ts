@@ -22,11 +22,12 @@ export default defineConfig({
   build: {
     sourcemap: true,
     outDir: "dist",
+    minify: false,
     lib: {
       entry: resolve(__dirname, "src/components/index.ts"),
       name: "whs-library",
-      formats: ["es", "umd"],
-      fileName: (format) => `whs-library.${format}.js`,
+      formats: ["es"],
+      fileName: () => `whs-library.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom", "react-router-dom"],
