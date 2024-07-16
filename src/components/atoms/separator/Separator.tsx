@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./separator.module.scss";
 
 export interface SeparatorProps {
@@ -8,12 +7,12 @@ export interface SeparatorProps {
   orientation?: "horizontal" | "vertical";
 }
 
-const Separator: React.FC<SeparatorProps> = ({
+const Separator = ({
   color = "black",
   thickness = "1px",
   margin = "16px 0",
   orientation = "horizontal",
-}) => {
+}: SeparatorProps) => {
   const separatorStyle = {
     backgroundColor: color,
     height: orientation === "horizontal" ? thickness : "100%",
