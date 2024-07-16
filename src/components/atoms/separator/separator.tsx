@@ -16,7 +16,7 @@ const Separator = ({
   const separatorStyle = {
     backgroundColor: color,
     height: orientation === "horizontal" ? thickness : "100%",
-    width: orientation === "horizontal" ? "auto" : thickness,
+    width: orientation === "horizontal" ? "100%" : thickness,
     margin: orientation === "horizontal" ? margin : margin,
   };
 
