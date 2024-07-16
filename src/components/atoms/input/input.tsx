@@ -2,7 +2,8 @@ import React, { ReactNode } from "react";
 import styles from "./input.module.scss";
 import clsx from "clsx";
 
-interface InputProps {
+type InputHtml = React.InputHTMLAttributes<HTMLInputElement>;
+export interface InputProps extends InputHtml {
   label?: string;
   type?: "text" | "password" | "email";
   startIcon?: ReactNode;
@@ -12,6 +13,7 @@ interface InputProps {
   required?: boolean;
   minLength?: number;
   maxLength?: number;
+  helperText?: string;
   pattern?: string;
   errorMessage?: string;
   className?: string;
@@ -31,12 +33,14 @@ const Input: React.FC<InputProps> = ({
   maxLength,
   pattern,
   className = "",
+  helperText,
   error,
   touched,
   startIcon,
   endIcon,
   onBlur,
   onChange,
+  ...props
 }) => {
   const rootClasses = clsx(styles.inputWrapper, className);
   const inputClasses = clsx(styles.input, {
@@ -56,10 +60,12 @@ const Input: React.FC<InputProps> = ({
         className={inputClasses}
         onChange={onChange}
         onBlur={onBlur}
+        {...props}
       />
       {label && <label className={styles.label}>{label}</label>}
       {startIcon && <div className={styles.startIcon}>{startIcon}</div>}
       {endIcon && <div className={styles.endIcon}>{endIcon}</div>}
+      {helperText && <div className={styles.helperText}>{helperText}</div>}
       {error && touched && <div className={styles.errorMessage}>{error}</div>}
     </div>
   );
