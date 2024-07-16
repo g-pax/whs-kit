@@ -1,5 +1,6 @@
 .btn {
   display: flex;
+  align-items: center;
   cursor: pointer;
   border: var(--whs-btn-border, 2px solid transparent);
   border-radius: var(--whs-btn-border-radius, 4px);
