@@ -29,7 +29,8 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "tcm": "typed-scss-modules src/**/*.module.scss --watch",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "react": "18.3.1",
