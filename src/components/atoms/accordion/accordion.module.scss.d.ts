@@ -1,5 +1,18 @@
-export declare const accordionContent: string;
-export declare const accordionContentWrapper: string;
-export declare const accordionItem: string;
-export declare const accordionTitle: string;
-export declare const accordionWrapper: string;
+export type Styles = {
+  "accordion-content": string;
+  "accordion-content-wrapper": string;
+  "accordion-item": string;
+  "accordion-title": string;
+  "accordion-wrapper": string;
+  accordionContent: string;
+  accordionContentWrapper: string;
+  accordionItem: string;
+  accordionTitle: string;
+  accordionWrapper: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

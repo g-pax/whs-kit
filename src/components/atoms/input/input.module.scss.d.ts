@@ -1,8 +1,21 @@
-export declare const endIcon: string;
-export declare const error: string;
-export declare const errorMessage: string;
-export declare const helperText: string;
-export declare const input: string;
-export declare const inputWrapper: string;
-export declare const label: string;
-export declare const startIcon: string;
+export type Styles = {
+  "end-icon": string;
+  endIcon: string;
+  error: string;
+  "error-message": string;
+  errorMessage: string;
+  "helper-text": string;
+  helperText: string;
+  input: string;
+  "input-wrapper": string;
+  inputWrapper: string;
+  label: string;
+  "start-icon": string;
+  startIcon: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

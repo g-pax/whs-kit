@@ -14,12 +14,12 @@ interface BreadcrumbsProps {
 
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ breadcrumbs }) => {
   return (
-    <nav className={styles.breadcrumbs}>
+    <nav className={styles.root}>
       {breadcrumbs.map((breadcrumb, index) => (
-        <span key={index} className={styles.breadcrumbItem}>
+        <span key={index} className={styles.item}>
           <Link to={breadcrumb.path}>{breadcrumb.label}</Link>
           {index < breadcrumbs.length - 1 && (
-            <span className={styles.breadcrumbSeparator}>/</span>
+            <span className={styles.separator}>/</span>
           )}
         </span>
       ))}

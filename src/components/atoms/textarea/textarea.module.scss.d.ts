@@ -1,5 +1,15 @@
-export declare const error: string;
-export declare const errorMessage: string;
-export declare const label: string;
-export declare const textarea: string;
-export declare const textareaWrapper: string;
+export type Styles = {
+  error: string;
+  "error-message": string;
+  errorMessage: string;
+  label: string;
+  textarea: string;
+  "textarea-wrapper": string;
+  textareaWrapper: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

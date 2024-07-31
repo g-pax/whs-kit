@@ -1,9 +1,22 @@
-export declare const alternating: string;
-export declare const left: string;
-export declare const right: string;
-export declare const timeline: string;
-export declare const timelineContent: string;
-export declare const timelineDescription: string;
-export declare const timelineEvent: string;
-export declare const timelineTime: string;
-export declare const timelineTitle: string;
+export type Styles = {
+  alternating: string;
+  left: string;
+  right: string;
+  timeline: string;
+  "timeline-content": string;
+  "timeline-description": string;
+  "timeline-event": string;
+  "timeline-time": string;
+  "timeline-title": string;
+  timelineContent: string;
+  timelineDescription: string;
+  timelineEvent: string;
+  timelineTime: string;
+  timelineTitle: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

@@ -1,6 +1,14 @@
-export declare const danger: string;
-export declare const disabled: string;
-export declare const link: string;
-export declare const primary: string;
-export declare const secondary: string;
-export declare const success: string;
+export type Styles = {
+  danger: string;
+  disabled: string;
+  link: string;
+  primary: string;
+  secondary: string;
+  success: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

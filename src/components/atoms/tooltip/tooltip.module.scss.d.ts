@@ -1,7 +1,17 @@
-export declare const bottom: string;
-export declare const left: string;
-export declare const right: string;
-export declare const tooltip: string;
-export declare const tooltipContent: string;
-export declare const tooltipVisible: string;
-export declare const top: string;
+export type Styles = {
+  bottom: string;
+  left: string;
+  right: string;
+  tooltip: string;
+  "tooltip-content": string;
+  "tooltip-visible": string;
+  tooltipContent: string;
+  tooltipVisible: string;
+  top: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

@@ -1,6 +1,18 @@
-export declare const badge: string;
-export declare const badgeWrapper: string;
-export declare const bottomLeft: string;
-export declare const bottomRight: string;
-export declare const topLeft: string;
-export declare const topRight: string;
+export type Styles = {
+  badge: string;
+  "bottom-left": string;
+  "bottom-right": string;
+  bottomLeft: string;
+  bottomRight: string;
+  root: string;
+  "top-left": string;
+  "top-right": string;
+  topLeft: string;
+  topRight: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

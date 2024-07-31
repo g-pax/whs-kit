@@ -1,4 +1,4 @@
-.accordionWrapper {
+.accordion-wrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 16px;
@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.accordionItem {
+.accordion-item {
   border-top: 1px solid #ccc;
 
   &:first-of-type {
@@ -15,7 +15,7 @@
   }
 }
 
-.accordionTitle {
+.accordion-title {
   padding: 10px 20px;
   cursor: pointer;
   background-color: #f0f0f0;
@@ -26,12 +26,12 @@
   }
 }
 
-.accordionContentWrapper {
+.accordion-content-wrapper {
   overflow: hidden;
   transition: max-height 0.3s ease-in-out;
 }
 
-.accordionContent {
+.accordion-content {
   padding: 20px;
   background-color: white;
 }

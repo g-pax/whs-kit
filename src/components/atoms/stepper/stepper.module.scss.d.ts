@@ -1,15 +1,26 @@
-export declare const active: string;
-export declare const bottom: string;
-export declare const completed: string;
-export declare const horizontal: string;
-export declare const left: string;
-export declare const loader: string;
-export declare const right: string;
-export declare const spin: string;
-export declare const step: string;
-export declare const stepIcon: string;
-export declare const stepLabel: string;
-export declare const stepLine: string;
-export declare const stepper: string;
-export declare const top: string;
-export declare const vertical: string;
+export type Styles = {
+  active: string;
+  bottom: string;
+  completed: string;
+  horizontal: string;
+  left: string;
+  loader: string;
+  right: string;
+  spin: string;
+  step: string;
+  "step-icon": string;
+  "step-label": string;
+  "step-line": string;
+  stepIcon: string;
+  stepLabel: string;
+  stepLine: string;
+  stepper: string;
+  top: string;
+  vertical: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

@@ -1,3 +1,11 @@
-export declare const divider: string;
-export declare const horizontal: string;
-export declare const vertical: string;
+export type Styles = {
+  divider: string;
+  horizontal: string;
+  vertical: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

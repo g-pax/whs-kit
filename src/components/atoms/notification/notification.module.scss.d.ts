@@ -1,12 +1,25 @@
-export declare const bottomLeft: string;
-export declare const bottomRight: string;
-export declare const closeButton: string;
-export declare const error: string;
-export declare const icon: string;
-export declare const info: string;
-export declare const message: string;
-export declare const notification: string;
-export declare const success: string;
-export declare const topLeft: string;
-export declare const topRight: string;
-export declare const warning: string;
+export type Styles = {
+  "bottom-left": string;
+  "bottom-right": string;
+  bottomLeft: string;
+  bottomRight: string;
+  "close-button": string;
+  closeButton: string;
+  error: string;
+  icon: string;
+  info: string;
+  message: string;
+  notification: string;
+  success: string;
+  "top-left": string;
+  "top-right": string;
+  topLeft: string;
+  topRight: string;
+  warning: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

@@ -1,0 +1,105 @@
+.root {
+  display: inline-block;
+  font-weight: var(--pill-font-weight, 500);
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+
+  &-primary {
+    background-color: var(--pill-bg-primary, #007bff);
+    color: var(--pill-color-primary, #fff);
+    &:hover {
+      background-color: var(--pill-bg-primary-hover, #0056b3);
+      color: var(--pill-color-primary-hover, #fff);
+    }
+  }
+
+  &-secondary {
+    background-color: var(--pill-bg-secondary, #6c757d);
+    color: var(--pill-color-secondary, #fff);
+    &:hover {
+      background-color: var(--pill-bg-secondary-hover, #5a6268);
+      color: var(--pill-color-secondary-hover, #fff);
+    }
+  }
+
+  &-success {
+    background-color: var(--pill-bg-success, #28a745);
+    color: var(--pill-color-success, #fff);
+    &:hover {
+      background-color: var(--pill-bg-success-hover, #218838);
+      color: var(--pill-color-success-hover, #fff);
+    }
+  }
+
+  &-danger {
+    background-color: var(--pill-bg-danger, #dc3545);
+    color: var(--pill-color-danger, #fff);
+    &:hover {
+      background-color: var(--pill-bg-danger-hover, #c82333);
+      color: var(--pill-color-danger-hover, #fff);
+    }
+  }
+
+  &-warning {
+    background-color: var(--pill-bg-warning, #ffc107);
+    color: var(--pill-color-warning, #212529);
+    &:hover {
+      background-color: var(--pill-bg-warning-hover, #e0a800);
+      color: var(--pill-color-warning-hover, #212529);
+    }
+  }
+
+  &-info {
+    background-color: var(--pill-bg-info, #17a2b8);
+    color: var(--pill-color-info, #fff);
+    &:hover {
+      background-color: var(--pill-bg-info-hover, #138496);
+      color: var(--pill-color-info-hover, #fff);
+    }
+  }
+
+  &-light {
+    background-color: var(--pill-bg-light, #f8f9fa);
+    color: var(--pill-color-light, #212529);
+    &:hover {
+      background-color: var(--pill-bg-light-hover, #e2e6ea);
+      color: var(--pill-color-light-hover, #212529);
+    }
+  }
+
+  &-dark {
+    background-color: var(--pill-bg-dark, #343a40);
+    color: var(--pill-color-dark, #fff);
+    &:hover {
+      background-color: var(--pill-bg-dark-hover, #23272b);
+      color: var(--pill-color-dark-hover, #fff);
+    }
+  }
+  &-sm {
+    font-size: var(--pill-font-size-sm, 0.75rem);
+    padding: var(--pill-padding-sm, 0.25rem 0.5rem);
+  }
+  &-md {
+    font-size: var(--pill-font-size-md, 0.875rem);
+    padding: var(--pill-padding-md, 0.3rem 0.75rem);
+  }
+
+  &-lg {
+    font-size: var(--pill-font-size-lg, 1rem);
+    padding: var(--pill-padding-lg, 0.5rem 1rem);
+  }
+  &-rounded-sm {
+    border-radius: var(--pill-rounded-sm, 0.2rem);
+  }
+  &-rounded-md {
+    border-radius: var(--pill-rounded-md, 0.25rem);
+  }
+  &-rounded-lg {
+    border-radius: var(--pill-rounded-lg, 0.3rem);
+  }
+  &-rounded-full {
+    border-radius: var(--pill-rounded-full, 9999px);
+  }
+}

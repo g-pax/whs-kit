@@ -5,18 +5,18 @@ import clsx from "clsx";
 interface BadgeProps {
   children: React.ReactNode;
   badgeContent: React.ReactNode;
-  position?: "topRight" | "topLeft" | "bottomRight" | "bottomLeft";
+  position?: "top-right" | "top-left" | "bottom-right" | "bottom-left";
 }
 
 const Badge: React.FC<BadgeProps> = ({
   children,
   badgeContent,
-  position = "topRight",
+  position = "top-right",
 }) => {
   const contentClasses = clsx(styles.badge, styles[position]);
 
   return (
-    <div className={styles.badgeWrapper}>
+    <div className={styles.root}>
       {children}
       <span className={contentClasses}>{badgeContent}</span>
     </div>

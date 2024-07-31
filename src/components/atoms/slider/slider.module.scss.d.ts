@@ -1,3 +1,11 @@
-export declare const disabled: string;
-export declare const slider: string;
-export declare const thumb: string;
+export type Styles = {
+  disabled: string;
+  slider: string;
+  thumb: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

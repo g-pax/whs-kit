@@ -28,17 +28,17 @@ const Button = ({
   const btnClasses = clsx(styles.btn, className, {
     [styles[variant]]: Boolean(variant),
     [styles[color]]: Boolean(color),
-    [styles.fullWidth]: fullWidth,
+    [styles["full-width"]]: fullWidth,
   });
 
   return (
     <button className={btnClasses} {...props}>
       <div className={styles.inner}>
         {startIcon ? (
-          <span className={styles.startIcon}>{startIcon}</span>
+          <span className={styles["start-icon"]}>{startIcon}</span>
         ) : null}
         <span className={styles.content}>{children || name}</span>
-        {endIcon ? <span className={styles.endIcon}>{endIcon}</span> : null}
+        {endIcon ? <span className={styles["end-icon"]}>{endIcon}</span> : null}
       </div>
     </button>
   );

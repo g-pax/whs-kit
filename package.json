@@ -28,7 +28,7 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "tcm": "typed-scss-modules src/**/*.module.scss --watch",
+    "tcm": "typed-scss-modules src/**/*.module.scss --watch --exportType default --nameFormat kebab --nameFormat camel",
     "build-storybook": "storybook build",
     "prepublishOnly": "npm run build"
   },

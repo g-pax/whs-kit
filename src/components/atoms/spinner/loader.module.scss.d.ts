@@ -1,5 +1,13 @@
-export declare const bar: string;
-export declare const load: string;
-export declare const loader: string;
-export declare const spin: string;
-export declare const spinner: string;
+export type Styles = {
+  bar: string;
+  load: string;
+  loader: string;
+  spin: string;
+  spinner: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

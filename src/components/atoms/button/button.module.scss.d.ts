@@ -1,13 +1,24 @@
-export declare const btn: string;
-export declare const contained: string;
-export declare const content: string;
-export declare const endIcon: string;
-export declare const fullWidth: string;
-export declare const inner: string;
-export declare const outlined: string;
-export declare const primary: string;
-export declare const secondary: string;
-export declare const startIcon: string;
-export declare const stuff: string;
-export declare const tertiary: string;
-export declare const text: string;
+export type Styles = {
+  btn: string;
+  contained: string;
+  content: string;
+  "end-icon": string;
+  endIcon: string;
+  "full-width": string;
+  fullWidth: string;
+  inner: string;
+  outlined: string;
+  primary: string;
+  secondary: string;
+  "start-icon": string;
+  startIcon: string;
+  stuff: string;
+  tertiary: string;
+  text: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

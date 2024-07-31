@@ -1,5 +1,13 @@
-export declare const close: string;
-export declare const content: string;
-export declare const header: string;
-export declare const modal: string;
-export declare const overlay: string;
+export type Styles = {
+  close: string;
+  content: string;
+  header: string;
+  modal: string;
+  overlay: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

@@ -30,7 +30,7 @@ const Avatar: React.FC<AvatarProps> = ({
     return (
       <svg
         viewBox="0 0 24 24"
-        className={styles.fallbackIcon}
+        className={styles["fallback-icon"]}
         xmlns="http://www.w3.org/2000/svg"
       >
         <circle cx="12" cy="12" r="10" />

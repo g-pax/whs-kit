@@ -1,5 +1,15 @@
-export declare const label: string;
-export declare const percentage: string;
-export declare const progress: string;
-export declare const progressBar: string;
-export declare const progressWrapper: string;
+export type Styles = {
+  label: string;
+  percentage: string;
+  progress: string;
+  "progress-bar": string;
+  "progress-wrapper": string;
+  progressBar: string;
+  progressWrapper: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

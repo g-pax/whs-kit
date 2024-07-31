@@ -17,7 +17,7 @@
   flex: 1;
 }
 
-.closeButton {
+.close-button {
   background: none;
   border: none;
   font-size: 16px;
@@ -25,10 +25,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.closeButton svg {
-  font-size: 20px;
+  & svg {
+    font-size: 20px;
+  }
 }
 
 .success {

@@ -1,4 +1,14 @@
-export declare const arrow: string;
-export declare const menu: string;
-export declare const menuItem: string;
-export declare const subMenu: string;
+export type Styles = {
+  arrow: string;
+  menu: string;
+  "menu-item": string;
+  menuItem: string;
+  "sub-menu": string;
+  subMenu: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

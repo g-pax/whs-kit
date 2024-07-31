@@ -1,9 +1,21 @@
-export declare const active: string;
-export declare const bottom: string;
-export declare const carousel: string;
-export declare const carouselControls: string;
-export declare const carouselIndicators: string;
-export declare const carouselInner: string;
-export declare const carouselItem: string;
-export declare const center: string;
-export declare const top: string;
+export type Styles = {
+  active: string;
+  bottom: string;
+  carousel: string;
+  "carousel-controls": string;
+  "carousel-indicators": string;
+  "carousel-inner": string;
+  "carousel-item": string;
+  carouselControls: string;
+  carouselIndicators: string;
+  carouselInner: string;
+  carouselItem: string;
+  center: string;
+  top: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

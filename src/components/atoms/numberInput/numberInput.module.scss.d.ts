@@ -1,4 +1,15 @@
-export declare const decrementButton: string;
-export declare const incrementButton: string;
-export declare const input: string;
-export declare const numberInputContainer: string;
+export type Styles = {
+  "decrement-button": string;
+  decrementButton: string;
+  "increment-button": string;
+  incrementButton: string;
+  input: string;
+  "number-input-container": string;
+  numberInputContainer: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

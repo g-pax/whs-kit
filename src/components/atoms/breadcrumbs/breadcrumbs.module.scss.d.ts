@@ -1,3 +1,11 @@
-export declare const breadcrumbItem: string;
-export declare const breadcrumbs: string;
-export declare const breadcrumbSeparator: string;
+export type Styles = {
+  item: string;
+  root: string;
+  separator: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

@@ -1,9 +1,17 @@
-export declare const bottom: string;
-export declare const closed: string;
-export declare const content: string;
-export declare const left: string;
-export declare const open: string;
-export declare const overlay: string;
-export declare const right: string;
-export declare const sidebar: string;
-export declare const top: string;
+export type Styles = {
+  bottom: string;
+  closed: string;
+  content: string;
+  left: string;
+  open: string;
+  overlay: string;
+  right: string;
+  sidebar: string;
+  top: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

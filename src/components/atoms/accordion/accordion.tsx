@@ -20,18 +20,18 @@ const Accordion: React.FC<AccordionProps> = ({
   const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   return (
-    <div className={styles.accordionWrapper}>
+    <div className={styles["accordion-wrapper"]}>
       {items.map((item, index) => (
-        <div key={index} className={styles.accordionItem}>
+        <div key={index} className={styles["accordion-item"]}>
           <div
-            className={styles.accordionTitle}
+            className={styles["accordion-title"]}
             onClick={() => onItemToggle(index)}
           >
             {item.title}
           </div>
           <div
             ref={(el) => (contentRefs.current[index] = el)}
-            className={styles.accordionContentWrapper}
+            className={styles["accordion-content-wrapper"]}
             style={{
               maxHeight:
                 activeIndex === index
@@ -39,7 +39,7 @@ const Accordion: React.FC<AccordionProps> = ({
                   : "0",
             }}
           >
-            <div className={styles.accordionContent}>{item.content}</div>
+            <div className={styles["accordion-content"]}>{item.content}</div>
           </div>
         </div>
       ))}

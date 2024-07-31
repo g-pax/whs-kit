@@ -35,7 +35,7 @@ const Alert: React.FC<AlertProps> = ({
       <div className={styles.icon}>{getIcon()}</div>
       <div className={styles.message}>{message}</div>
       {dismissible && (
-        <button className={styles.closeButton} onClick={onClose}>
+        <button className={styles["close-button"]} onClick={onClose}>
           &times;
         </button>
       )}

@@ -1,7 +1,16 @@
-export declare const collapseContainer: string;
-export declare const collapsed: string;
-export declare const content: string;
-export declare const expanded: string;
-export declare const header: string;
-export declare const icon: string;
-export declare const title: string;
+export type Styles = {
+  "collapse-container": string;
+  collapseContainer: string;
+  collapsed: string;
+  content: string;
+  expanded: string;
+  header: string;
+  icon: string;
+  title: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;

@@ -1,5 +1,15 @@
-export declare const checkbox: string;
-export declare const checkboxLabel: string;
-export declare const checkmark: string;
-export declare const disabled: string;
-export declare const labelText: string;
+export type Styles = {
+  checkbox: string;
+  "checkbox-label": string;
+  checkboxLabel: string;
+  checkmark: string;
+  disabled: string;
+  "label-text": string;
+  labelText: string;
+};
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;
