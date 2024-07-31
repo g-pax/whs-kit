@@ -21,6 +21,6 @@ export const BadgeDefault: Story = {
   args: {
     badgeContent: "Web 3.0",
     children: <Button name="Button">Button</Button>,
-    position: "topRight",
+    position: "top-right",
   },
 };
