@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./avatar.module.scss";
+import clsx from "clsx";
 
 interface AvatarProps {
   src?: string;
@@ -37,12 +38,11 @@ const Avatar: React.FC<AvatarProps> = ({
       </svg>
     );
   };
+  const rootClasses = clsx(styles.avatar, styles[shape]);
+  const rootStyles = { width: size, height: size, backgroundColor, color };
 
   return (
-    <div
-      className={`${styles.avatar} ${styles[shape]}`}
-      style={{ width: size, height: size, backgroundColor, color }}
-    >
+    <div className={rootClasses} style={rootStyles}>
       {renderContent()}
     </div>
   );

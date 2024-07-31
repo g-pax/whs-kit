@@ -4,3 +4,4 @@ export { default as Separator } from "./separator/separator";
 export { default as Input } from "./input/input";
 export { default as Typography } from "./typography/typography";
 export { default as Pill } from "./pill/pill";
+export { default as Avatar } from "./avatar/avatar";
