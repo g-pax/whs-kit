@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import styles from "./separator.module.scss";
 
 export interface SeparatorProps {
@@ -5,6 +6,7 @@ export interface SeparatorProps {
   thickness?: string;
   margin?: string;
   orientation?: "horizontal" | "vertical";
+  className?: string;
 }
 
 const Separator = ({
@@ -12,6 +14,7 @@ const Separator = ({
   thickness = "1px",
   margin = "16px 0",
   orientation = "horizontal",
+  className,
 }: SeparatorProps) => {
   const separatorStyle = {
     backgroundColor: color,
@@ -20,7 +23,9 @@ const Separator = ({
     margin: orientation === "horizontal" ? margin : margin,
   };
 
-  return <div className={styles.separator} style={separatorStyle} />;
+  return (
+    <div className={clsx(styles.separator, className)} style={separatorStyle} />
+  );
 };
 
 export default Separator;

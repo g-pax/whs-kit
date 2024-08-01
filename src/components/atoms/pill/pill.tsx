@@ -15,6 +15,7 @@ type PillProps = {
   onClick?: () => void;
   size?: "sm" | "md" | "lg";
   rounded?: "sm" | "md" | "lg" | "full";
+  className?: string;
 };
 
 const Pill = ({
@@ -23,12 +24,14 @@ const Pill = ({
   variant = "primary",
   size = "md",
   rounded = "md",
+  className,
 }: PillProps) => {
   const rootClasses = clsx(
     styles.root,
     styles[`root-${variant}`],
     styles[`root-${size}`],
-    styles[`root-rounded-${rounded}`]
+    styles[`root-rounded-${rounded}`],
+    className
   );
   return (
     <span className={rootClasses} onClick={onClick}>
