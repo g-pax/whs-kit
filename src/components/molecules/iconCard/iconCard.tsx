@@ -39,7 +39,9 @@ const IconCard = ({
         IconComponent
       )}
       <div className={clsx(styles.content, styles[spacing])}>
-        <Typography variant="h3">{title}</Typography>
+        <Typography as="h3" variant="h3">
+          {title}
+        </Typography>
         <Typography variant="body2">{description}</Typography>
         <Typography variant="body2">{footerText}</Typography>
       </div>

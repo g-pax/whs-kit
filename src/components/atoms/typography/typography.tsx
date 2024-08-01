@@ -15,14 +15,14 @@ type Variant =
 
 interface TypographyProps {
   variant?: Variant;
-  as: HVariants | "p" | "span";
+  as?: HVariants | "p" | "span";
   children: ReactNode;
   className?: string;
 }
 
 const Typography = ({
   variant,
-  as: Component,
+  as: Component = "p",
   children,
   className = "",
 }: TypographyProps) => {
