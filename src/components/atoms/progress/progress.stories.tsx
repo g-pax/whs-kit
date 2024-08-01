@@ -18,6 +18,7 @@ type Story = StoryObj<typeof meta>;
 
 export const ProgressDefault: Story = {
   args: {
+    min: 0,
     max: 100,
     value: 50,
     label: <div>Progress 😵‍💫</div>,
