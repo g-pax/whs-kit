@@ -1,11 +1,11 @@
 export type Styles = {
+  bar: string;
   label: string;
   percentage: string;
   progress: string;
-  "progress-bar": string;
-  "progress-wrapper": string;
-  progressBar: string;
-  progressWrapper: string;
+  "range-values": string;
+  rangeValues: string;
+  root: string;
 };
 
 export type ClassNames = keyof Styles;

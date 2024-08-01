@@ -1,19 +1,27 @@
-import React from "react";
+import { ReactNode } from "react";
 import styles from "./progress.module.scss";
 
-interface ProgressProps {
+export interface ProgressProps {
   value: number;
   max: number;
-  label?: string;
+  label?: ReactNode;
+  renderStartValue?: (value: number) => ReactNode;
+  renderEndValue?: (value: number) => ReactNode;
 }
 
-const Progress: React.FC<ProgressProps> = ({ value, max, label }) => {
+const Progress = ({
+  value,
+  max,
+  label,
+  renderEndValue,
+  renderStartValue,
+}: ProgressProps) => {
   const percentage = (value / max) * 100;
 
   return (
-    <div className={styles.progressWrapper}>
+    <div className={styles.root}>
       {label && <label className={styles.label}>{label}</label>}
-      <div className={styles.progressBar}>
+      <div className={styles.bar}>
         <div
           className={styles.progress}
           style={{ width: `${percentage}%` }}
@@ -23,7 +31,18 @@ const Progress: React.FC<ProgressProps> = ({ value, max, label }) => {
           aria-valuemax={max}
         ></div>
       </div>
-      <div className={styles.percentage}>{Math.round(percentage)}%</div>
+      <div className={styles["range-values"]}>
+        {renderStartValue ? (
+          renderStartValue(value)
+        ) : (
+          <div className={styles.percentage}>{Math.round(percentage)}%</div>
+        )}
+        {renderEndValue ? (
+          renderEndValue(value)
+        ) : (
+          <div className={styles.percentage}>{Math.round(percentage)}%</div>
+        )}
+      </div>
     </div>
   );
 };

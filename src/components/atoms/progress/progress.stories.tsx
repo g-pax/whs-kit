@@ -20,7 +20,9 @@ export const ProgressDefault: Story = {
   args: {
     max: 100,
     value: 50,
-    label: "Progress",
+    label: <div>Progress 😵‍💫</div>,
+    renderStartValue: (value) => <div>Start: {value}</div>,
+    renderEndValue: (value) => <div>End: {value}</div>,
   },
   render: (props) => <Progress {...props} />,
 };
