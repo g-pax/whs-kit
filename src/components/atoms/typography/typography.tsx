@@ -1,29 +1,36 @@
-import { ElementType, ReactNode } from "react";
+import { ReactNode } from "react";
 import styles from "./typography.module.scss";
 import clsx from "clsx";
 
+type HVariants = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+type Variant =
+  | HVariants
+  | "body1"
+  | "body2"
+  | "caption"
+  | "overline"
+  | "button"
+  | "subtitle1"
+  | "subtitle2";
+
 interface TypographyProps {
-  variant:
-    | "h1"
-    | "h2"
-    | "h3"
-    | "h4"
-    | "h5"
-    | "h6"
-    | "body1"
-    | "body2"
-    | "caption"
-    | "overline"
-    | "button"
-    | "subtitle1"
-    | "subtitle2";
+  variant?: Variant;
+  as: HVariants | "p" | "span";
   children: ReactNode;
   className?: string;
 }
 
-const Typography = ({ variant, children, className = "" }: TypographyProps) => {
-  const Component = (variant.startsWith("h") ? variant : "p") as ElementType;
-  const rootClasses = clsx(styles.typography, styles[variant], className);
+const Typography = ({
+  variant,
+  as: Component,
+  children,
+  className = "",
+}: TypographyProps) => {
+  const rootClasses = clsx(
+    styles.typography,
+    variant ? styles[variant] : null,
+    className
+  );
 
   return <Component className={rootClasses}>{children}</Component>;
 };
