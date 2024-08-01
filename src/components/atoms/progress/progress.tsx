@@ -4,6 +4,7 @@ import styles from "./progress.module.scss";
 export interface ProgressProps {
   value: number;
   max: number;
+  min: number;
   label?: ReactNode;
   renderStartValue?: (value: number) => ReactNode;
   renderEndValue?: (value: number) => ReactNode;
@@ -12,6 +13,7 @@ export interface ProgressProps {
 const Progress = ({
   value,
   max,
+  min,
   label,
   renderEndValue,
   renderStartValue,
@@ -27,18 +29,18 @@ const Progress = ({
           style={{ width: `${percentage}%` }}
           role="progressbar"
           aria-valuenow={value}
-          aria-valuemin={0}
+          aria-valuemin={min}
           aria-valuemax={max}
         ></div>
       </div>
       <div className={styles["range-values"]}>
         {renderStartValue ? (
-          renderStartValue(value)
+          renderStartValue(min)
         ) : (
           <div className={styles.percentage}>{Math.round(percentage)}%</div>
         )}
         {renderEndValue ? (
-          renderEndValue(value)
+          renderEndValue(max)
         ) : (
           <div className={styles.percentage}>{Math.round(percentage)}%</div>
         )}
