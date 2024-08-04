@@ -5,6 +5,7 @@ import clsx from "clsx";
 type InputHtml = React.InputHTMLAttributes<HTMLInputElement>;
 export interface InputProps extends InputHtml {
   label?: string;
+  labelIcon?: ReactNode;
   type?: "text" | "password" | "email";
   startIcon?: ReactNode;
   endIcon?: ReactNode;
@@ -38,6 +39,7 @@ const Input: React.FC<InputProps> = ({
   touched,
   startIcon,
   endIcon,
+  labelIcon,
   onBlur,
   onChange,
   ...props
@@ -62,7 +64,12 @@ const Input: React.FC<InputProps> = ({
         onBlur={onBlur}
         {...props}
       />
-      {label && <label className={styles.label}>{label}</label>}
+      {label && (
+        <label className={styles.label}>
+          {labelIcon && <span>{labelIcon}</span>}
+          <span>{label}</span>
+        </label>
+      )}
       {startIcon && <div className={styles.startIcon}>{startIcon}</div>}
       {endIcon && <div className={styles.endIcon}>{endIcon}</div>}
       {helperText && <div className={styles.helperText}>{helperText}</div>}

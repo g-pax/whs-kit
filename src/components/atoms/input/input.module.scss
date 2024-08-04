@@ -1,48 +1,77 @@
+$label-gap: calc(
+  (var(--whs-input-label-height, 20px) + var(--whs-input-gap, 0.5rem)) * -1
+);
+
+$top-icon: calc(
+  50% - 0.5 * var(--whs-input-gap, 0.5rem) - 0.5 *
+    var(--whs-input-helper-text-height, 20px)
+);
+
 .inputWrapper {
   position: relative;
   display: flex;
   flex-direction: column;
-  // margin-bottom: 16px;
+  gap: var(--whs-input-gap, 0.5rem);
 
   .label {
-    // 'absolute z-1 select-none pointer-events-none',
-    // 'light:!text-black dark:!text-white leading-[55px] text-14',
-    // 'transition-all transform-gpu duration-150 ease-in-out origin-left peer-focus:scale-75 peer-focus:-translate-y-10',
-    // 'scale-75 peer-placeholder-shown:scale-100 -translate-y-10',
-    // 'peer-placeholder-shown:translate-y-0',
-    // {
-    //   'translate-x-[46px] peer-focus:translate-x-[46px]':
-    //     !floatingLabel && startIcon,
-    // },
-    // {
-    //   'leading-snug peer-focus:!bg-white dark:peer-focus:bg-black peer-placeholder-shown:translate-y-19':
-    //     floatingLabel,
-    // },
+    height: var(--whs-input-label-height, 20px);
     position: absolute;
-    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: var(--whs-input-label-gap, 0.5rem);
     top: 0;
-    transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, $label-gap, 0);
     font-weight: bold;
     z-index: 1;
     user-select: none;
     pointer-events: none;
     transform-origin: left;
+
+    color: var(--whs-input-label-color, #757b8c);
+    font-family: var(--whs-input-label-font-family, "Arial");
+    font-size: var(--whs-input-label-font-size, 16px);
+    font-style: var(--whs-input-label-font-style, normal);
+    font-weight: var(--whs-input-label-font-weight, normal);
+    line-height: var(--whs-input-label-line-height, 1.5);
+    letter-spacing: var(--whs-input-label-letter-spacing, 0.5px);
   }
 
   .input {
-    padding: 8px 2rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    outline: none;
-    transition: border-color 0.3s;
+    color: var(--whs-input-color, #757b8c);
+    font-family: var(--whs-input-font-family, "Arial");
+    font-size: var(--whs-input-font-size, 16px);
+    font-style: var(--whs-input-font-style, normal);
+    font-weight: var(--whs-input-font-weight, normal);
+    line-height: var(--whs-input-line-height, 1.5);
+    letter-spacing: var(--whs-input-letter-spacing, 0.5px);
+
+    height: var(--whs-input-height, 30px);
+    padding: var(--whs-input-padding, 0.5rem 2rem);
+    border: var(--whs-input-border, 1px solid #ccc);
+    border-radius: var(--whs-input-border-radius, 4px);
+    outline: var(--whs-input-outline, none);
+    transition:
+      border-color 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out,
+      color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
 
     &:focus {
-      border-color: #000;
+      border-color: var(--whs-input-border-color-focus, #007bff);
+      background-color: var(--whs-input-bg-focus, #f5f5f5);
+      color: var(--whs-input-color-focus, #000);
     }
 
     &.error {
-      border-color: red;
+      border-color: var(--whs-input-border-color-error, red);
+      background-color: var(--whs-input-bg-error, #f5f5f5);
+      color: var(--whs-input-color-error, #000);
+    }
+
+    &:hover {
+      border-color: var(--whs-input-border-color-hover, #007bff);
+      background-color: var(--whs-input-bg-hover, #f5f5f5);
+      color: var(--whs-input-color-hover, #000);
     }
   }
 
@@ -60,6 +89,9 @@
     left: 8px;
     top: 50%;
     transform: translateY(-50%);
+    &:has(~ .helperText) {
+      top: $top-icon;
+    }
   }
   .endIcon {
     display: flex;
@@ -69,10 +101,18 @@
     right: 8px;
     top: 50%;
     transform: translateY(-50%);
+    &:has(~ .helperText) {
+      top: $top-icon;
+    }
   }
 
   .helperText {
-    font-size: 14px;
-    margin-top: 4px;
+    height: var(--whs-input-helper-text-height, 20px);
+    font-size: var(--whs-input-helper-text-font-size, 14px);
+    color: var(--whs-input-helper-text-color, #757b8c);
+    font-family: var(--whs-input-helper-text-font-family, "Arial");
+    font-style: var(--whs-input-helper-text-font-style, normal);
+    font-weight: var(--whs-input-helper-text-font-weight, normal);
+    line-height: var(--whs-input-helper-text-line-height, 1.5);
   }
 }
