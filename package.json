@@ -1,6 +1,6 @@
 {
   "name": "@g-pax/whskit",
-  "version": "0.0.38",
+  "version": "0.0.39",
   "type": "module",
   "main": "dist/whs-library.js",
   "module": "dist/whs-library.js",
