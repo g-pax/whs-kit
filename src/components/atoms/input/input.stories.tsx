@@ -26,6 +26,7 @@ export const InputDefault: Story = {
     return <Input {...args} value={value} onChange={onChange} />;
   },
   args: {
+    fullWidth: true,
     value: "",
     onChange: fn(),
     label: "Username",
