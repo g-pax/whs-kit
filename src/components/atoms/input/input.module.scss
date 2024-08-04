@@ -54,19 +54,19 @@ $top-icon: calc(
     transition: all 0.3s ease-in-out;
 
     &:focus {
-      border-color: var(--whs-input-border-color-focus, #007bff);
+      border: var(--whs-input-border-focus, #007bff);
       background-color: var(--whs-input-bg-focus, #f5f5f5);
       color: var(--whs-input-color-focus, #000);
     }
 
     &.error {
-      border-color: var(--whs-input-border-color-error, red);
+      border: var(--whs-input-border-error, red);
       background-color: var(--whs-input-bg-error, #f5f5f5);
       color: var(--whs-input-color-error, #000);
     }
 
     &:hover {
-      border-color: var(--whs-input-border-color-hover, #007bff);
+      border: var(--whs-input-border-hover, #007bff);
       background-color: var(--whs-input-bg-hover, #f5f5f5);
       color: var(--whs-input-color-hover, #000);
     }
