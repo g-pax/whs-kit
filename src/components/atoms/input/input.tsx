@@ -18,6 +18,7 @@ export interface InputProps extends InputHtml {
   pattern?: string;
   errorMessage?: string;
   className?: string;
+  fullWidth?: boolean;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onBlur?: () => void;
   error?: string;
@@ -39,12 +40,15 @@ const Input: React.FC<InputProps> = ({
   touched,
   startIcon,
   endIcon,
+  fullWidth,
   labelIcon,
   onBlur,
   onChange,
   ...props
 }) => {
-  const rootClasses = clsx(styles.inputWrapper, className);
+  const rootClasses = clsx(styles.inputWrapper, className, {
+    [styles.fullWidth]: fullWidth,
+  });
   const inputClasses = clsx(styles.input, {
     [styles.error]: error && touched,
   });

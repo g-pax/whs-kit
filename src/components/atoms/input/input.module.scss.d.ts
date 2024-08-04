@@ -4,6 +4,8 @@ export type Styles = {
   error: string;
   "error-message": string;
   errorMessage: string;
+  "full-width": string;
+  fullWidth: string;
   "helper-text": string;
   helperText: string;
   input: string;

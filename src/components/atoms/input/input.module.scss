@@ -13,6 +13,10 @@ $top-icon: calc(
   flex-direction: column;
   gap: var(--whs-input-gap, 0.5rem);
 
+  .fullWidth {
+    width: 100%;
+  }
+
   .label {
     height: var(--whs-input-label-height, 20px);
     position: absolute;
