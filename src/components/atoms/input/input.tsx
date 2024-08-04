@@ -55,6 +55,12 @@ const Input: React.FC<InputProps> = ({
 
   return (
     <div className={rootClasses}>
+      {label && (
+        <label className={styles.label}>
+          {labelIcon && <span>{labelIcon}</span>}
+          <span>{label}</span>
+        </label>
+      )}
       <input
         type={type}
         value={value}
@@ -68,12 +74,6 @@ const Input: React.FC<InputProps> = ({
         onBlur={onBlur}
         {...props}
       />
-      {label && (
-        <label className={styles.label}>
-          {labelIcon && <span>{labelIcon}</span>}
-          <span>{label}</span>
-        </label>
-      )}
       {startIcon && <div className={styles.startIcon}>{startIcon}</div>}
       {endIcon && <div className={styles.endIcon}>{endIcon}</div>}
       {helperText && <div className={styles.helperText}>{helperText}</div>}

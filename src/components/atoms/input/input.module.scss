@@ -1,13 +1,19 @@
 $label-gap: calc(
   (var(--whs-input-label-height, 20px) + var(--whs-input-gap, 0.5rem)) * -1
 );
-
 $top-icon: calc(
-  50% - 0.5 * var(--whs-input-gap, 0.5rem) - 0.5 *
-    var(--whs-input-helper-text-height, 20px)
+  50% + 0.5 * var(--whs-input-label-height, 20px) + 0.5 *
+    var(--whs-input-gap, 0.5rem)
+);
+$top-icon-with-helper: calc(
+  50% - 0.5 * var(--whs-input-helper-text-height, 20px) + 0.5 *
+    var(--whs-input-label-height, 20px)
 );
 
 .inputWrapper {
+  --whs-input-border: 1px solid #757b8c;
+  --whs-input-border-hover: 1px solid #757b8c;
+  --whs-input-border-focus: 1px solid #757b8c;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -15,12 +21,9 @@ $top-icon: calc(
 
   .label {
     height: var(--whs-input-label-height, 20px);
-    position: absolute;
     display: flex;
     align-items: center;
     gap: var(--whs-input-label-gap, 0.5rem);
-    top: 0;
-    transform: translate3d(0, $label-gap, 0);
     font-weight: bold;
     z-index: 1;
     user-select: none;
@@ -94,10 +97,10 @@ $top-icon: calc(
     justify-content: center;
     position: absolute;
     left: 8px;
-    top: 50%;
+    top: $top-icon;
     transform: translateY(-50%);
     &:has(~ .helperText) {
-      top: $top-icon;
+      top: $top-icon-with-helper;
     }
   }
   .endIcon {
@@ -106,10 +109,10 @@ $top-icon: calc(
     justify-content: center;
     position: absolute;
     right: 8px;
-    top: 50%;
+    top: $top-icon;
     transform: translateY(-50%);
     &:has(~ .helperText) {
-      top: $top-icon;
+      top: $top-icon-with-helper;
     }
   }
 
