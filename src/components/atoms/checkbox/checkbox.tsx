@@ -17,7 +17,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
   iconChecked,
   disabled = false,
 }) => {
-  const rootClasses = clsx(styles.checkboxLabel, {
+  const rootClasses = clsx(styles.label, {
     [styles.disabled]: disabled,
   });
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
