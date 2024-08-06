@@ -18,7 +18,7 @@
   justify-content: center;
   height: var(--whs-checkbox-size);
   width: var(--whs-checkbox-size);
-  background-color: var(--whs-checkbox-bg-unchecked);
+  background: var(--whs-checkbox-bg-unchecked);
   border: var(--whs-checkbox-border-unchecked);
   border-radius: var(--whs-checkbox-border-radius);
   box-shadow: var(--whs-checkbox-box-shadow-unchecked);
@@ -47,7 +47,7 @@
 }
 
 .checkbox:checked + .checkmark {
-  background-color: var(--whs-checkbox-bg-checked);
+  background: var(--whs-checkbox-bg-checked);
   border-color: var(--whs-checkbox-border-checked);
   box-shadow: var(--whs-checkbox-box-shadow-checked);
 }
