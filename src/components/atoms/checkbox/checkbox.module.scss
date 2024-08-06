@@ -16,32 +16,53 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  border: 2px solid #ccc;
-  border-radius: 4px;
+  height: var(--whs-checkbox-size);
+  width: var(--whs-checkbox-size);
+  background-color: var(--whs-checkbox-bg-unchecked);
+  border: var(--whs-checkbox-border-unchecked);
+  border-radius: var(--whs-checkbox-border-radius);
+  box-shadow: var(--whs-checkbox-box-shadow-unchecked);
   transition:
-    background-color 0.2s,
-    border-color 0.2s;
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+}
+
+.iconChecked {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.checkbox:checked + .visible {
+  opacity: 0;
+}
+
+.checkbox:checked + .iconChecked {
+  opacity: 1;
 }
 
 .checkbox:checked + .checkmark {
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: var(--whs-checkbox-bg-checked);
+  border-color: var(--whs-checkbox-border-checked);
+  box-shadow: var(--whs-checkbox-box-shadow-checked);
 }
 
-.checkmark::after {
+.withoutIcon::after {
   content: "";
   position: absolute;
   display: none;
 }
 
-.checkbox:checked + .checkmark::after {
+.checkbox:checked + .withoutIcon::after {
   display: block;
 }
 
-.checkbox:checked + .checkmark::after {
+.checkbox:checked + .withoutIcon::after {
   left: 0.5rem;
   top: 3px;
   width: 6px;
