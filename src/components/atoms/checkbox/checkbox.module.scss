@@ -62,7 +62,7 @@
 
 .checkbox:checked + .checkmark {
   background: var(--whs-checkbox-bg-checked);
-  border-color: var(--whs-checkbox-border-checked);
+  border: var(--whs-checkbox-border-checked);
   box-shadow: var(--whs-checkbox-box-shadow-checked);
 }
 
