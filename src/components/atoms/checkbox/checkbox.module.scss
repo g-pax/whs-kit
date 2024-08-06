@@ -25,7 +25,15 @@
   transition:
     color 0.3s ease-in-out,
     background-color 0.3s ease-in-out,
-    border-color 0.3s ease-in-out;
+    border-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+
+  &:hover {
+    border: var(--whs-checkbox-border-unchecked-hover);
+    background: var(--whs-checkbox-bg-unchecked-hover);
+    box-shadow: var(--whs-checkbox-box-shadow-unchecked-hover);
+  }
 }
 
 .iconChecked {
@@ -50,6 +58,12 @@
   background: var(--whs-checkbox-bg-checked);
   border-color: var(--whs-checkbox-border-checked);
   box-shadow: var(--whs-checkbox-box-shadow-checked);
+
+  &:hover {
+    border: var(--whs-checkbox-border-checked-hover);
+    background: var(--whs-checkbox-bg-checked-hover);
+    box-shadow: var(--whs-checkbox-box-shadow-checked-hover);
+  }
 }
 
 .withoutIcon::after {
