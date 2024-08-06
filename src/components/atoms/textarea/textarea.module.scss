@@ -1,28 +1,86 @@
-.textareaWrapper {
+$label-gap: calc(
+  (var(--whs-input-label-height, 20px) + var(--whs-input-gap, 0.5rem)) * -1
+);
+$top-icon: calc(
+  50% + 0.5 * var(--whs-input-label-height, 20px) + 0.5 *
+    var(--whs-input-gap, 0.5rem)
+);
+$top-icon-with-helper: calc(
+  50% - 0.5 * var(--whs-input-helper-text-height, 20px) + 0.5 *
+    var(--whs-input-label-height, 20px)
+);
+
+.root {
+  --whs-input-border: 1px solid #757b8c;
+  --whs-input-border-hover: 1px solid #757b8c;
+  --whs-input-border-focus: 1px solid #757b8c;
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  gap: var(--whs-input-gap, 0.5rem);
 
   .label {
-    margin-bottom: 4px;
+    height: var(--whs-input-label-height, 20px);
+    display: flex;
+    align-items: center;
+    gap: var(--whs-input-label-gap, 0.5rem);
     font-weight: bold;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    transform-origin: left;
+
+    color: var(--whs-input-label-color, #757b8c);
+    font-family: var(--whs-input-label-font-family, "Arial");
+    font-size: var(--whs-input-label-font-size, 16px);
+    font-style: var(--whs-input-label-font-style, normal);
+    font-weight: var(--whs-input-label-font-weight, normal);
+    line-height: var(--whs-input-label-line-height, 1.5);
+    letter-spacing: var(--whs-input-label-letter-spacing, 0.5px);
   }
 
   .textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    outline: none;
-    transition: border-color 0.3s;
-    resize: vertical;
+    color: var(--whs-input-color, #757b8c);
+    font-family: var(--whs-input-font-family, "Arial");
+    font-size: var(--whs-input-font-size, 16px);
+    font-style: var(--whs-input-font-style, normal);
+    font-weight: var(--whs-input-font-weight, normal);
+    line-height: var(--whs-input-line-height, 1.5);
+    letter-spacing: var(--whs-input-letter-spacing, 0.5px);
+    background: var(--whs-input-bg);
+
+    padding: var(--whs-input-padding, 0.25rem 0.5rem);
+    border: var(--whs-input-border);
+    border-radius: var(--whs-input-border-radius, 4px);
+    outline: var(--whs-input-outline);
+    transition: all 0.3s ease-in-out;
+
+    &::placeholder {
+      color: var(--whs-input-placeholder-color, #757b8c);
+      font-family: var(--whs-input-placeholder-font-family, "Arial");
+      font-size: var(--whs-input-placeholder-font-size, 16px);
+      font-style: var(--whs-input-placeholder-font-style, normal);
+      font-weight: var(--whs-input-placeholder-font-weight, normal);
+      line-height: var(--whs-input-placeholder-line-height, 1.5);
+      letter-spacing: var(--whs-input-placeholder-letter-spacing, 0.5px);
+    }
 
     &:focus {
-      border-color: #000;
+      border: var(--whs-input-border-focus);
+      background-color: var(--whs-input-bg-focus);
+      color: var(--whs-input-color-focus);
     }
 
     &.error {
-      border-color: red;
+      border: var(--whs-input-border-error);
+      background-color: var(--whs-input-bg-error);
+      color: var(--whs-input-color-error);
+    }
+
+    &:hover {
+      border: var(--whs-input-border-hover);
+      background-color: var(--whs-input-bg-hover);
+      color: var(--whs-input-color-hover);
     }
   }
 
@@ -31,4 +89,42 @@
     font-size: 14px;
     margin-top: 4px;
   }
+
+  .startIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 8px;
+    top: $top-icon;
+    transform: translateY(-50%);
+    &:has(~ .helperText) {
+      top: $top-icon-with-helper;
+    }
+  }
+  .endIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 8px;
+    top: $top-icon;
+    transform: translateY(-50%);
+    &:has(~ .helperText) {
+      top: $top-icon-with-helper;
+    }
+  }
+
+  .helperText {
+    height: var(--whs-input-helper-text-height, 20px);
+    font-size: var(--whs-input-helper-text-font-size, 14px);
+    color: var(--whs-input-helper-text-color, #757b8c);
+    font-family: var(--whs-input-helper-text-font-family, "Arial");
+    font-style: var(--whs-input-helper-text-font-style, normal);
+    font-weight: var(--whs-input-helper-text-font-weight, normal);
+    line-height: var(--whs-input-helper-text-line-height, 1.5);
+  }
+}
+.fullWidth {
+  width: 100%;
 }

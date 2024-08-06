@@ -18,16 +18,18 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const TextareaDefault: Story = {
-  render: ({ value, onChange }) => (
-    <Textarea
-      label="Username"
-      value={value}
-      placeholder="Enter your username"
-      required
-      minLength={4}
-      errorMessage="Please enter a valid username"
-      onChange={onChange}
-    />
+  render: ({ value, onChange, ...props }) => (
+    <Textarea value={value} onChange={onChange} {...props} />
   ),
-  args: { value: "", onChange: fn() },
+  args: {
+    value: "",
+    onChange: fn(),
+    endIcon: "😵‍💫",
+    startIcon: "👋",
+    rows: 4,
+    labelIcon: "👋",
+    label: "Username",
+    placeholder: "Enter your username",
+    helperText: "This is a helper text",
+  },
 };

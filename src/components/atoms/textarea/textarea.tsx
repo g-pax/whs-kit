@@ -1,8 +1,9 @@
-import React from "react";
+import { ReactNode, TextareaHTMLAttributes } from "react";
 import styles from "./textarea.module.scss";
 import clsx from "clsx";
 
-interface TextareaProps {
+export interface TextareaProps
+  extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string;
   value?: string;
   placeholder?: string;
@@ -12,6 +13,10 @@ interface TextareaProps {
   errorMessage?: string;
   className?: string;
   pattern?: string;
+  startIcon?: ReactNode;
+  endIcon?: ReactNode;
+  labelIcon?: ReactNode;
+  helperText?: string;
   onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   onBlur?: () => void;
   error?: string;
@@ -28,16 +33,26 @@ const Textarea: React.FC<TextareaProps> = ({
   className = "",
   onChange,
   onBlur,
+  helperText,
+  // endIcon,
+  // startIcon,
+  labelIcon,
   error,
   touched,
+  ...props
 }) => {
-  const rootClasses = clsx(styles.textareaWrapper, className);
+  const rootClasses = clsx(styles.root, className);
   const textareaClasses = clsx(styles.textarea, {
     [styles.error]: error && touched,
   });
   return (
     <div className={rootClasses}>
-      {label && <label className={styles.label}>{label}</label>}
+      {label && (
+        <label className={styles.label}>
+          {labelIcon && <span>{labelIcon}</span>}
+          <span>{label}</span>
+        </label>
+      )}
       <textarea
         value={value}
         placeholder={placeholder}
@@ -47,7 +62,11 @@ const Textarea: React.FC<TextareaProps> = ({
         className={textareaClasses}
         onChange={onChange}
         onBlur={onBlur}
+        {...props}
       />
+      {/* {startIcon && <div className={styles.startIcon}>{startIcon}</div>}
+      {endIcon && <div className={styles.endIcon}>{endIcon}</div>} */}
+      {helperText && <div className={styles.helperText}>{helperText}</div>}
       {error && touched && <div className={styles.errorMessage}>{error}</div>}
     </div>
   );
