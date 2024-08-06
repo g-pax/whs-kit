@@ -21,6 +21,7 @@ export interface TextareaProps
   onBlur?: () => void;
   error?: string;
   touched?: boolean;
+  fullWidth?: boolean;
 }
 
 const Textarea: React.FC<TextareaProps> = ({
@@ -39,9 +40,12 @@ const Textarea: React.FC<TextareaProps> = ({
   labelIcon,
   error,
   touched,
+  fullWidth,
   ...props
 }) => {
-  const rootClasses = clsx(styles.root, className);
+  const rootClasses = clsx(styles.root, className, {
+    [styles.fullWidth]: fullWidth,
+  });
   const textareaClasses = clsx(styles.textarea, {
     [styles.error]: error && touched,
   });
