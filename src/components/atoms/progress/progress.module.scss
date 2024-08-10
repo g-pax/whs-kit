@@ -13,6 +13,7 @@
     height: var(--whs-progress-bar-height, 20px);
     background-color: var(--whs-progress-bar-bg, #f5f5f5);
     border-radius: var(--whs-progress-bar-radius, 4px);
+    border: var(--whs-progress-progress-border);
     overflow: hidden;
   }
 

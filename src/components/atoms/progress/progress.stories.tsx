@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import Progress from "./progress";
+import WithCssVars from "../../../utils/WithCssVars";
 
 const meta = {
   title: "Atoms/Progress",
@@ -10,6 +11,17 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {},
+  decorators: [
+    (Story) => {
+      return (
+        <WithCssVars
+          vars={{ "whs-progress-progress-border": "1px solid #5500ff" }}
+        >
+          <Story />
+        </WithCssVars>
+      );
+    },
+  ],
   args: {},
 } satisfies Meta<typeof Progress>;
 
