@@ -2,6 +2,8 @@
   display: inline-block;
   font-weight: var(--pill-font-weight, 500);
   cursor: pointer;
+  text-wrap: nowrap;
+  flex-shrink: 0;
   transition:
     background-color 0.3s ease-in-out,
     color 0.3s ease-in-out;
