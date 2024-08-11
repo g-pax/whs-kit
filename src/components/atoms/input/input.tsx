@@ -19,8 +19,6 @@ export interface InputProps extends InputHtml {
   errorMessage?: string;
   className?: string;
   fullWidth?: boolean;
-  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  onBlur?: () => void;
   error?: string;
   touched?: boolean;
 }
