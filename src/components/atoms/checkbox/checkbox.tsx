@@ -17,6 +17,7 @@ const Checkbox = ({
   onChange,
   iconChecked,
   disabled = false,
+  ...props
 }: CheckboxProps) => {
   const rootClasses = clsx(styles.label, {
     [styles.disabled]: disabled,
@@ -33,6 +34,7 @@ const Checkbox = ({
         checked={checked}
         onChange={handleChange}
         disabled={disabled}
+        {...props}
       />
       <span
         className={clsx(styles.checkmark, {
