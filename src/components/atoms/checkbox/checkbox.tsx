@@ -5,7 +5,7 @@ import clsx from "clsx";
 type InputHtml = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange">;
 export interface CheckboxProps extends InputHtml {
   label?: string;
-  checked: boolean;
+  checked?: boolean;
   onChange: (checked: boolean) => void;
   disabled?: boolean;
   iconChecked?: ReactNode;
