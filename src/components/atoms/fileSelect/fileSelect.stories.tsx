@@ -19,9 +19,15 @@ type Story = StoryObj<typeof meta>;
 
 export const FileSelectDefault: Story = {
   args: {
-    onChange: fn(),
+    fileUploadIcon: "📁",
+    fileUploadLabel: "Select a file",
+    helperText: "Select a file",
     label: "Select a file",
+    placeholder: "No file selected",
+    onChange: fn(),
     multiple: false,
+    startIcon: "📁",
+    endIcon: "📁",
   },
   render: (props) => <FileSelect {...props} />,
 };

@@ -1,17 +1,156 @@
-.wrapper {
+$label-gap: calc(
+  (var(--whs-fileInput-label-height, 20px) + var(--whs-fileInput-gap, 0.5rem)) *
+    -1
+);
+$top-icon: calc(
+  50% + 0.5 * var(--whs-fileInput-label-height, 20px) + 0.5 *
+    var(--whs-fileInput-gap, 0.5rem)
+);
+$top-icon-with-helper: calc(
+  50% - 0.5 * var(--whs-fileInput-helper-text-height, 20px) + 0.5 *
+    var(--whs-fileInput-label-height, 20px)
+);
+
+.inputWrapper {
+  --whs-fileInput-border: 1px solid #757b8c;
+  --whs-fileInput-border-hover: 1px solid #757b8c;
+  --whs-fileInput-border-focus: 1px solid #757b8c;
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
+  gap: var(--whs-fileInput-gap, 0.5rem);
 
   .label {
-    margin-bottom: 4px;
+    height: var(--whs-fileInput-label-height, 20px);
+    display: flex;
+    align-items: center;
+    gap: var(--whs-fileInput-label-gap, 0.5rem);
     font-weight: bold;
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+    transform-origin: left;
+
+    color: var(--whs-fileInput-label-color, #757b8c);
+    font-family: var(--whs-fileInput-label-font-family, "Arial");
+    font-size: var(--whs-fileInput-label-font-size, 16px);
+    font-style: var(--whs-fileInput-label-font-style, normal);
+    font-weight: var(--whs-fileInput-label-font-weight, normal);
+    line-height: var(--whs-fileInput-label-line-height, 1.5);
+    letter-spacing: var(--whs-fileInput-label-letter-spacing, 0.5px);
   }
 
-  .fileInput {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 8px;
-    cursor: pointer;
+  .input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--whs-fileInput-color, #757b8c);
+    font-family: var(--whs-fileInput-font-family, "Arial");
+    font-size: var(--whs-fileInput-font-size, 16px);
+    font-style: var(--whs-fileInput-font-style, normal);
+    font-weight: var(--whs-fileInput-font-weight, normal);
+    line-height: var(--whs-fileInput-line-height, 1.5);
+    letter-spacing: var(--whs-fileInput-letter-spacing, 0.5px);
+    background: var(--whs-fileInput-bg);
+
+    height: var(--whs-fileInput-height, 30px);
+    padding: var(--whs-fileInput-padding, 0.5rem 2rem);
+    border: var(--whs-fileInput-border);
+    border-radius: var(--whs-fileInput-border-radius, 4px);
+    outline: var(--whs-fileInput-outline);
+    transition: all 0.3s ease-in-out;
+
+    &::placeholder {
+      color: var(--whs-fileInput-placeholder-color, #757b8c);
+      font-family: var(--whs-fileInput-placeholder-font-family, "Arial");
+      font-size: var(--whs-fileInput-placeholder-font-size, 16px);
+      font-style: var(--whs-fileInput-placeholder-font-style, normal);
+      font-weight: var(--whs-fileInput-placeholder-font-weight, normal);
+      line-height: var(--whs-fileInput-placeholder-line-height, 1.5);
+      letter-spacing: var(--whs-fileInput-placeholder-letter-spacing, 0.5px);
+    }
+
+    &:focus {
+      border: var(--whs-fileInput-border-focus);
+      background-color: var(--whs-fileInput-bg-focus);
+      color: var(--whs-fileInput-color-focus);
+    }
+
+    &.error {
+      border: var(--whs-fileInput-border-error);
+      background-color: var(--whs-fileInput-bg-error);
+      color: var(--whs-fileInput-color-error);
+    }
+
+    &:hover {
+      border: var(--whs-fileInput-border-hover);
+      background-color: var(--whs-fileInput-bg-hover);
+      color: var(--whs-fileInput-color-hover);
+    }
   }
+
+  .errorMessage {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .startIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 8px;
+    top: $top-icon;
+    transform: translateY(-50%);
+    &:has(~ .helperText) {
+      top: $top-icon-with-helper;
+    }
+  }
+  .endIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 8px;
+    top: $top-icon;
+    transform: translateY(-50%);
+    &:has(~ .helperText) {
+      top: $top-icon-with-helper;
+    }
+  }
+
+  .helperText {
+    height: var(--whs-fileInput-helper-text-height, 20px);
+    font-size: var(--whs-fileInput-helper-text-font-size, 14px);
+    color: var(--whs-fileInput-helper-text-color, #757b8c);
+    font-family: var(--whs-fileInput-helper-text-font-family, "Arial");
+    font-style: var(--whs-fileInput-helper-text-font-style, normal);
+    font-weight: var(--whs-fileInput-helper-text-font-weight, normal);
+    line-height: var(--whs-fileInput-helper-text-line-height, 1.5);
+  }
+}
+.fullWidth {
+  width: 100%;
+}
+
+.fileButton {
+  cursor: pointer;
+  display: flex;
+  padding: var(--whs-fileButton-padding);
+  justify-content: center;
+  align-items: center;
+  gap: var(--whs-fileButton-gap);
+  border-radius: var(--whs-fileButton-border-radius);
+  border: var(--whs-fileButton-border);
+  background: var(--whs-fileButton-bg);
+
+  color: var(--whs-fileButton-color);
+  font-family: var(--whs-fileButton-font-family);
+  font-size: var(--whs-fileButton-font-size);
+  font-style: var(--whs-fileButton-font-style);
+  font-weight: var(--whs-fileButton-font-weight);
+  line-height: var(--whs-fileButton-line-height);
+  letter-spacing: var(--whs-fileButton-letter-spacing);
+  text-transform: var(--whs-fileButton-text-transform);
 }
