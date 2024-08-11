@@ -20,6 +20,7 @@ export interface FileSelectProps extends InputHtml {
   onBlur?: () => void;
   error?: string;
   touched?: boolean;
+  renderFileUploadButton?: (onClick: () => void) => ReactNode;
   fileUploadIcon?: ReactNode;
   fileUploadLabel?: string;
 }
@@ -42,6 +43,7 @@ const FileSelect = ({
   labelIcon,
   onBlur,
   onChange,
+  renderFileUploadButton,
   ...props
 }: FileSelectProps) => {
   const ref = useRef<HTMLInputElement>(null);
@@ -82,15 +84,19 @@ const FileSelect = ({
           onBlur={onBlur}
           {...props}
         />
-        <button
-          aria-label="Select a file"
-          type="button"
-          className={styles.fileButton}
-          onClick={openFilePicker}
-        >
-          <span>{fileUploadIcon}</span>
-          <span>{fileUploadLabel}</span>
-        </button>
+        {renderFileUploadButton ? (
+          renderFileUploadButton?.(openFilePicker)
+        ) : (
+          <button
+            aria-label="Select a file"
+            type="button"
+            className={styles.fileButton}
+            onClick={openFilePicker}
+          >
+            <span>{fileUploadIcon}</span>
+            <span>{fileUploadLabel}</span>
+          </button>
+        )}
       </div>
       {startIcon && <div className={styles.startIcon}>{startIcon}</div>}
       {endIcon && <div className={styles.endIcon}>{endIcon}</div>}
