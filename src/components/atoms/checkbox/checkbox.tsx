@@ -1,8 +1,9 @@
-import React, { ReactNode } from "react";
+import { InputHTMLAttributes, ReactNode } from "react";
 import styles from "./checkbox.module.scss";
 import clsx from "clsx";
 
-export interface CheckboxProps {
+type InputHtml = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange">;
+export interface CheckboxProps extends InputHtml {
   label?: string;
   checked: boolean;
   onChange: (checked: boolean) => void;
@@ -10,13 +11,13 @@ export interface CheckboxProps {
   iconChecked?: ReactNode;
 }
 
-const Checkbox: React.FC<CheckboxProps> = ({
+const Checkbox = ({
   label,
   checked,
   onChange,
   iconChecked,
   disabled = false,
-}) => {
+}: CheckboxProps) => {
   const rootClasses = clsx(styles.label, {
     [styles.disabled]: disabled,
   });
