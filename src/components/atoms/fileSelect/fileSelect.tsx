@@ -1,8 +1,9 @@
-import React, { ReactNode, useRef } from "react";
+import { InputHTMLAttributes, ReactNode, useRef } from "react";
 import styles from "./fileSelect.module.scss";
 import clsx from "clsx";
 
-export interface FileSelectProps {
+type InputHtml = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange">;
+export interface FileSelectProps extends InputHtml {
   label?: string;
   multiple?: boolean;
   onChange: (files: FileList | null) => void;
