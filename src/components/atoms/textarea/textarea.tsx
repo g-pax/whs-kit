@@ -17,8 +17,6 @@ export interface TextareaProps
   endIcon?: ReactNode;
   labelIcon?: ReactNode;
   helperText?: string;
-  onChange?: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
-  onBlur?: () => void;
   error?: string;
   touched?: boolean;
   fullWidth?: boolean;
