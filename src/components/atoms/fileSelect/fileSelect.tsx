@@ -2,11 +2,10 @@ import { InputHTMLAttributes, ReactNode, useRef } from "react";
 import styles from "./fileSelect.module.scss";
 import clsx from "clsx";
 
-type InputHtml = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange">;
+type InputHtml = InputHTMLAttributes<HTMLInputElement>;
 export interface FileSelectProps extends InputHtml {
   label?: string;
   multiple?: boolean;
-  onChange: (files: FileList | null) => void;
   labelIcon?: ReactNode;
   startIcon?: ReactNode;
   endIcon?: ReactNode;
@@ -17,7 +16,6 @@ export interface FileSelectProps extends InputHtml {
   errorMessage?: string;
   className?: string;
   fullWidth?: boolean;
-  onBlur?: () => void;
   error?: string;
   touched?: boolean;
   renderFileUploadButton?: (onClick: () => void) => ReactNode;
@@ -30,7 +28,6 @@ const FileSelect = ({
   multiple = false,
   value,
   placeholder,
-  required = false,
   className = "",
   helperText,
   error,
@@ -41,15 +38,11 @@ const FileSelect = ({
   fileUploadIcon,
   fileUploadLabel,
   labelIcon,
-  onBlur,
-  onChange,
   renderFileUploadButton,
   ...props
 }: FileSelectProps) => {
   const ref = useRef<HTMLInputElement>(null);
-  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onChange(event.target.files);
-  };
+
   const openFilePicker = () => {
     if (ref.current) {
       ref.current.click();
@@ -79,9 +72,6 @@ const FileSelect = ({
           type="file"
           multiple={multiple}
           value={value}
-          required={required}
-          onChange={handleFileChange}
-          onBlur={onBlur}
           {...props}
         />
         {renderFileUploadButton ? (
