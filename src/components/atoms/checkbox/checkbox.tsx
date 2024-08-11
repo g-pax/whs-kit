@@ -2,11 +2,10 @@ import { InputHTMLAttributes, ReactNode } from "react";
 import styles from "./checkbox.module.scss";
 import clsx from "clsx";
 
-type InputHtml = Omit<InputHTMLAttributes<HTMLInputElement>, "onChange">;
+type InputHtml = InputHTMLAttributes<HTMLInputElement>;
 export interface CheckboxProps extends InputHtml {
   label?: string;
   checked?: boolean;
-  onChange: (checked: boolean) => void;
   disabled?: boolean;
   iconChecked?: ReactNode;
 }
@@ -14,7 +13,6 @@ export interface CheckboxProps extends InputHtml {
 const Checkbox = ({
   label,
   checked,
-  onChange,
   iconChecked,
   disabled = false,
   ...props
@@ -22,9 +20,6 @@ const Checkbox = ({
   const rootClasses = clsx(styles.label, {
     [styles.disabled]: disabled,
   });
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    onChange(event.target.checked);
-  };
 
   return (
     <label className={rootClasses}>
@@ -32,7 +27,6 @@ const Checkbox = ({
         type="checkbox"
         className={styles.checkbox}
         checked={checked}
-        onChange={handleChange}
         disabled={disabled}
         {...props}
       />
