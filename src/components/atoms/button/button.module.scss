@@ -5,9 +5,6 @@
   border: var(--whs-btn-border, 2px solid transparent);
   border-radius: var(--whs-btn-border-radius, 4px);
   width: var(--whs-btn-width, auto);
-  font-size: var(--whs-btn-font-size, 16px);
-  font-weight: var(--whs-btn-font-weight, 500);
-  line-height: var(--whs-btn-line-height, 1.5);
   text-align: var(--whs-btn-text-align, center);
   padding: var(--whs-btn-padding, 10px 20px);
   transition: var(--whs-btn-transition, all 0.3s ease-in-out);
@@ -164,6 +161,12 @@
 
 .content {
   font-size: var(--whs-button-font-weight, 16px);
+  font-family: var(--whs-button-font-family, Arial);
+  font-style: var(--whs-button-font-style, normal);
+  font-weight: var(--whs-button-font-weight, 500);
+  line-height: var(--whs-button-line-height, 1.5);
+  letter-spacing: var(--whs-button-letter-spacing, 0.5px);
+  text-transform: var(--whs-button-text-transform, none);
 }
 
 .stuff {
