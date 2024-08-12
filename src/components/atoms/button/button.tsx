@@ -12,6 +12,7 @@ export interface WhsButtonProps extends PropsWithChildren<ButtonProps> {
   color?: "primary" | "secondary" | "tertiary"; // need to extend colors
   variant?: "contained" | "outlined" | "text";
   fullWidth?: boolean;
+  size?: "small" | "medium" | "large";
 }
 
 const Button = ({
@@ -23,12 +24,14 @@ const Button = ({
   startIcon,
   fullWidth = false,
   className,
+  size = "medium",
   ...props
 }: WhsButtonProps) => {
   const btnClasses = clsx(styles.btn, className, {
     [styles[variant]]: Boolean(variant),
     [styles[color]]: Boolean(color),
     [styles["full-width"]]: fullWidth,
+    [styles[size]]: size,
   });
 
   return (

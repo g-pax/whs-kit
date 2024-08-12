@@ -7,9 +7,12 @@ export type Styles = {
   "full-width": string;
   fullWidth: string;
   inner: string;
+  large: string;
+  medium: string;
   outlined: string;
   primary: string;
   secondary: string;
+  small: string;
   "start-icon": string;
   startIcon: string;
   stuff: string;
