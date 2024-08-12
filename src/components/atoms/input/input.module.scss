@@ -57,6 +57,7 @@ $top-icon-with-helper: calc(
     transition: all 0.3s ease-in-out;
 
     &::placeholder {
+      user-select: none;
       color: var(--whs-input-placeholder-color, #757b8c);
       font-family: var(--whs-input-placeholder-font-family, "Arial");
       font-size: var(--whs-input-placeholder-font-size, 16px);

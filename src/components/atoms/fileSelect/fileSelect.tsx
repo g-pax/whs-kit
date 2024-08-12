@@ -65,7 +65,7 @@ const FileSelect = ({
         </label>
       )}
       <div className={inputClasses}>
-        <span>{placeholder}</span>
+        <span className={styles.placeholder}>{placeholder}</span>
         <input
           ref={ref}
           style={{ display: "none" }}

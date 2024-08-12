@@ -154,3 +154,7 @@ $top-icon-with-helper: calc(
   letter-spacing: var(--whs-fileButton-letter-spacing);
   text-transform: var(--whs-fileButton-text-transform);
 }
+
+.placeholder {
+  user-select: none;
+}

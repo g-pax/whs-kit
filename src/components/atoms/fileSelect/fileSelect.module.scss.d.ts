@@ -14,6 +14,7 @@ export type Styles = {
   "input-wrapper": string;
   inputWrapper: string;
   label: string;
+  placeholder: string;
   "start-icon": string;
   startIcon: string;
 };
