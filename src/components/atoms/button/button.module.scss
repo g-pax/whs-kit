@@ -10,11 +10,7 @@
   line-height: var(--whs-btn-line-height, 1.5);
   text-align: var(--whs-btn-text-align, center);
   padding: var(--whs-btn-padding, 10px 20px);
-  transition: var(
-    --whs-btn-transition,
-    background-color 0.3s ease-in-out,
-    color 0.3s ease-in-out
-  );
+  transition: var(--whs-btn-transition, all 0.3s ease-in-out);
 }
 .full-width {
   width: 100% !important;
