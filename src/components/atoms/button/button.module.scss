@@ -161,13 +161,13 @@
 
 .content {
   text-wrap: nowrap;
-  font-size: var(--whs-button-font-weight, 16px);
-  font-family: var(--whs-button-font-family, Arial);
-  font-style: var(--whs-button-font-style, normal);
-  font-weight: var(--whs-button-font-weight, 500);
-  line-height: var(--whs-button-line-height, 1.5);
-  letter-spacing: var(--whs-button-letter-spacing, 0.5px);
-  text-transform: var(--whs-button-text-transform, none);
+  font-size: var(--whs-btn-font-weight, 16px);
+  font-family: var(--whs-btn-font-family, Arial);
+  font-style: var(--whs-btn-font-style, normal);
+  font-weight: var(--whs-btn-font-weight, 500);
+  line-height: var(--whs-btn-line-height, 1.5);
+  letter-spacing: var(--whs-btn-letter-spacing, 0.5px);
+  text-transform: var(--whs-btn-text-transform, none);
 }
 
 .stuff {
@@ -177,12 +177,15 @@
 .small {
   padding: var(--whs-btn-small-padding);
   height: var(--whs-btn-small-height);
+  font-size: var(--whs-btn-small-font-weight);
 }
 .medium {
   padding: var(--whs-btn-medium-padding);
   height: var(--whs-btn-medium-height);
+  height: var(--whs-btn-medium-font-weight);
 }
 .large {
   padding: var(--whs-btn-large-padding);
   height: var(--whs-btn-large-height);
+  font-size: var(--whs-btn-large-font-weight);
 }
