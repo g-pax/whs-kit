@@ -160,6 +160,7 @@
 }
 
 .content {
+  text-wrap: nowrap;
   font-size: var(--whs-button-font-weight, 16px);
   font-family: var(--whs-button-font-family, Arial);
   font-style: var(--whs-button-font-style, normal);
