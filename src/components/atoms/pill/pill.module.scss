@@ -9,74 +9,74 @@
     color 0.3s ease-in-out;
 
   &-primary {
-    background-color: var(--pill-bg-primary, #007bff);
-    color: var(--pill-color-primary, #fff);
+    background-color: var(--pill-bg-primary);
+    color: var(--pill-color-primary);
     &:hover {
-      background-color: var(--pill-bg-primary-hover, #0056b3);
-      color: var(--pill-color-primary-hover, #fff);
+      background-color: var(--pill-bg-primary-hover);
+      color: var(--pill-color-primary-hover);
     }
   }
 
   &-secondary {
-    background-color: var(--pill-bg-secondary, #6c757d);
-    color: var(--pill-color-secondary, #fff);
+    background-color: var(--pill-bg-secondary);
+    color: var(--pill-color-secondary);
     &:hover {
-      background-color: var(--pill-bg-secondary-hover, #5a6268);
-      color: var(--pill-color-secondary-hover, #fff);
+      background-color: var(--pill-bg-secondary-hover);
+      color: var(--pill-color-secondary-hover);
     }
   }
 
   &-success {
-    background-color: var(--pill-bg-success, #28a745);
-    color: var(--pill-color-success, #fff);
+    background-color: var(--pill-bg-success);
+    color: var(--pill-color-success);
     &:hover {
-      background-color: var(--pill-bg-success-hover, #218838);
-      color: var(--pill-color-success-hover, #fff);
+      background-color: var(--pill-bg-success-hover);
+      color: var(--pill-color-success-hover);
     }
   }
 
   &-danger {
-    background-color: var(--pill-bg-danger, #dc3545);
-    color: var(--pill-color-danger, #fff);
+    background-color: var(--pill-bg-danger);
+    color: var(--pill-color-danger);
     &:hover {
-      background-color: var(--pill-bg-danger-hover, #c82333);
-      color: var(--pill-color-danger-hover, #fff);
+      background-color: var(--pill-bg-danger-hover);
+      color: var(--pill-color-danger-hover);
     }
   }
 
   &-warning {
-    background-color: var(--pill-bg-warning, #ffc107);
-    color: var(--pill-color-warning, #212529);
+    background-color: var(--pill-bg-warning);
+    color: var(--pill-color-warning);
     &:hover {
-      background-color: var(--pill-bg-warning-hover, #e0a800);
-      color: var(--pill-color-warning-hover, #212529);
+      background-color: var(--pill-bg-warning-hover);
+      color: var(--pill-color-warning-hover);
     }
   }
 
   &-info {
-    background-color: var(--pill-bg-info, #17a2b8);
-    color: var(--pill-color-info, #fff);
+    background-color: var(--pill-bg-info);
+    color: var(--pill-color-info);
     &:hover {
-      background-color: var(--pill-bg-info-hover, #138496);
-      color: var(--pill-color-info-hover, #fff);
+      background-color: var(--pill-bg-info-hover);
+      color: var(--pill-color-info-hover);
     }
   }
 
   &-light {
-    background-color: var(--pill-bg-light, #f8f9fa);
-    color: var(--pill-color-light, #212529);
+    background-color: var(--pill-bg-light);
+    color: var(--pill-color-light);
     &:hover {
-      background-color: var(--pill-bg-light-hover, #e2e6ea);
-      color: var(--pill-color-light-hover, #212529);
+      background-color: var(--pill-bg-light-hover);
+      color: var(--pill-color-light-hover);
     }
   }
 
   &-dark {
-    background-color: var(--pill-bg-dark, #343a40);
-    color: var(--pill-color-dark, #fff);
+    background-color: var(--pill-bg-dark);
+    color: var(--pill-color-dark);
     &:hover {
-      background-color: var(--pill-bg-dark-hover, #23272b);
-      color: var(--pill-color-dark-hover, #fff);
+      background-color: var(--pill-bg-dark-hover);
+      color: var(--pill-color-dark-hover);
     }
   }
   &-sm {
