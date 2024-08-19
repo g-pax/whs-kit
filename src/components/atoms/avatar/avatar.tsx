@@ -10,6 +10,11 @@ interface AvatarProps {
   shape?: "circle" | "square";
   backgroundColor?: string;
   color?: string;
+  classes?: {
+    root?: string;
+    img?: string;
+    initials?: string;
+  };
 }
 
 const Avatar: React.FC<AvatarProps> = ({
@@ -20,13 +25,20 @@ const Avatar: React.FC<AvatarProps> = ({
   shape = "circle",
   backgroundColor = "#ccc",
   color = "#fff",
+  classes,
 }) => {
   const renderContent = () => {
     if (src) {
-      return <img src={src} alt={alt} className={styles.image} />;
+      return (
+        <img src={src} alt={alt} className={clsx(styles.image, classes?.img)} />
+      );
     }
     if (initials) {
-      return <span className={styles.initials}>{initials}</span>;
+      return (
+        <span className={clsx(styles.initials, classes?.initials)}>
+          {initials}
+        </span>
+      );
     }
     return (
       <svg
@@ -38,7 +50,7 @@ const Avatar: React.FC<AvatarProps> = ({
       </svg>
     );
   };
-  const rootClasses = clsx(styles.avatar, styles[shape]);
+  const rootClasses = clsx(styles.avatar, styles[shape], classes?.root);
   const rootStyles = { width: size, height: size, backgroundColor, color };
 
   return (
