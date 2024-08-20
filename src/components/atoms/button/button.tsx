@@ -25,25 +25,28 @@ const Button = ({
   fullWidth = false,
   className,
   size = "medium",
+  disabled,
   ...props
 }: WhsButtonProps) => {
   const btnClasses = clsx(styles.btn, className, {
     [styles[variant]]: Boolean(variant),
     [styles[color]]: Boolean(color),
-    [styles["full-width"]]: fullWidth,
     [styles[size]]: size,
+    [styles.disabled]: disabled,
   });
 
   return (
-    <button className={btnClasses} {...props}>
-      <div className={styles.inner}>
-        {startIcon ? (
-          <span className={styles["start-icon"]}>{startIcon}</span>
-        ) : null}
-        <span className={styles.content}>{children || name}</span>
-        {endIcon ? <span className={styles["end-icon"]}>{endIcon}</span> : null}
-      </div>
-    </button>
+    <div className={clsx(styles.root, { [styles.full]: fullWidth })}>
+      <button className={btnClasses} disabled={disabled} {...props}>
+        <div className={styles.inner}>
+          {startIcon ? (
+            <span className={styles.startIcon}>{startIcon}</span>
+          ) : null}
+          <span className={styles.content}>{children || name}</span>
+          {endIcon ? <span className={styles.endIcon}>{endIcon}</span> : null}
+        </div>
+      </button>
+    </div>
   );
 };
 
