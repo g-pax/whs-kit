@@ -5,13 +5,14 @@ $top-icon: calc(
   50% + 0.5 * var(--whs-input-label-height, 20px) + 0.5 *
     var(--whs-input-gap, 0.5rem)
 );
+
 $top-icon-with-helper: calc(
   var(--whs-input-label-height, 20px) + var(--whs-input-gap, 0.5rem) +
-    var(--whs-input-padding, 0.5rem) + 0.5 *
-    var(--whs-input-helper-text-height, 20px)
+    var(--whs-input-padding-top, 0.5rem) + 2px
 );
 
 .root {
+  box-sizing: border-box;
   --whs-input-border: 1px solid #757b8c;
   --whs-input-border-hover: 1px solid #757b8c;
   --whs-input-border-focus: 1px solid #757b8c;
@@ -60,7 +61,9 @@ $top-icon-with-helper: calc(
   border: var(--whs-input-border);
   border-radius: var(--whs-input-border-radius, 4px);
   outline: var(--whs-input-outline);
-  transition: all 0.3s ease-in-out;
+  transition:
+    all 0.3s ease-in-out,
+    height 0s;
 
   &::placeholder {
     color: var(--whs-input-placeholder-color, #757b8c);
@@ -126,13 +129,15 @@ $top-icon-with-helper: calc(
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: calc(8px + var(--whs-input-padding, 0.5rem));
+  left: calc(8px + 0.5 * var(--whs-input-padding, 0.5rem));
   top: $top-icon;
   transform: translateY(-50%);
   &:has(~ .helperText) {
+    transform: translate3d(0, 0, 0);
     top: $top-icon-with-helper;
   }
   &:has(~ .errorMessage) {
+    transform: translate3d(0, 0, 0);
     top: $top-icon-with-helper;
   }
 }
@@ -141,13 +146,15 @@ $top-icon-with-helper: calc(
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: calc(8px + var(--whs-input-padding, 0.5rem));
+  right: calc(8px + (0.5 * var(--whs-input-padding, 0.5rem)));
   top: $top-icon;
   transform: translateY(-50%);
   &:has(~ .helperText) {
+    transform: translate3d(0, 0, 0);
     top: $top-icon-with-helper;
   }
   &:has(~ .errorMessage) {
+    transform: translate3d(0, 0, 0);
     top: $top-icon-with-helper;
   }
 }
