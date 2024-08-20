@@ -33,8 +33,8 @@ const Textarea: React.FC<TextareaProps> = ({
   onChange,
   onBlur,
   helperText,
-  // endIcon,
-  // startIcon,
+  endIcon,
+  startIcon,
   labelIcon,
   error,
   touched,
@@ -45,7 +45,7 @@ const Textarea: React.FC<TextareaProps> = ({
     [styles.fullWidth]: fullWidth,
   });
   const textareaClasses = clsx(styles.textarea, {
-    [styles.error]: error && touched,
+    [styles.error]: error,
   });
   return (
     <div className={rootClasses}>
@@ -66,10 +66,12 @@ const Textarea: React.FC<TextareaProps> = ({
         onBlur={onBlur}
         {...props}
       />
-      {/* {startIcon && <div className={styles.startIcon}>{startIcon}</div>}
-      {endIcon && <div className={styles.endIcon}>{endIcon}</div>} */}
-      {helperText && <div className={styles.helperText}>{helperText}</div>}
-      {error && touched && <div className={styles.errorMessage}>{error}</div>}
+      {startIcon && <div className={styles.startIcon}>{startIcon}</div>}
+      {endIcon && <div className={styles.endIcon}>{endIcon}</div>}
+      {helperText && !error && (
+        <div className={styles.helperText}>{helperText}</div>
+      )}
+      {error && <div className={styles.errorMessage}>{error}</div>}
     </div>
   );
 };
