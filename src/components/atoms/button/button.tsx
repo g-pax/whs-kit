@@ -30,9 +30,10 @@ const Button = forwardRef(
       disabled,
       ...props
     }: WhsButtonProps,
-    ref: ForwardedRef<HTMLDivElement>
+    ref: ForwardedRef<HTMLButtonElement>
   ) => {
     const btnClasses = clsx(styles.btn, className, {
+      [styles.full]: fullWidth,
       [styles[variant]]: Boolean(variant),
       [styles[color]]: Boolean(color),
       [styles[size]]: size,
@@ -40,20 +41,15 @@ const Button = forwardRef(
     });
 
     return (
-      <div
-        ref={ref}
-        className={clsx(styles.root, { [styles.full]: fullWidth })}
-      >
-        <button className={btnClasses} disabled={disabled} {...props}>
-          <div className={styles.inner}>
-            {startIcon ? (
-              <span className={styles.startIcon}>{startIcon}</span>
-            ) : null}
-            <span className={styles.content}>{children || name}</span>
-            {endIcon ? <span className={styles.endIcon}>{endIcon}</span> : null}
-          </div>
-        </button>
-      </div>
+      <button ref={ref} className={btnClasses} disabled={disabled} {...props}>
+        <div className={styles.inner}>
+          {startIcon ? (
+            <span className={styles.startIcon}>{startIcon}</span>
+          ) : null}
+          <span className={styles.content}>{children || name}</span>
+          {endIcon ? <span className={styles.endIcon}>{endIcon}</span> : null}
+        </div>
+      </button>
     );
   }
 );
