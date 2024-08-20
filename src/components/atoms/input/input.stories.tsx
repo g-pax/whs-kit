@@ -34,7 +34,6 @@ export const InputDefault: Story = {
     placeholder: "Enter your username",
     required: true,
     minLength: 4,
-    errorMessage: "Please enter a valid username",
     endIcon: "😵‍💫",
     startIcon: "👋",
   },
@@ -51,7 +50,6 @@ export const InputError: Story = {
   },
   args: {
     error: "This is an error",
-    errorMessage: "Please enter a valid username",
     fullWidth: true,
     value: "",
     onChange: fn(),
