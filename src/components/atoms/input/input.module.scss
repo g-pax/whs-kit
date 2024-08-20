@@ -93,6 +93,12 @@ $top-icon-with-helper: calc(
   &::placeholder {
     color: var(--whs-input-placeholder-color-error, #ff0000);
   }
+
+  &:hover {
+    border: var(--whs-input-border-error-hover, 1px solid #ff0000);
+    background-color: var(--whs-input-bg-error-hover);
+    color: var(--whs-input-color-error-hover, #ff0000);
+  }
 }
 
 .errorMessage {
