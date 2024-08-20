@@ -74,21 +74,19 @@ const FileSelect = ({
           value={value}
           {...props}
         />
-        <div style={{ marginRight: "8px" }}>
-          {renderFileUploadButton ? (
-            renderFileUploadButton?.(openFilePicker)
-          ) : (
-            <button
-              aria-label="Select a file"
-              type="button"
-              className={styles.fileButton}
-              onClick={openFilePicker}
-            >
-              <span>{fileUploadIcon}</span>
-              <span>{fileUploadLabel}</span>
-            </button>
-          )}
-        </div>
+        {renderFileUploadButton ? (
+          renderFileUploadButton?.(openFilePicker)
+        ) : (
+          <button
+            aria-label="Select a file"
+            type="button"
+            className={styles.fileButton}
+            onClick={openFilePicker}
+          >
+            <span>{fileUploadIcon}</span>
+            <span>{fileUploadLabel}</span>
+          </button>
+        )}
       </div>
       {startIcon && <div className={styles.startIcon}>{startIcon}</div>}
       {endIcon && <div className={styles.endIcon}>{endIcon}</div>}

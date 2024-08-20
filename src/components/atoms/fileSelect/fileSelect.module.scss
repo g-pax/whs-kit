@@ -169,6 +169,7 @@ $top-icon-with-helper: calc(
 
 .fileButton {
   cursor: pointer;
+  margin-right: var(--whs-fileButton-margin-righ, 8px);
   display: flex;
   padding: var(--whs-fileButton-padding);
   justify-content: center;
