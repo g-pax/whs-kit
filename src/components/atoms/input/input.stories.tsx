@@ -39,3 +39,29 @@ export const InputDefault: Story = {
     startIcon: "👋",
   },
 };
+
+export const InputError: Story = {
+  render: (args) => {
+    const [value, setValue] = useState(args.value);
+    const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      setValue(e.target.value);
+    };
+
+    return <Input {...args} value={value} onChange={onChange} />;
+  },
+  args: {
+    error: "This is an error",
+    errorMessage: "Please enter a valid username",
+    fullWidth: true,
+    value: "",
+    onChange: fn(),
+    label: "Username",
+    type: "text",
+    placeholder: "Enter your username",
+    required: true,
+    minLength: 4,
+    endIcon: "😵‍💫",
+    touched: true,
+    startIcon: "👋",
+  },
+};

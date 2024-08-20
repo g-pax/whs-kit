@@ -16,7 +16,6 @@ export interface InputProps extends InputHtml {
   maxLength?: number;
   helperText?: string;
   pattern?: string;
-  errorMessage?: string;
   className?: string;
   fullWidth?: boolean;
   error?: string;
@@ -48,7 +47,7 @@ const Input: React.FC<InputProps> = ({
     [styles.fullWidth]: fullWidth,
   });
   const inputClasses = clsx(styles.input, {
-    [styles.error]: error && touched,
+    [styles.error]: error,
   });
 
   return (
@@ -74,8 +73,10 @@ const Input: React.FC<InputProps> = ({
       />
       {startIcon && <div className={styles.startIcon}>{startIcon}</div>}
       {endIcon && <div className={styles.endIcon}>{endIcon}</div>}
-      {helperText && <div className={styles.helperText}>{helperText}</div>}
-      {error && touched && <div className={styles.errorMessage}>{error}</div>}
+      {helperText && !error && (
+        <div className={styles.helperText}>{helperText}</div>
+      )}
+      {error && <div className={styles.errorMessage}>{error}</div>}
     </div>
   );
 };
