@@ -7,6 +7,7 @@ export interface CheckboxProps extends InputHtml {
   label?: string;
   checked?: boolean;
   disabled?: boolean;
+  error?: string;
   iconChecked?: ReactNode;
 }
 
@@ -15,10 +16,12 @@ const Checkbox = ({
   checked,
   iconChecked,
   disabled = false,
+  error,
   ...props
 }: CheckboxProps) => {
   const rootClasses = clsx(styles.label, {
     [styles.disabled]: disabled,
+    [styles.labelError]: error,
   });
 
   return (
@@ -33,6 +36,7 @@ const Checkbox = ({
       <span
         className={clsx(styles.checkmark, {
           [styles.withoutIcon]: !iconChecked,
+          [styles.error]: error,
         })}
       >
         {iconChecked && (

@@ -18,9 +18,6 @@ const meta = {
           vars={{
             "whs-checkbox-size": "20px",
             "whs-checkbox-bg-unchecked": "#fff",
-            "whs-checkbox-bg-checked": "#007bff",
-            "whs-checkbox-border-unchecked": "1px solid #007bff",
-            "whs-checkbox-border-checked": "1px solid #007bff",
             "whs-checkbox-border-radius": "5px",
           }}
         >
