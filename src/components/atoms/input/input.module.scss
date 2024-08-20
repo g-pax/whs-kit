@@ -99,6 +99,11 @@ $top-icon-with-helper: calc(
     background-color: var(--whs-input-bg-error-hover);
     color: var(--whs-input-color-error-hover, #ff0000);
   }
+  &:focus {
+    border: var(--whs-input-border-error-focus, 1px solid #ff0000);
+    background-color: var(--whs-input-bg-error-focus);
+    color: var(--whs-input-color-error-focus, #ff0000);
+  }
 }
 
 .errorMessage {
