@@ -53,7 +53,7 @@ const FileSelect = ({
     [styles.fullWidth]: fullWidth,
   });
   const inputClasses = clsx(styles.input, {
-    [styles.error]: error && touched,
+    [styles.error]: error,
   });
 
   return (
@@ -74,24 +74,28 @@ const FileSelect = ({
           value={value}
           {...props}
         />
-        {renderFileUploadButton ? (
-          renderFileUploadButton?.(openFilePicker)
-        ) : (
-          <button
-            aria-label="Select a file"
-            type="button"
-            className={styles.fileButton}
-            onClick={openFilePicker}
-          >
-            <span>{fileUploadIcon}</span>
-            <span>{fileUploadLabel}</span>
-          </button>
-        )}
+        <div style={{ marginRight: "8px" }}>
+          {renderFileUploadButton ? (
+            renderFileUploadButton?.(openFilePicker)
+          ) : (
+            <button
+              aria-label="Select a file"
+              type="button"
+              className={styles.fileButton}
+              onClick={openFilePicker}
+            >
+              <span>{fileUploadIcon}</span>
+              <span>{fileUploadLabel}</span>
+            </button>
+          )}
+        </div>
       </div>
       {startIcon && <div className={styles.startIcon}>{startIcon}</div>}
       {endIcon && <div className={styles.endIcon}>{endIcon}</div>}
-      {helperText && <div className={styles.helperText}>{helperText}</div>}
-      {error && touched && <div className={styles.errorMessage}>{error}</div>}
+      {helperText && !error && (
+        <div className={styles.helperText}>{helperText}</div>
+      )}
+      {error && <div className={styles.errorMessage}>{error}</div>}
     </div>
   );
 };

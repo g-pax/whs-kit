@@ -121,7 +121,7 @@ $top-icon-with-helper: calc(
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: calc(8px + var(--whs-input-padding, 0.5rem));
+  left: calc(8px + 0.5 * var(--whs-input-padding, 0.5rem));
   top: $top-icon;
   transform: translateY(-50%);
   &:has(~ .helperText) {
@@ -136,7 +136,7 @@ $top-icon-with-helper: calc(
   align-items: center;
   justify-content: center;
   position: absolute;
-  right: calc(8px + var(--whs-input-padding, 0.5rem));
+  right: calc(8px + 0.5 * var(--whs-input-padding, 0.5rem));
   top: $top-icon;
   transform: translateY(-50%);
   &:has(~ .helperText) {
