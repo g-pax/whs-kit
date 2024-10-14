@@ -5,6 +5,7 @@ $top-icon: calc(
   50% + 0.5 * var(--whs-input-label-height, 20px) + 0.5 *
     var(--whs-input-gap, 0.5rem)
 );
+$top-icon-without-label: 50%;
 $top-icon-with-helper: calc(
   50% - 0.5 * var(--whs-input-helper-text-height, 20px) + 0.5 *
     var(--whs-input-label-height, 20px)
@@ -122,8 +123,11 @@ $top-icon-with-helper: calc(
   justify-content: center;
   position: absolute;
   left: calc(8px + 0.5 * var(--whs-input-padding, 0.5rem));
-  top: $top-icon;
+  top: $top-icon-without-label;
   transform: translateY(-50%);
+  &:has(~ label) {
+    top: $top-icon;
+  }
   &:has(~ .helperText) {
     top: $top-icon-with-helper;
   }
@@ -137,8 +141,11 @@ $top-icon-with-helper: calc(
   justify-content: center;
   position: absolute;
   right: calc(8px + 0.5 * var(--whs-input-padding, 0.5rem));
-  top: $top-icon;
+  top: $top-icon-without-label;
   transform: translateY(-50%);
+  &:has(~ label) {
+    top: $top-icon;
+  }
   &:has(~ .helperText) {
     top: $top-icon-with-helper;
   }
