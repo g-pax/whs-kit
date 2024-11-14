@@ -12,9 +12,6 @@ $top-icon-with-helper: calc(
 );
 
 .inputWrapper {
-  --whs-fileInput-border: 1px solid #757b8c;
-  --whs-fileInput-border-hover: 1px solid #757b8c;
-  --whs-fileInput-border-focus: 1px solid #757b8c;
   position: relative;
   display: flex;
   flex-direction: column;
